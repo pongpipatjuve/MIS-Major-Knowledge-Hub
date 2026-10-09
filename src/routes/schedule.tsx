@@ -96,7 +96,7 @@ function Schedule() {
                   <td className="p-2 font-semibold"><Link to="/course/$code" params={{ code: c.code }} className="hover:text-primary">{c.code}</Link></td>
                   <td>{c.nameEn}</td>
                   <td>{c.credits}</td>
-                  <td>{DAYS[c.sections[0].day]} {c.sections[0].start}:00-{c.sections[0].end}:00</td>
+                  <td>{DAYS[c.sections[0]!.day]} {c.sections[0]!.start}:00-{c.sections[0]!.end}:00</td>
                   <td className={c.restriction === "ไม่มีข้อจำกัด" ? "" : "text-destructive"}>{c.restriction}</td>
                   <td className="p-2 text-right"><RegButton code={c.code} active={isReg(c.code)} /></td>
                 </tr>
@@ -113,6 +113,6 @@ function RegButton({ code, active }: { code: string; active: boolean }) {
   return active ? (
     <button aria-label="ถอนรายวิชา" onClick={() => regStore.remove(code)} className="grid h-8 w-8 place-items-center rounded-lg bg-muted text-muted-foreground hover:text-destructive"><X className="h-4 w-4" /></button>
   ) : (
-    <button aria-label="เพิ่มรายวิชา" onClick={() => regStore.add(code, findCourse(code)!.sections[0].sec)} className="grid h-8 w-8 place-items-center rounded-lg bg-primary text-primary-foreground hover:opacity-90"><Plus className="h-4 w-4" /></button>
+    <button aria-label="เพิ่มรายวิชา" onClick={() => regStore.add(code, findCourse(code)!.sections[0]!.sec)} className="grid h-8 w-8 place-items-center rounded-lg bg-primary text-primary-foreground hover:opacity-90"><Plus className="h-4 w-4" /></button>
   );
 }
