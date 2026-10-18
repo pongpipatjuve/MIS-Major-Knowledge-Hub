@@ -18,7 +18,7 @@ export const Route = createFileRoute("/")({
 
 const DOCS: { title: string; icon: typeof FileText; url?: string }[] = [
   { title: "คู่มือการลงทะเบียนเรียน", icon: FileText },
-  { title: "คู่มือประจำภาคการศึกษา", icon: BookOpen, url: "/Undergraduate%20Study%20Guide,%20Academic%20Year%202026.pdf" },
+  { title: "คู่มือประจำภาคการศึกษา", icon: BookOpen, url: "/handbook.pdf" },
   { title: "ปฏิทินการศึกษา", icon: CalendarDays },
 ];
 
@@ -42,7 +42,7 @@ function Home() {
               <d.icon className="h-6 w-6 shrink-0 text-primary" />
               <div className="text-sm">
                 <div className="font-semibold">{d.title}</div>
-                {d.url ? <a href={d.url} target="_blank" rel="noreferrer" className="text-primary">เปิดเอกสาร</a> : <NoData>ยังไม่มีเอกสาร — รอลิงก์ทางการ</NoData>}
+                {d.url ? <a href={d.url} target="_blank" rel="noopener noreferrer" className="text-primary">เปิดเอกสาร</a> : <NoData>ยังไม่มีเอกสาร — รอลิงก์ทางการ</NoData>}
               </div>
             </div>
           ))}
