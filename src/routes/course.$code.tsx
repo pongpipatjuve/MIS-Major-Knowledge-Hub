@@ -1,16 +1,16 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Calendar, Check, MapPin, Plus, Star, User, Users } from "lucide-react";
-import { DAYS, findCourse, GRADES, regStore, useRegs } from "@/lib/courses";
+import { DAYS, findAnyCourse, GRADES, regStore, useRegs } from "@/lib/courses";
 
 export const Route = createFileRoute("/course/$code")({
   loader: ({ params }) => {
-    const c = findCourse(params.code);
+    const c = findAnyCourse(params.code);
     if (!c) throw notFound();
     return { code: c.code, title: `${c.code} - ${c.nameEn}`, th: c.nameTh };
   },
   head: ({ loaderData }) => {
-    if (!loaderData) return { meta: [{ title: "ไม่พบรายวิชา — REG-CBS" }, { name: "robots", content: "noindex" }] };
-    const t = `${loaderData.title} — REG-CBS`;
+    if (!loaderData) return { meta: [{ title: "ไม่พบรายวิชา — MIS Major Knowledge Hub" }, { name: "robots", content: "noindex" }] };
+    const t = `${loaderData.title} — MIS Major Knowledge Hub`;
     const d = `รายละเอียดวิชา ${loaderData.th} กลุ่มเรียน เกณฑ์เกรด และรีวิวจากนิสิต`;
     return { meta: [{ title: t }, { name: "description", content: d }, { property: "og:title", content: t }, { property: "og:description", content: d }] };
   },
@@ -20,7 +20,7 @@ export const Route = createFileRoute("/course/$code")({
 
 function CourseDetail() {
   const { code } = Route.useLoaderData();
-  const c = findCourse(code)!;
+  const c = findAnyCourse(code)!;
   const regs = useRegs();
   const mine = regs.find((r) => r.code === code);
   const max = Math.max(...c.grades);

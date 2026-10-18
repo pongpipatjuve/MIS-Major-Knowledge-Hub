@@ -1,4 +1,5 @@
 import { useSyncExternalStore } from "react";
+import { categoryOf, CORE_CODES, MAJOR_ELECTIVE_CODES, MAJOR_REQUIRED_CODES, type Category } from "./curriculum";
 
 export type Section = {
   sec: string;
@@ -9,6 +10,9 @@ export type Section = {
   instructor: string;
   seats: number;
   left: number;
+  instructorShort?: string | undefined;
+  midtermExam?: string;
+  finalExam?: string;
 };
 
 export type Course = {
@@ -23,7 +27,12 @@ export type Course = {
   sections: Section[];
   grades: number[]; // A,B+,B,C+,C,D+,D,F
   rating: number;
-  reviews: { name: string; year: string; stars: number; text: string; tags: string[] }[];
+  reviews: { name: string; year: string; stars: number; text: string; tags: string[]; sec?: string; instructor?: string }[];
+  category?: Category | undefined;
+  term?: "ต้น" | "ปลาย";
+  description?: string;
+  isSample?: boolean;
+  stub?: boolean;
 };
 
 export const DAYS = ["จันทร์", "อังคาร", "พุธ", "พฤหัสบดี", "ศุกร์"];
@@ -82,7 +91,26 @@ export const courses: Course[] = [
   },
 ];
 
+// วิชาเดิมทั้งหมดข้างบนเป็นข้อมูลตัวอย่าง (AI สร้างขึ้น) ไม่ใช่ข้อมูลจริง
+for (const c of courses) {
+  c.isSample = true;
+  c.category = categoryOf(c.code);
+}
+
+// รายวิชาตามหลักสูตร MIS ที่ยังไม่มีรายละเอียด: มีเพียงรหัสและหมวด
+const stub = (code: string): Course => ({
+  code, nameEn: "", nameTh: "", credits: 0, dept: "บริหารธุรกิจ", major: "MIS", type: "วิชาบังคับ",
+  restriction: "", sections: [], grades: [], rating: 0, reviews: [], stub: true, category: categoryOf(code),
+});
+export const curriculumStubs: Course[] = [...CORE_CODES, ...MAJOR_REQUIRED_CODES, ...MAJOR_ELECTIVE_CODES]
+  .filter((code) => !courses.some((c) => c.code === code))
+  .map(stub);
+
+export const allCourses: Course[] = [...courses, ...curriculumStubs];
+export const isMis = (c: Course) => !!c.category;
+
 export const findCourse = (code: string) => courses.find((c) => c.code === code);
+export const findAnyCourse = (code: string) => allCourses.find((c) => c.code === code);
 
 // simple in-memory registration store
 type Reg = { code: string; sec: string };

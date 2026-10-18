@@ -6,9 +6,9 @@ import { courses, DAYS, findCourse, regStore, useRegs } from "@/lib/courses";
 export const Route = createFileRoute("/schedule")({
   head: () => ({
     meta: [
-      { title: "ตารางเรียน — REG-CBS" },
+      { title: "ตารางเรียน — MIS Major Knowledge Hub" },
       { name: "description", content: "วางแผนตารางเรียนประจำภาคและเลือกรายวิชาที่ลงทะเบียนได้" },
-      { property: "og:title", content: "ตารางเรียน — REG-CBS" },
+      { property: "og:title", content: "ตารางเรียน — MIS Major Knowledge Hub" },
       { property: "og:description", content: "ตารางเรียนรายสัปดาห์และรายวิชาที่ลงทะเบียนได้ของนิสิต CBS" },
     ],
   }),
