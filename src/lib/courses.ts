@@ -10,7 +10,7 @@ export type Section = {
   instructor: string;
   seats: number;
   left: number;
-  instructorShort?: string;
+  instructorShort?: string | undefined;
   midtermExam?: string;
   finalExam?: string;
 };
@@ -28,7 +28,7 @@ export type Course = {
   grades: number[]; // A,B+,B,C+,C,D+,D,F
   rating: number;
   reviews: { name: string; year: string; stars: number; text: string; tags: string[]; sec?: string; instructor?: string }[];
-  category?: Category;
+  category?: Category | undefined;
   term?: "ต้น" | "ปลาย";
   description?: string;
   isSample?: boolean;

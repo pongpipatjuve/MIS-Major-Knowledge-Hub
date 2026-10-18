@@ -1,4 +1,4 @@
-export type Slot = { code: string; sec: string; day: number; start: number; end: number; midterm?: string; final?: string };
+export type Slot = { code: string; sec: string; day: number; start: number; end: number; midterm?: string | undefined; final?: string | undefined };
 
 export const overlaps = (a: Slot, b: Slot) => a.day === b.day && a.start < b.end && b.start < a.end;
 

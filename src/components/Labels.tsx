@@ -11,7 +11,7 @@ const CAT_CLASS: Record<Category, string> = {
   วิชาเลือกเสรี: "bg-block-5",
 };
 
-export function CategoryBadge({ cat }: { cat?: Category }) {
+export function CategoryBadge({ cat }: { cat?: Category | undefined }) {
   if (!cat) return <span className="rounded-md bg-muted px-2 py-0.5 text-xs text-muted-foreground">ยังไม่ระบุหมวด</span>;
   const desc = CATEGORIES.find((c) => c.key === cat)?.desc;
   return <span title={desc} className={`rounded-md px-2 py-0.5 text-xs font-medium ${CAT_CLASS[cat]}`}>{cat}</span>;
