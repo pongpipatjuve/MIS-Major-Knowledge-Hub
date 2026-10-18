@@ -1,3 +1,4 @@
+import handbookUrl from '/public/handbook.pdf?url'
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { BookOpen, CalendarDays, ChevronRight, FileText, Megaphone, Search, GraduationCap } from "lucide-react";
 import { NoData } from "@/components/Labels";
@@ -43,16 +44,7 @@ function Home() {
               <div className="text-sm">
                 <div className="font-semibold">{d.title}</div>
                 {d.url ? (
-                  <a
-                    href={d.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={(event) => {
-                      event.preventDefault();
-                      window.open("/handbook.pdf", "_blank");
-                    }}
-                    className="text-primary"
-                  >
+                  <a href={handbookUrl} target="_blank" rel="noopener noreferrer" className="text-primary">
                     เปิดเอกสาร
                   </a>
                 ) : <NoData>ยังไม่มีเอกสาร — รอลิงก์ทางการ</NoData>}
