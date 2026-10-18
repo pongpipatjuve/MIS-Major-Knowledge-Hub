@@ -16,10 +16,9 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
-// ยังไม่มีลิงก์ทางการ: url ว่างไว้จนกว่าผู้ใช้จะให้ลิงก์จริง
 const DOCS: { title: string; icon: typeof FileText; url?: string }[] = [
   { title: "คู่มือการลงทะเบียนเรียน", icon: FileText },
-  { title: "คู่มือประจำภาคการศึกษา", icon: BookOpen },
+  { title: "คู่มือประจำภาคการศึกษา", icon: BookOpen, url: "/Undergraduate%20Study%20Guide,%20Academic%20Year%202026.pdf" },
   { title: "ปฏิทินการศึกษา", icon: CalendarDays },
 ];
 
