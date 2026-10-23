@@ -6,6 +6,9 @@ import { CATEGORIES } from "@/lib/curriculum";
 import { CategoryBadge, NoData, SampleBadge } from "@/components/Labels";
 
 export const Route = createFileRoute("/courses")({
+  validateSearch: (search: Record<string, unknown>) => ({
+    search: typeof search.search === "string" ? search.search : "",
+  }),
   head: () => ({
     meta: [
       { title: "ค้นหารายวิชา MIS — MIS Major Knowledge Hub" },
@@ -20,7 +23,8 @@ export const Route = createFileRoute("/courses")({
 });
 
 function Courses() {
-  const [q, setQ] = useState("");
+  const { search } = Route.useSearch();
+  const [q, setQ] = useState(search);
   const [cat, setCat] = useState("ทั้งหมด");
   const [showOther, setShowOther] = useState(false);
   const terms = [...new Set(allCourses.map((c) => c.term).filter(Boolean))];
