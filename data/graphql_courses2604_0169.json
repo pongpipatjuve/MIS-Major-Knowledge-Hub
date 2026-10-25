@@ -1,0 +1,3349 @@
+[
+    {
+        "data": {
+            "search": [
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604365",
+                    "abbrName": "FIN PLAN LIFE",
+                    "courseNameTh": "การวางแผนการเงินเพื่อชีวิต",
+                    "courseNameEn": "FINANCIAL PLANNING FOR LIFE",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR (S/U)(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 575,
+                                "max": 600,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED IN ONLINE (SO) S/U ONLY",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "JSC",
+                                        "STK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "800",
+                            "closed": false,
+                            "capacity": {
+                                "current": 1,
+                                "max": 5,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604465",
+                    "abbrName": "CREDIT MANAGEMENT",
+                    "courseNameTh": "การจัดการสินเชื่อ",
+                    "courseNameEn": "CREDITS MANAGEMENT",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2604361",
+                    "courseDescTh": "ลักษณะและขอบเขตของการจัดการสินเชื่อ โครงสร้างองค์การของฝ่ายสินเชื่อ ประเภทของสินเชื่อเครื่องมือสินเชื่อและหลักทรัพย์ค้ำประกัน ความเสี่ยงในการให้สินเชื่อ การจัดการสินเชื่อผู้บริโภค การจัดการสินเชื่อทางการค้า และการจัดการสินเชื่อของสถาบันการเงิน การตรวจสอบและการวิเคราะห์ความเสี่ยงในการให้สินเชื่อ นโยบาย 5 ซี วงเงินสินเชื่อ นโยบายและการปฏิบัติในการเรียกเก็บหนี้การควบคุมและการติดตามสินเชื่อ",
+                    "courseDescEn": "Nature and scope of credit management; organization of a credit department; types of credit, credit instruments and collateral, credit risk; management of consumer credit, commercial credit and credit of financial institution; investigation and analysis of credit risk; sources and methods of collection of information, credit prolicies and procedure; credit limits; collection policies and practices; credit control and follow-up.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": "2569-09-23T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "15:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2569-11-26T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "15:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 60,
+                                "max": 50,
+                                "__typename": "Capacity"
+                            },
+                            "note": "FINANCE 4TH YR",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "8/606",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "BJR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604433",
+                    "abbrName": "REAL ESTATE FIN",
+                    "courseNameTh": "การเงินเพื่อการจัดการอสังหาริมทรัพย์",
+                    "courseNameEn": "REAL ESTATE FINANCE",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2604361",
+                    "courseDescTh": "ธุรกิจอสังหาริมทรัพย์และกฎหมายที่เกี่ยวข้องกับธุรกิจอสังหาริมทรัพย์ หลักการทางการเงินในการดำเนินธุรกิจอสังหาริมทรัพย์ มูลค่าของเงินตามเวลา การวิเคราะห์ความเสี่ยงและความไม่แน่นอนการลงทุนอสังหาริมทรัพย์ อัตราผลตอบแทนที่แท้จริง ประเด็นทางภาษี แหล่งเงินทุนและการวิเคราะห์ความเป็นไปได้ของโครงการ อสังหาริมทรัพย์",
+                    "courseDescEn": "Background of real estate and its legal environment of real estate; financial aspects of real estate: the time value of money, provision for risk and uncertainty in real estate investment analysis, internal rate of return, tax issues, source of fund, and real estate project feasibility analysis.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": "2569-09-21T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2569-11-30T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 20,
+                                "max": 50,
+                                "__typename": "Capacity"
+                            },
+                            "note": "FINANCE 4TH YR",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "8/309",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "KSC"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604363",
+                    "abbrName": "WLTH MGT/FIN PLAN",
+                    "courseNameTh": "การบริหารความมั่นคงและการวางแผนทางการเงิน",
+                    "courseNameEn": "WEALTH MANAGEMENT AND FINANCIAL PLANNING",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2604361 OR 2604332",
+                    "courseDescTh": "วัตถุประสงค์การลงทุนสำหรับบุคคล การประเมินความสามารถและความเต็มใจในการรับความเสี่ยง นโยบายการลงทุน กลยุทธ์การจัดสรรกลุ่มสินทรัพย์ การวางแผนมรดก และการเกษียณอายุ กลยุทธ์ด้านภาษี ทุนทางการเงินและทุนมนุษย์สำหรับบุคคล บทบาท จริยธรรมและจรรยาบรรณพื้นฐานของผู้ให้คำแนะนำทางการเงิน",
+                    "courseDescEn": "Investment objectives for individuals; evaluation of ability and willingness to take risk; investment policy; asset allocation strategy; insurance, estate and retirement planning; tax strategy; financial capital and human capital for individuals; roles, ethics and basic code of conduct for financial advisors.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": "2569-09-21T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "10:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2569-11-27T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "11:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 112,
+                                "max": 120,
+                                "__typename": "Capacity"
+                            },
+                            "note": "FINANCE 4TH YR",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "1/204",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "JSC"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604293",
+                    "abbrName": "MATH TECH FIN",
+                    "courseNameTh": "เทคนิคคณิตศาสตร์สำหรับการเงิน",
+                    "courseNameEn": "MATHEMATICAL TECHNIQUES FOR FINANCE",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2301115",
+                    "courseDescTh": "เวกเตอร์และการหาอนุพันธ์ของเวกเตอร์ ฟังก์ชันหลายตัวแปร กฎลูกโซ่และเกรเดียนต์ ค่าสูงสุดและค่าตำสุดของฟังก์ชันสองตัวแปร ฟังก์ชันไม่เชิงเส้นที่ไม่มีเงื่อนไข ฟังก์ชันเชิงเส้นที่มีเงื่อนไขเชิงเส้น ฟังก์ชันไม่เชิงเส้นที่มีเงื่อนไขเชิงเส้น อนุพันธ์ขั้นสูงและพหุนามของเทเลอร์ ผลต่างเชิงอนุพันธ์และอนุกรรม สมการเชิงอนุพันธ์เบื้องต้น อินทิกรัลสองชั้น แมทริกซ์ การจับคู่เชิงเส้น ดีเทอร์มิแนนต์ ความเป็นอิสระของเวกเตอร์ จาโคเบียนและสูตรการเปลี่ยนตัวแปร",
+                    "courseDescEn": "Vectors and differentiation of vectors; function of  several variables; chain rule and the gradient; maximum and minimum of function of two variables: unconstrained nonlinear function, constrained linear function with linear constraints, constrained nonlinear function with linear constraints; higher derivatives and Taylor’s polynomials; differentials and total derivatives; introduction to differential equation; double integral; matrices: linear mapping, determinants, independence of vectors; Jacobian  and change of variable formula",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": "2569-09-23T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "15:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2569-11-30T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "11:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 84,
+                                "max": 85,
+                                "__typename": "Capacity"
+                            },
+                            "note": "FINANCE 2ND YR TEACH IN ENGLISH",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "1/205",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "SST",
+                                        "TWW"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 86,
+                                "max": 85,
+                                "__typename": "Capacity"
+                            },
+                            "note": "FINANCE 2ND YR TEACH IN ENGLISH",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "407",
+                                    "building": "MAHIT",
+                                    "teachers": [
+                                        "SST",
+                                        "TWW"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604362",
+                    "abbrName": "PERSONAL FINANCE",
+                    "courseNameTh": "การเงินส่วนบุคคล",
+                    "courseNameEn": "PERSONAL FINANCE",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "SO",
+                    "midterm": {
+                        "date": "2569-09-23T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "10:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2569-11-26T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "11:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 28,
+                                "max": 50,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MAJOR,MINOR",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "3/308",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "JSC"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 82,
+                                "max": 100,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED NON-FIN (S/U ONLY)",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "3/308",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "JSC"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604313",
+                    "abbrName": "FIN ECONOMETRICS",
+                    "courseNameTh": "เศรษฐมิติการเงิน",
+                    "courseNameEn": "FINANCIAL ECONOMETRICS",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2603330",
+                    "courseDescTh": "แนวคิดของเศรษฐมิติและการประยุกต์ใช้ทางการเงิน คุณสมบัติทางสถิติของตัวแปรทางการเงิน การประยุกต์ใช้การวิเคราะห์สมการถดถอยทางการเงิน การวิเคราะห์และแปลผลที่ได้จากสมการถดถอย การทดสอบคุณสมบัติทางสถิติ การวิเคราะห์และแปลผลตัวแปรเชิงคุณภาพทางการเงินในตัวแบบสมการถดถอย",
+                    "courseDescEn": "Concepts of econometrics and its application in finance; statistical properties of financial variables; application of regression analysis in finance; analyzing and interpreting results from regression; diagnostic testing; analyzing and interpreting qualitative financial variables in regression models.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": "2569-09-23T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "15:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2569-12-01T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "11:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 70,
+                                "max": 69,
+                                "__typename": "Capacity"
+                            },
+                            "note": "FINANCE 3RD YR",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "1/204",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "NSS",
+                                        "WSR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 68,
+                                "max": 69,
+                                "__typename": "Capacity"
+                            },
+                            "note": "FINANCE 3RD YR",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "1/206",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "NSS",
+                                        "WSR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604467",
+                    "abbrName": "ADV BUS FINANCE",
+                    "courseNameTh": "การเงินธุรกิจขั้นสูง",
+                    "courseNameEn": "ADVANCED BUSINESS FINANCE",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2604361 OR 2604294",
+                    "courseDescTh": "แนวคิดการจัดการทางการเงินและการประยุกต์ในธุรกิจ การประเมินค่ากิจการ รูปแบบการกำหนดราคาสินทรัพย์ การวิเคราะห์ความเสี่ยงและงบประมาณเงินทุนขั้นสูง โครงสร้างเงินทุนและนโยบายเงินปันผล การวางแผนการเงิน การเช่าซื้อ การรวมกิจการ การจัดการการเงินระยะสั้น",
+                    "courseDescEn": "The concepts of business financial management and their applications; valuation of the firm; capital asset pricing model; analysis of risk and capital budgeting; capital structure and dividen policy; financial planning; leasing; mergers; short-term financial management.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": "2569-09-25T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "11:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2569-11-23T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "11:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 78,
+                                "max": 65,
+                                "__typename": "Capacity"
+                            },
+                            "note": "FINANCE ACCOUNT TEACH IN ENGLISH",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "408",
+                                    "building": "MAHIT",
+                                    "teachers": [
+                                        "MEY"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604161",
+                    "abbrName": "INTRO FIN",
+                    "courseNameTh": "การเงินเบื้องต้น",
+                    "courseNameEn": "INTRODUCTION TO FINANCE",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ภาพรวมของการทำงานด้านการเงิน ตลาดการเงิน สถาบันการเงินและเครื่องมือทางการเงิน อัตราดอกเบี้ย มูลค่าเงินตามเวลาและการประยุกต์ใช้พื้นฐานของการเปรียบเทียบ ความเสี่ยงและผลตอบแทน การกระจายความเสี่ยง อัตราส่วนทางการเงิน",
+                    "courseDescEn": "Overview function of finance; financial markets, financial institutions and instruments; interest rate; time value of money; risk and applications; fundamentals of risk and return trade-off; diversification; financial ratios.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": "2569-09-23T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "10:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2569-12-01T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "11:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 54,
+                                "max": 70,
+                                "__typename": "Capacity"
+                            },
+                            "note": "SAR [OCARE]",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604294",
+                    "abbrName": "FUND CORP FIN",
+                    "courseNameTh": "การเงินธุรกิจพื้นฐาน",
+                    "courseNameEn": "FUNDAMENTALS OF CORPORATE FINANCE",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2601113 OR 2601115",
+                    "courseDescTh": "แนวคิดและเป้าหมายของการจัดการการเงิน การวางแผนและการพยากรณ์ทางการเงิน  การจัดการเงินทุนหมุนเวียน  ความเสี่ยงและผลตอบแทน  การจัดหาเงินทุนระยะยาว ต้นทุนของเงินทุน    การวิเคราะห์โครงการและงบประมาณเงินทุน โครงสร้างเงินทุนและนโยบายการจ่ายเงินเบื้องต้น ภาพรวมของตราสารอนุพันธ์",
+                    "courseDescEn": "Concept and goal of financial management; financial planning and forecasting; working capital management; risk and return; long-term financing; cost of capital; project analysis and capital budgeting; basics of capital structure and payout policy; overview of derivatives instruments.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": "2569-09-23T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2569-11-24T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 74,
+                                "max": 75,
+                                "__typename": "Capacity"
+                            },
+                            "note": "ACC STAT",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "1/205",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "STK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604332",
+                    "abbrName": "PRIN INVESTMENT",
+                    "courseNameTh": "หลักการลงทุน",
+                    "courseNameEn": "PRINCIPLE OF INVESTMENT",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2604361 OR 2604294",
+                    "courseDescTh": "หน้าที่ของตลาดทุน สมมติฐานของตลาดที่มีประสิทธิภาพ ทฤษฎีพอร์ตโฟลิโอ ทฤษฎีการประเมินมูลค่าที่ใช้กับตลาดหลักทรัพย์โดยทั่วไป อุตสาหกรรมและบริษัทที่เป็นทางเลือก หลักการเบื้องต้นในการวิเคราะห์หลักทรัพย์",
+                    "courseDescEn": "The functioning of capital markets, introduction to the efficient markets hypothesis, portfolio theory and valuation theory applied to the aggregate stock market, alternative industries, individual firms; basic principles of securities analysis.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": "2569-09-23T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "10:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2569-11-27T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 65,
+                                "max": 65,
+                                "__typename": "Capacity"
+                            },
+                            "note": "FINANCE ONLY 3RD YR",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "3/205",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "APT",
+                                        "TSS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 65,
+                                "max": 65,
+                                "__typename": "Capacity"
+                            },
+                            "note": "FINANCE ONLY 3RD YR",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "8/307",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "APT",
+                                        "TSS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "3",
+                            "closed": false,
+                            "capacity": {
+                                "current": 33,
+                                "max": 55,
+                                "__typename": "Capacity"
+                            },
+                            "note": "FINANCE NON-FINANCE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "8/307",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "APT",
+                                        "TSS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604361",
+                    "abbrName": "BUSINESS FINANCE",
+                    "courseNameTh": "การเงินธุรกิจ",
+                    "courseNameEn": "BUSINESS FINANCE",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2601121 OR 2601212 OR (2601116 AND 2604161) OR((2601111 OR 2601117) AND 2604161)",
+                    "courseDescTh": "การวิเคราะห์งบการเงิน การวางแผนและการพยากรณ์ทางการเงิน การจัดการเงินทุนหมุนเวียน หลักการของความเสี่ยงกับผลตอบแทน พื้นฐานการหามูลค่าตราสารทางการเงิน แหล่งที่มาและต้นทุนเงินทุน งบประมาณเงินทุน โครงสร้างเงินทุน นโยบายการจ่ายเงิน ตราสารอนุพันธ์",
+                    "courseDescEn": "Financial statement analysis; financial planning and forecasting; working capital management; principles of risk and return; basics of financial security valuation; sources of funds and cost of capital; capital budgeting; capital structure; payout policy; derivatives securities.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": "2569-09-21T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2569-11-24T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 68,
+                                "max": 72,
+                                "__typename": "Capacity"
+                            },
+                            "note": "2ND YR BUS ADMIN ONLY TEACH IN ENGLISH",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "208",
+                                    "building": "MAHIT",
+                                    "teachers": [
+                                        "MSL"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 63,
+                                "max": 72,
+                                "__typename": "Capacity"
+                            },
+                            "note": "2ND YR BUS ADMIN ONLY TEACH IN ENGLISH",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "3/105",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "RRC"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "3",
+                            "closed": false,
+                            "capacity": {
+                                "current": 76,
+                                "max": 72,
+                                "__typename": "Capacity"
+                            },
+                            "note": "2ND YR BUS ADMIN ONLY TEACH IN ENGLISH",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "408",
+                                    "building": "MAHIT",
+                                    "teachers": [
+                                        "AKT"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604271",
+                    "abbrName": "BUSINESS ECONOMICS",
+                    "courseNameTh": "เศรษฐศาสตร์ธุรกิจ",
+                    "courseNameEn": "BUSINESS ECONOMICS",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2900111",
+                    "courseDescTh": "วัตถุประสงค์ของธุรกิจ ลักษณะของการตัดสินใจทางการจัดการภายใต้สภาพที่ไม่แน่นอน แนวความคิดเกี่ยวกับกำไร การวิเคราะห์อุปสงค์และอุปทาน การพยากรณ์ การวิเคราะห์ต้นทุนและการควบคุม การแข่งขัน การวางแผน การผลิต และนโยบายผลิตภัณฑ์ การตั้งราคา ทฤษฎีและการปฏิบัติและนโยบายการตัดสินใจในการลงทุน นโยบายของรัฐและการตัดสินใจทางธุรกิจ",
+                    "courseDescEn": "Business objectives; nature of managerial decision making under uncertainty; concepts of profit; demand analysis and forecasting; cost analysis and control; competition, planning, production and production policies; pricing: theory, practices and policies; investment decision: government policies and business decision.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": "2569-09-24T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "11:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2569-11-25T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "11:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 61,
+                                "max": 64,
+                                "__typename": "Capacity"
+                            },
+                            "note": "2ND YR BUS ADMIN,STAT",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "1/104",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "PYK",
+                                        "TSY"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 61,
+                                "max": 64,
+                                "__typename": "Capacity"
+                            },
+                            "note": "2ND YR BUS ADMIN STAT",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "8/309",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "PYK",
+                                        "TSY"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "3",
+                            "closed": false,
+                            "capacity": {
+                                "current": 57,
+                                "max": 64,
+                                "__typename": "Capacity"
+                            },
+                            "note": "2ND YR BUS ADMIN STAT",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "1/204",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "PYK",
+                                        "TSY"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "4",
+                            "closed": false,
+                            "capacity": {
+                                "current": 76,
+                                "max": 64,
+                                "__typename": "Capacity"
+                            },
+                            "note": "2ND YR BUS ADMIN STAT",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "1/206",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "APW"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604482",
+                    "abbrName": "FIX INC SEC ANAL",
+                    "courseNameTh": "การวิเคราะห์ตราสารที่ให้รายได้คงที่",
+                    "courseNameEn": "FIXED INCOME SECURITY ANALYSIS",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2604332",
+                    "courseDescTh": "ประเภทและลักษณะของตราสารที่ให้รายได้คงที่ บทบาทของตลาดตราสารที่ให้รายได้คงที่ ความเสี่ยงของการลงทุนในตราสารที่ให้รายได้คงที่ การกำหนดตราสารที่ให้รายได้คงที่ การวิเคราะห์ความแปรปรวนของราคาตราสารที่ให้รายได้คงที่ โครงสร้างอัตราดอกเบี้ย ตราสารที่ให้รายได้คงที่จากซิเคียวริไทเซซัน วัตถุประสงค์และกระบวนการการลงทุนในพอร์ตโฟลิโอตราสารที่ให้รายได้คงที่ กลยุทธ์ในการจัดการพอร์ตโฟลิโอตราสารที่ให้รายได้คงที่",
+                    "courseDescEn": null,
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": "2569-09-25T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2569-11-23T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 44,
+                                "max": 50,
+                                "__typename": "Capacity"
+                            },
+                            "note": "FINANCE 4 TH YR",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "1/305",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "TSS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604501",
+                    "abbrName": "FINANCIAL MGT",
+                    "courseNameTh": "การจัดการด้านการเงิน",
+                    "courseNameEn": "FINANCIAL MANAGEMENT",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "วัตถุประสงค์ของการบริหารการเงิน การวิเคราะห์ การวางแผน และการควบคุมทางการเงิน การบริหารทุนหมุนเวียน การบริหารสินทรัพย์ประจำ การจัดหาเงินทุนจากแหล่งระยะสั้น ยุทธวิธีจัดโครงสร้างเงินทุน นโยบายเงินปันผล การควบบริษัท และปัญหาเงินอื่นๆ",
+                    "courseDescEn": "Objectives of financial management; Financial analysis; risk and reture; financial planning and control; working capital management, asset management short-term, intermediate term and long-term funding; capital structure, dividend policy, mergers, and acquistions and other financial problems.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "6",
+                            "closed": false,
+                            "capacity": {
+                                "current": 52,
+                                "max": 60,
+                                "__typename": "Capacity"
+                            },
+                            "note": "IT",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "18:00",
+                                        "end": "21:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "208",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "RSR",
+                                        "JSC"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "7",
+                            "closed": false,
+                            "capacity": {
+                                "current": 57,
+                                "max": 57,
+                                "__typename": "Capacity"
+                            },
+                            "note": "M.ACC.",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "SA",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "STK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "27",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 50,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "SA",
+                                    "period": {
+                                        "start": "08:30",
+                                        "end": "11:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "search": [
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604506",
+                    "abbrName": "MNGL FIN",
+                    "courseNameTh": "การเงินบริหาร",
+                    "courseNameEn": "MANAGERIAL FINANCE",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "20",
+                            "closed": false,
+                            "capacity": {
+                                "current": 63,
+                                "max": 66,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MSB",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "AR",
+                                    "period": {
+                                        "start": "AR",
+                                        "end": "AR",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "RSR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604650",
+                    "abbrName": "TREAS MGT",
+                    "courseNameTh": "การบริหารเงิน",
+                    "courseNameEn": "TREASURY MANAGEMENT",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 1.5,
+                    "creditHours": "LECT 1.5 CR(LECT 1.5 HR)",
+                    "courseCondition": "PRER 2604504 AND 2604505 OR C.F.",
+                    "courseDescTh": "บทบาทของฝ่ายบริหารเงิน การตัดสินใจด้านการจัดหาเงินทุน การบริหารเงินสด การบริหารเงินทุนหมุนเวียน การบริหารความเสี่ยงจากมูลค่าตลาด การบริหารความเสี่ยงจากสภาพคล่อง การบริหารความเสี่ยงจากเครดิต การบริหารเงินแบบรวมศูนย์",
+                    "courseDescEn": "Roles of the treasury department; financing decisions; cash management; working capital management; market risk management; liquidity risk management; credit risk management; centralized treasury management.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "10",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA EXECUTIVE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "18:00",
+                                        "end": "21:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "305",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "BJR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604649",
+                    "abbrName": "VENTURE CAPITAL",
+                    "courseNameTh": "เงินทุนร่วมลงทุน",
+                    "courseNameEn": "VENTURE CAPITAL",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 1.5,
+                    "creditHours": "LECT 1.5 CR(LECT 1.5 HR)",
+                    "courseCondition": "PRER 2604504 AND 2604505 OR C.F.",
+                    "courseDescTh": "ภาพรวมของเงินทุนร่วมลงทุน การจัดการและประเมินมูลค่ากิจการในช่วงแรกเริ่ม กลไกการลงทุน โครงสร้างสัญญาร่วมลงทุน กลยุทธ์การถอนการลงทุน",
+                    "courseDescEn": "Overview of venture capital; management and valuation of startups; investment mechanisms; valuation of startups; structure of contracts in venture capital; exit strategies.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "8",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 40,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA YOUNG EXEC",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "SU",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "220",
+                                    "building": "COM2",
+                                    "teachers": [
+                                        "KSC"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "10",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 40,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA EXEC",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "SA",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "206",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "KSC"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604674",
+                    "abbrName": "FIN ECONOMETRICS",
+                    "courseNameTh": "เศรษฐมิติการเงิน",
+                    "courseNameEn": "FINANCIAL ECONOMETRICS",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "เทคนิคทางสถิติและเศรษฐมิติสำหรับการวิจัยทางการเงิน การวิเคราะห์การถดถอยเชิงเส้น การทดสอบสมมติฐาน ทฤษฎีทางสถิติของกลุ่มตัวอย่างขนาดใหญ่ การผ่อนคลายข้อสมมติของตัวแบบการถดถอยเชิงเส้นแบบคลาสสิค การวิเคราะห์อนุกรมเวลาตัวแปรเดียว",
+                    "courseDescEn": "Statistical techniques and econometrics for financial research; linear regression analysis; hypothesis testing; large sample statistical theory; relaxing assumptions of classical linear regression models; univariate time series analysis.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 5,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "1104",
+                                    "building": "MAHIT",
+                                    "teachers": [
+                                        "NSS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604862",
+                    "abbrName": "ADV BUS ECON",
+                    "courseNameTh": "เศรษฐศาสตร์ธุรกิจขั้นสูง",
+                    "courseNameEn": "ADVANCED BUSINESS ECONOMICS",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "C.F.",
+                    "courseDescTh": "พฤติกรรมผู้บริโภค การผลิต พฤติกรรมบริษัท ตลาดแข่งขันสมบูรณ์และตลาดแข่งขันไม่สมบูรณ์ ทฤษฎีบทดุลยภาพทั่วไปและทฤษฎีบทสวัสดิการ ความล้มเหลวของตลาด การประยุกต์เบื้องต้นของทฤษฎีเกม เศรษฐศาสตร์ของความไม่แน่นอนและข้อมูลที่ไม่สมบูรณ์ นโยบายการเงินและการคลัง เศรษฐศาสตร์ระหว่างประเทศ การเงินระหว่างประเทศ",
+                    "courseDescEn": "Consumer behavior; production; firm behavior; perfectly competitive and imperfectly competitive markets; general equilibrium and welfare theorem;  two-period resource allocation; consumption-saving decision and tax policies; introduction to game theory; moral hazard and  adverse selection.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 2,
+                                "max": 15,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "8/607",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "TSY"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604671",
+                    "abbrName": "ECON BUS MGT",
+                    "courseNameTh": "เศรษฐศาสตร์เพื่อการจัดการธุรกิจ",
+                    "courseNameEn": "ECONOMICS FOR BUSINESS MANAGEMENT",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 1.5,
+                    "creditHours": "LECT 1.5 CR(LECT 1.5 HR)",
+                    "courseCondition": "COREQ 2602500 OR C.F.",
+                    "courseDescTh": "แนวคิดของเศรษฐศาสตร์และการประยุกต์ หลักการของเศรษฐศาสตร์จุลภาคและเศรษฐศาสตร์มหภาค ตัวแบบของอุปสงค์รวมและอุปทานรวม นโยบายทางการเงิน การคลัง และตลาดปริวรรตเงินตรา การวิเคราะห์การผลิตและต้นทุน โครงสร้างตลาด ทฤษฎีเกม",
+                    "courseDescEn": "Economics concepts and applications; microeconomics and macroeconomics principles; aggregate demand and aggregate supply model; fiscal and monetary policies and foreign exchange market; production and cost analysis; market structures; game theory.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA REGULAR FIRST HALF SEMESTER",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "306",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "PYK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "8",
+                            "closed": false,
+                            "capacity": {
+                                "current": 43,
+                                "max": 43,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA YOUNG EXEC FIRST HALF SEMESTER",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "SU",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "225",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "NSS",
+                                        "TSY"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "11",
+                            "closed": false,
+                            "capacity": {
+                                "current": 44,
+                                "max": 44,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA YOUNG EXEC FIRST HALF SEMESTER",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "SU",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "226",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "NSS",
+                                        "TSY"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "21",
+                            "closed": false,
+                            "capacity": {
+                                "current": 45,
+                                "max": 50,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA ENGLISH FIRST HALF SEMESTER",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "SA",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "309",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "PYK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604672",
+                    "abbrName": "MANAGERIAL ECON",
+                    "courseNameTh": "เศรษฐศาสตร์เพื่อการจัดการ",
+                    "courseNameEn": "MANAGERIAL ECONOMICS",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "แนวความคิดและทฤษฎีเศรษฐศาสตร์ ทฤษฎีผู้บริโภค ซึ่งรวมถึงความพอใจและอรรถประโยชน์ อุปสงค์และการประยุกต์ในทางปฏิบัติ ทฤษฎีตลาดและทฤษฎีการตั้งราคา การตัดสินใจภายใต้ภาวะที่แน่นอนและไม่แน่นอน",
+                    "courseDescEn": "Economic concepts and theories; consumer theory: preferences and utility; demand and its applications; market theory and pricing theory; decision making under certainty and uncertainty.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "7",
+                            "closed": false,
+                            "capacity": {
+                                "current": 57,
+                                "max": 57,
+                                "__typename": "Capacity"
+                            },
+                            "note": "M.ACC.",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "18:00",
+                                        "end": "20:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "NSR"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "AR",
+                                    "period": {
+                                        "start": "AR",
+                                        "end": "AR",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "NSR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604647",
+                    "abbrName": "FIN STATEMENT ANAL",
+                    "courseNameTh": "การวิเคราะห์งบการเงิน",
+                    "courseNameEn": "FINANCIAL STATEMENT ANALYSIS",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "เทคนิคการวิเคราะห์งบการเงินและการใช้ผลการวิเคราะห์ในการตัดสินใจ การใช้ข้อมูลงบการเงินมาในทางปฏิบัติรวมถึงการนำข้อมูลงบการเงินมาใช้ในการวิจัยทางด้านวิชาการ ได้แก่ อุปสงค์และอุปทานของข้อมูลงบการเงิน คุณสมบัติของข้อมูลงบการเงินรวมถึงการใช้ข้อมูลเหล่านั้นเพื่อประโยชน์หลายด้าน การตัดสินใจในเรื่องสินเชื่อ การวิเคราะห์หลักทรัพย์ การวิเคราะห์ความเสี่ยง และการประเมินมูลค่าของกิจการเพื่อการปรับโครงสร้างของธุรกิจ",
+                    "courseDescEn": "Techniques for financial statement analysis and their uses in managerial decision-marking; the actual uses of financial statement information by practitioners as well as the most recent academic research on the use of such data; the demand",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "AR",
+                                    "period": {
+                                        "start": "AR",
+                                        "end": "AR",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STN",
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604651",
+                    "abbrName": "PROJ INVEST DSGN",
+                    "courseNameTh": "การออกแบบโครงการลงทุนและการศึกษาความเป็นไปได้",
+                    "courseNameEn": "PROJECT INVESTMENT DESIGN AND FEASIBILITY STUDY",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 1.5,
+                    "creditHours": "LECT 1.5 CR(LECT 1.5 HR)",
+                    "courseCondition": "PRER 2604504 AND 2604505 OR C.F.",
+                    "courseDescTh": "กลยุทธ์และปัจจัยภายนอกสำหรับโครงการลงทุน กระบวนการพัฒนาโครงการและการศึกษาความเป็นไปได้ การวิเคราะห์ผลประโยชน์และต้นทุน การประเมินโครงการ การตัดสินใจลงทุนภายใต้ความไม่แน่นอน รายงานการศึกษาความเป็นไปได้ การติดตามโครงการ",
+                    "courseDescEn": "Project investment strategies and external factors; project development process and feasibility studies; cost and benefit analysis; project appraisal; investment decisions under uncertainty; feasibility study reports; project monitoring.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "18",
+                            "closed": false,
+                            "capacity": {
+                                "current": 9,
+                                "max": 40,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA YOUNG EXEC",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "18:00",
+                                        "end": "21:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "225",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "RRC"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "21",
+                            "closed": false,
+                            "capacity": {
+                                "current": 31,
+                                "max": 40,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA ENGLISH",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "SA",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "306",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "RRC"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604645",
+                    "abbrName": "FINANCIAL MARKETS",
+                    "courseNameTh": "ตลาดการเงิน",
+                    "courseNameEn": "FINANCIAL MARKETS",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 1.5,
+                    "creditHours": "LECT 1.5 CR(LECT 1.5 HR)",
+                    "courseCondition": "PRER 2604504 AND 2604505 OR C.F.",
+                    "courseDescTh": "บทบาทและความสำคัญของตลาดการเงิน การจัดประเภทของตลาดการเงิน บทบาทของธนาคารกลางและหน่วยงานกำกับ บทบาทของอัตราดอกเบี้ย การระดมทุนผ่านตลาดตราสารหนี้และตราสารทุน บทบาทของสถาบันการเงิน",
+                    "courseDescEn": "Roles and importance of financial markets; classification of financial markets; roles of the central bank and regulators; roles of interest rates; fund raising from debt market and equity market; roles of financial institutions.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "8",
+                            "closed": false,
+                            "capacity": {
+                                "current": 17,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA YOUNG EXEC",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "SU",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "226",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "TLW"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604644",
+                    "abbrName": "INVESTMENT ANALY",
+                    "courseNameTh": "การวิเคราะห์การลงทุน",
+                    "courseNameEn": "INVESTMENT ANALYSIS",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2604501 OR 2604502 OR C.F.",
+                    "courseDescTh": "ลักษณะและหน้าที่ของตลาดหลักทรัพย์ วิวัฒนาการในตลาดหลักทรัพย์ การวิเคราะห์และทดสอบสมสติฐานของตลาดที่มีประสิทธิภาพ ความรู้พื้นฐานของการจัดการกลุ่มหลักทรัพย์ ทฤษฎีตลาดทุน การตัดสินใจโดยการใช้ทฤษฎีการประเมินค่า การวิเคราะห์ตลาดหลักทรัพย์โดยรวม การวิเคราะห์เศรษฐกิจและอุตสาหกรรม การวิเคราะห์กิจการ การวิเคราะห์หลักทรัพย์ทั้งทางทฤษฎีและปฏิบัติการประเมินผลการดำเนินงานของกลุ่มหลักทรัพย์",
+                    "courseDescEn": "Characteristics and function of securities market; revolution of in securities markets; analysis and test of efficient market hypothesis, basic knowledge to portfolio management; capital market theory;decision making by using theory of valuation: aggregate stock market analysis; economic and industries and industry analysis of firms. security analysis in theory and practice; evaluation of portfolio performance",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "7",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 60,
+                                "__typename": "Capacity"
+                            },
+                            "note": "M.ACC.EXEC",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "AR",
+                                    "period": {
+                                        "start": "AR",
+                                        "end": "AR",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604502",
+                    "abbrName": "FOUND FIN MGT",
+                    "courseNameTh": "พื้นฐานการจัดการด้านการเงิน",
+                    "courseNameEn": "FOUNDATION OF FINANCIAL MANAGEMENT",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "วัตถุประสงค์ของการจัดการทางการเงิน แนวคิดและการประยุกต์ของความเสี่ยงและผลตอบแทน การวิเคราะห์และการพยากรณ์งบการเงิน มูลค่าของเงินตามระยะเวลา การจัดการเงินทุนหมุนเวียน แหล่งที่มาของเงินทุน โครงสร้างเงินทุน งบประมาณเงินทุนในภาวะแน่นอน จรรยาบรรณทางการเงิน",
+                    "courseDescEn": "Objectives of financial mangement; concepts and applications of risk and return; analysis and forecast of financial statements; time value of money; working capital management; sources of funds; capital structure; capital budgeting under certainty.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 40,
+                                "__typename": "Capacity"
+                            },
+                            "note": "TIP",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "SU",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604680",
+                    "abbrName": "ETHIC FIN",
+                    "courseNameTh": "จรรยาบรรณวิชาชีพการเงิน",
+                    "courseNameEn": "ETHICS IN FINANCE",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 1,
+                    "creditHours": "LECT 1.0 CR(LECT 1.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "จรรยาบรรณในวิชาชีพ มาตรฐานการปฏิบัติอย่างมืออาชีพ จรรยาบรรณในวิชาชีพการลงทุน",
+                    "courseDescEn": "Code of ethics; standards of professional conduct; ethics in the investment profession.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 5,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604504",
+                    "abbrName": "FIN PRIN",
+                    "courseNameTh": "หลักการการเงิน",
+                    "courseNameEn": "FINANCIAL PRINCIPLES",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 1.5,
+                    "creditHours": "LECT 1.5 CR(LECT 1.5 HR)",
+                    "courseCondition": "COREQ 2602500 OR C.F.",
+                    "courseDescTh": "วัตถุประสงค์ของการจัดการการเงิน ตลาดทุนและการระดมทุน การวิเคราะห์งบการเงิน การวางแผนการเงิน มูลค่าของเงินตามเวลา ความสัมพันธ์ระหว่างความเสี่ยงและผลตอบแทน การประเมินมูลค่าตราสารหนี้และตราสารทุน",
+                    "courseDescEn": "Financial management objectives; capital market and fund raising; financial statements analysis; financial planning; time value of money; risk and return relationship; valuation of debt and equity securities.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA REGULAR SECOND HALF SEMESTER",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "307",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "RRC"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "8",
+                            "closed": false,
+                            "capacity": {
+                                "current": 43,
+                                "max": 43,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA YOUNG EXEC SECOND HALF SEMESTER",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "SU",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "225",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "STK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "11",
+                            "closed": false,
+                            "capacity": {
+                                "current": 44,
+                                "max": 44,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA YOUNG EXEC SECOND HALF SEMESTER",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "SA",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "226",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "KSC"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "20",
+                            "closed": false,
+                            "capacity": {
+                                "current": 14,
+                                "max": 15,
+                                "__typename": "Capacity"
+                            },
+                            "note": "CHULA LGO",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "SA",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "2205A",
+                                    "building": "COM2",
+                                    "teachers": [
+                                        "RSR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "21",
+                            "closed": false,
+                            "capacity": {
+                                "current": 50,
+                                "max": 50,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA ENGLISH SECOND HALF SEMESTER",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "SA",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "309",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "MEY"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604639",
+                    "abbrName": "FINANCE THEORIES",
+                    "courseNameTh": "ทฤษฎีการเงิน",
+                    "courseNameEn": "FINANCE THEORIES",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ทฤษฎีทางการเงินที่เกี่ยวกับการตัดสินใจในการลงทุนและการบริโภคภายใต้ความแน่นอนและไม่แน่นอน ความพึงพอใจในความเสี่ยง การประยุกต์ใช้ทฤษฎีอรรถประโยชน์ที่คาดหวังในการวิเคราะห์การลงทุน ตลาดสินทรัพย์แบบไร้ข้อบกพร่อง ตลาดสินทรัพย์แบบสมบูรณ์ ทฤษฎีการจัดกล่มหลักทรัพย์ ทฤษฎีการกำหนดราคาของสินทรัพย์ การวิเคราะห์ประเด็นการเงินธุรกิจที่สำคัญ โครงสร้างเงินทุน นโยบายเงินปันผล โครงสร้างความเป็นเจ้าของ ความไม่สมมาตรของข้อมูล",
+                    "courseDescEn": "Financial theories related to investment and consumption decisions under certainty and uncertainty; risk perferences; application of expected utility theory in investment analysis; perfect asset markets; complete asset markets; portfolio theories; asset pricing theories; analysis of key corporate finance issues; capital structure; dividend policy; ownership structure; asymmetric information.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 10,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MSF: FT RSR: TUE 1-4 PM BJR: TUE 9AM-12PM",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "1104",
+                                    "building": "MAHIT",
+                                    "teachers": [
+                                        "RSR",
+                                        "BJR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "search": [
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604495",
+                    "abbrName": "INTRO FIN ENG",
+                    "courseNameTh": "วิศวกรรมการเงินเบื้องต้น",
+                    "courseNameEn": "INTRODUCTION TO FINANCIAL ENGINEERING",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": "2569-09-24T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "15:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2569-12-02T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "11:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 19,
+                                "max": 40,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "1001",
+                                    "building": "MAHIT",
+                                    "teachers": [
+                                        "TWW"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604873",
+                    "abbrName": "EMP METH FIN II",
+                    "courseNameTh": "วิธีเชิงประจักษ์ทางการเงิน 2",
+                    "courseNameEn": "EMPIRICAL METHODS IN FINANCE II",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2604863",
+                    "courseDescTh": "อนุกรมเวลาตัวแปรเดียว ระบบสมการ เวกเตอร์อนุกรมเวลาอัตถดถอย การบูรณาการร่วมอนุกรมเวลา ตัวแบบแก้ความผิดพลาด การสร้างตัวแบบและการพยากรณ์ความผันผวนของผลตอบแทนสินทรัพย์ เทคนิคบูทสแตร็ป การประมาณแบบไม่อิงพารามิเตอร์",
+                    "courseDescEn": "Univariate time series; system of equations; vector autoregressions; cointegration; error correction models; modeling and forecasting asset return volatility; bootstrap techniques; non-parametric estimation.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 1,
+                                "max": 5,
+                                "__typename": "Capacity"
+                            },
+                            "note": "PHD ONLY",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "8/610",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "WSR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604876",
+                    "abbrName": "ADV MATH FIN",
+                    "courseNameTh": "คณิตศาสตร์ขั้นสูงสำหรับการเงิน",
+                    "courseNameEn": "ADVANCED MATHEMATICS FOR FINANCE",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ปริภูมิเวกเตอร์และเบซิส ค่าลักษณะเฉพาะและเวกเตอร์ลักษณะเฉพาะ การวิเคราะห์เชิงจริงเบื้องต้น ปริภูมิความน่าจะเป็น ตัวแปรสุ่ม ฟังก์ชันการแจกแจง ฟังก์ชันก่อกำเนิดโมเมนต์ การลู่เข้าแบบต่างๆ ลูกโซ่มาร์คอฟแบบแบบเวลาไม่ต่อเนื่อง",
+                    "courseDescEn": "Vector spaces and basis; eigenvalues and eigenvectors; introduction to real analysis; probability spaces; random variables; distribution functions; moment generating function; various types of convergence; discrete-time Markov chain.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 5,
+                                "__typename": "Capacity"
+                            },
+                            "note": "FIN ONLY",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "8/610",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "TSS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604859",
+                    "abbrName": "ADV FIN THEO",
+                    "courseNameTh": "ทฤษฎีการเงินขั้นสูง",
+                    "courseNameEn": "ADVANCED FINANCIAL THEORIES",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2604862 AND 2604876 OR C.F.",
+                    "courseDescTh": "ตัวแบบของทางเลือกภายใต้ความไม่แน่นอน การไม่ชอบความเสี่ยง สโทคาสติกโดมิแนนซ์ ปัญหาการหาค่าเหมาะที่สุดของกลุ่มหลักทรัพย์แบบคาบเวลาเดียว ตัวแบบดุลยภาพของตลาดสินทรัพย์ ตัวแบบแอโรว์เดอบรูของตลาดแบบสมบูรณ์  ตัวแบบแคปเอ็ม ตัวแบบเอพีที ทฤษฎีบทมูชวลฟันด์เซพาเรชัน ตลาดสินทรัพย์แบบหลายคาบเวลา ทางเลือกการลงทุนในกลุ่มหลักทรัพย์ในบริบทแบบหลายคาบเวลา ทฤษฎีการกำหนดราคาออปชัน",
+                    "courseDescEn": "Models of choice under uncertainty; risk aversion; stochastic dominance; single-period portfolio optimization problems; equilibrium models of asset markets: Arrow-Debreu model of complete markets, capital asset pricing model (CAPM), and arbitrage pricing theory model (APT); mutual fund separation theorems; multi-period asset markets; portfolio choice in a multi-period context; option pricing theory.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 10,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604697",
+                    "abbrName": "FIN MKT INST INSTR",
+                    "courseNameTh": "ตลาดการเงิน สถาบันการเงิน และเครื่องมือทางการเงิน",
+                    "courseNameEn": "FINANCIAL MARKETS, INSTITUTIONS, AND INSTRUMENTS",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "บทบาทของตลาดการเงิน โครงสร้างตลาดการเงิน ตลาดเงินและตลาดทุน ตลาดแรกและตลาดรอง ประเภทและบทบาทของสถาบันการเงินประเภทต่างๆ ในกระบวนการตัวกลางทางการเงิน การกำหนดอัตราดอกเบี้ย บทบาทขององค์กรกำกับดูแล ธนาคารกลาง ธนาคารพาณิชย์ กระบวนการสร้างปริมาณเงิน ตลาดตราสารหนี้ ตลาดตราสารทุน ตลาดปริวรรตเงินตรา เครื่องมือทางการเงิน สมมติฐานตลาดที่มีประสิทธิภาพ ตลาดการเงินในบริบทระหว่างประเทศ",
+                    "courseDescEn": "Roles of financial markets; structure of financial markets: money and capital markets; primary and secondary markets; types and roles of various financial institutions in intermediation process; determination of interest rates; roles of regulators; central banks; commercial banks; money supply process; debt markets; equity markets; foreign exchange markets; financial instruments; efficient market hypothesis; financial markets in international context.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 5,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA EXCHANGE PROGRAM MO 13-16 , TU 9-12",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "1104",
+                                    "building": "MAHIT",
+                                    "teachers": [
+                                        "RSR",
+                                        "TLW"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "1104",
+                                    "building": "MAHIT",
+                                    "teachers": [
+                                        "RSR",
+                                        "TLW"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604491",
+                    "abbrName": "SEM FINANCE",
+                    "courseNameTh": "สัมมนาทางการเงิน",
+                    "courseNameEn": "SEMINAR IN FINANCE",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2604467",
+                    "courseDescTh": "ปัญหาและประเด็นปัจจุบันด้านการจัดการการเงิน การพัฒนาและการเปลี่ยนแปลงของตลาดการเงินและทฤษฎีการเงิน การศึกษางานวิจัยทางการเงิน",
+                    "courseDescEn": "To investigate various phases of financial management of business and financial institutions.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2569-11-25T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "11:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 48,
+                                "max": 65,
+                                "__typename": "Capacity"
+                            },
+                            "note": "FINANCE 4TH YR",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "1/206",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "RSR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 50,
+                                "max": 65,
+                                "__typename": "Capacity"
+                            },
+                            "note": "FINANCE 4TH YR",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "1/206",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "RSR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604477",
+                    "abbrName": "INTL FIN MGT",
+                    "courseNameTh": "การบริหารการเงินระหว่างประเทศ",
+                    "courseNameEn": "INTERNATIONAL FINANCIAL MANAGEMENT",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "กลไกในตลาดการเงินระหว่างประเทศ การกำหนดระบบอัตราแลกเปลี่ยน ระบบการเงินระหว่างประเทศ ทฤษฎีเสมอภาคระหว่างอัตราแลกเปลี่ยนและตัวแปรต่างๆ ทางเศรษฐศาสตร์มหาภาค การจัดการความเสี่ยงจากอัตราแลกเปลี่ยน แหล่งเงินทุนระหว่างประเทศ",
+                    "courseDescEn": "Foreign exchange market, fixed and variable exchange rate; foreign exchange control balance of payment adjustment under fixed and variable exchange rate systems; international fund, Euro-Dollar Market and Asian Dollar Market.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": "2569-09-22T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "10:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2569-11-24T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "11:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 23,
+                                "max": 60,
+                                "__typename": "Capacity"
+                            },
+                            "note": "FINANCE 4 TH YR",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "3/207",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "TLW",
+                                        "SHY"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604863",
+                    "abbrName": "EMP METH FIN I",
+                    "courseNameTh": "วิธีเชิงประจักษ์ทางการเงิน 1",
+                    "courseNameEn": "EMPIRICAL METHODS IN FINANCE I",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "การทดสอบการพยากรณ์ผลตอบแทน การทดสอบตัวแบบราคาหลักทรัพย์ วิธีวิทยาการแบบอีเวนตสตัดดี การวิเคราะห์โครงสร้างตลาดการเงินและทุน ปัญหาเอ็นโดจีเนตีและการประมาณด้วยตัวแปรเครื่องมือ การประมาณความควรจะเป็นสูงสุด การประมาณของตัวแบบไม่เชิงเส้น การวิเคราะห์ข้อมูลแบบพาแนล",
+                    "courseDescEn": "Tests of return predictability; tests of asset pricing models; event-study methodology; analysis of market microstructure; endogeneity problems and instrumental variable estimation; maximum likelihood estimation; estimation of nonlinear models; panel data analysis.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 5,
+                                "__typename": "Capacity"
+                            },
+                            "note": "FINANCE ONLY",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "18:00",
+                                        "end": "21:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "SDB"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "2604877",
+                    "abbrName": "ADV CORP FIN",
+                    "courseNameTh": "การเงินธุรกิจขั้นสูง",
+                    "courseNameEn": "ADVANCED CORPORATE FINANCE",
+                    "faculty": "26",
+                    "department": "ภาควิชาการธนาคารและการเงิน",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2604859",
+                    "courseDescTh": "งบประมาณเงินทุน ทฤษฎีโครงสร้างเงินทุน ทฤษฎีนโยบายเงินปันผล การหาเงินทุนของธุรกิจ การกระจายความเสี่ยงของธุรกิจ การควบรวมและซื้อกิจการ บรรษัทภิบาล การกำกับดูแลตลาดหลักทรัพย์",
+                    "courseDescEn": "Capital budgeting; capital structure theories; theories of dividend policy; corporate financing; corporate diversification; mergers and acquisitions; corporate governance; securities market regulation.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 1,
+                                "max": 5,
+                                "__typename": "Capacity"
+                            },
+                            "note": "PHD ONLY",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "8/608",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "BJR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                }
+            ]
+        }
+    }
+]
