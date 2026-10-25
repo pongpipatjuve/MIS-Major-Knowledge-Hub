@@ -1,0 +1,3794 @@
+[
+    {
+        "data": {
+            "search": [
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605327",
+                    "abbrName": "DIGITAL MKTG",
+                    "courseNameTh": "การตลาดดิจิทัล",
+                    "courseNameEn": "DIGITAL MARKETING",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2605311",
+                    "courseDescTh": "คำจำกัดความของการตลาดดิจิทัล บทบาทและความสำคัญของตลาดดิจิทัลต่อธุรกิจ ผู้บริโภคและสังคม การใช้เครื่องมือทางการตลาดของเครือข่ายสังคม การตลาดผ่านโทรศัพท์เคลื่อนที่ การวัดประสิทธิผลของเครื่องมือการตลาดดิจิทัล ฐานข้อมูลของลูกค้าเพื่อการตลาดดิจิทัล จรรยาบรรณของนักการตลาดดิจิทัล",
+                    "courseDescEn": "Definition of digital marketing; roles and importance of digital marketing to business, consumers and society; use of social media marketing tools; mobile marketing; measurement of effectiveness of digital marketing tools; customer database for digital marketing; ethics of digital marketers.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "135",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "PSS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605427",
+                    "abbrName": "MKT PLAN",
+                    "courseNameTh": "การวางแผนการตลาด",
+                    "courseNameEn": "MARKETING PLANNING",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2605324,2605410,2605412&2605452 OR C.F.",
+                    "courseDescTh": "คำจำกัดความ ความสำคัญและบทบาทของการวางแผนการตลาด คุณลักษณะที่ดีของแผนการตลาด กระบวนการวางแผนทางการตลาด การพยากรณ์การตลาด การวิเคราะห์สถานการณ์ธุรกิจ การกำหนดวัตถุประสงค์ การสร้างกลยุทธการตลาด การกำหนดโปรแกรมการตลาดการกำหนดงบประมาณ การนำไปใช้และการควบคุม",
+                    "courseDescEn": null,
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 33,
+                                "__typename": "Capacity"
+                            },
+                            "note": "4TH YEAR MKT",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "226",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 33,
+                                "__typename": "Capacity"
+                            },
+                            "note": "4 TH YEAR MKT",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "134",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605492",
+                    "abbrName": "SEP SUST MKTG",
+                    "courseNameTh": "ปรัชญาเศรษฐกิจพอเพียงเพื่อการตลาดอย่างยั่งยืน",
+                    "courseNameEn": "SUFFICIENCY ECONOMY PHILOSOPHY FOR SUSTAINABLE MARKETING",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2605311 OR C.F.",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MARKETING S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "134",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "NAR",
+                                        "TPK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605300",
+                    "abbrName": "INTRO MKTG",
+                    "courseNameTh": "การตลาดเบื้องต้น",
+                    "courseNameEn": "INTRODUCTION TO MARKETING",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ความหมายและแนวคิดเบื้องต้นทางการตลาด สภาพแวดล้อมทางการตลาด พฤติกรรมการซื้อ การแบ่งส่วนตลาด การเลือกกลุ่มตลาดเป้าหมาย และการวางตำแหน่งผลิตภัณฑ์อย่างง่าย แนวคิดพื้นฐานด้านส่วนผสมทางการตลาด เทคโนโลยีทางการตลาด การตลาดเพื่อสังคม และจรรยาบรรณทางการตลาด",
+                    "courseDescEn": "Definitions and basic concepts in marketing, marketing environment, buying behavior, segmentation, targeting, and fundamental product positioning; basic concepts in marketing mix, technology in marketing, societal marketing, and marketing ethics.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 60,
+                                "__typename": "Capacity"
+                            },
+                            "note": "ONLINE SAR ONLY",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "CPS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605605",
+                    "abbrName": "SERV MKT MGT",
+                    "courseNameTh": "การจัดการการตลาดบริการ",
+                    "courseNameEn": "SERVICE MARKETING MANAGEMENT",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ลักษณะของการบริการ ประเภทของการบริการ การจัดการการตลาดบริการ การวิเคราะห์และการวางแผนธุรกิจบริการ กลยุทธ์การตลาดบริการ การวิเคราะห์ลูกค้า การกำหนดส่วนประสมทางการตลาดสำหรับธุรกิจบริการ การวัดคุณภาพของการบริการ การเพิ่มผลผลิตของการบริการ การนำกลยุทธ์ไปปฎิบัติและการควบคุม",
+                    "courseDescEn": "Characteristic of services; types of services; service marketing management; analysis and planning of service businesses; service marketing strategies; customer analysis; marketing mix for service businesses; service quality measurement; productivity of service; strategy implementation and control.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 40,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MS MARKETING",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "18:00",
+                                        "end": "21:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "134",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605512",
+                    "abbrName": "MKT VALUE CREAT",
+                    "courseNameTh": "การตลาดเพื่อสร้างคุณค่า",
+                    "courseNameEn": "MARKETING FOR VALUE CREATION",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 1.5,
+                    "creditHours": "LECT 1.5 CR(LECT 1.5 HR)",
+                    "courseCondition": "COREQ 2605511 OR C.F.",
+                    "courseDescTh": "การวางแผนการตลาดเชิงยุทธ์ กลยุทธ์ส่วนประสมการตลาด ผลิตภัณฑ์ ราคา ช่องทางจัดจำหน่ายและการสื่อสารทางการตลาดแบบบูรณาการ การงบประมาณทางการตลาด การควบคุมทางการตลาด",
+                    "courseDescEn": "Strategic marketing planning; marketing mix strategy: product, price, place and Integrated Marketing Communicationss; marketing budgeting; marketing control.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "10",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 60,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA EXECUTIVE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "18:00",
+                                        "end": "21:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "208",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "SUN"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "18",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 50,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA YOUNG EXEC",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "18:00",
+                                        "end": "21:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "224",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "NAR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605428",
+                    "abbrName": "INTERNSHIP MKTG",
+                    "courseNameTh": "การตลาดภาคปฏิบัติ",
+                    "courseNameEn": "INTERNSHIP IN MARKETING",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 0,
+                    "creditHours": "(S/U)(PRAC 18.0 HR)",
+                    "courseCondition": "PRER 2605311",
+                    "courseDescTh": "การตลาดเชิงปฏิบัติในบริษัทต่างๆและการฝึกงานที่เกี่ยวข้องกับกิจกรรมทางด้านการตลาด",
+                    "courseDescEn": "Practical marketing work in various firms and training related to marketing activities.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 10,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MARKET ONLY",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "PRAC",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605416",
+                    "abbrName": "AGRL MARKETING",
+                    "courseNameTh": "การตลาดสินค้าเกษตรกรรม",
+                    "courseNameEn": "AGRICULTURAL MARKETING",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2605311 OR 2605300",
+                    "courseDescTh": "ภาพรวมสินค้าเกษตรกรรม อุปสงค์ อุปทานและพฤติกรรมผู้บริโภค เทคโนโลยีและกฎระเบียบทางการค้าโลกที่เกี่ยวข้อง บทบาทและความช่วยเหลือของรัฐบาล ปัญหาด้านการตลาดและกลยุทธ์",
+                    "courseDescEn": "Principles of agricultural marketing, marketing channels of Thai agricultural products, price determination, factors affecting agricultural markets, government's roles and aids, framework for analyzing marketing problems, and organization of commodity and farm supply markets.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-27T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 45,
+                                "__typename": "Capacity"
+                            },
+                            "note": "ELECTIVE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "226",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "ARK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605425",
+                    "abbrName": "MKT STRA",
+                    "courseNameTh": "กลยุทธ์การตลาด",
+                    "courseNameEn": "MARKETING STRATEGY",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2605311",
+                    "courseDescTh": "ความหมาย บทบาทและความสำคัญของการกลยุทธ์การตลาดสำหรับการแข่งขันในธุรกิจการวิเคราะห์สภาพแวดล้อมภายในและภายนอก การบูรณาการหน้าที่งานการตลาดและหน้าที่อื่นๆ ของธุรกิจ การสร้างกลยุทธ์ส่วนผสมทางการตลาด",
+                    "courseDescEn": null,
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-26T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 65,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MARKETING ONLY",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "306",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605311",
+                    "abbrName": "PRIN MKTG",
+                    "courseNameTh": "หลักการตลาด",
+                    "courseNameEn": "PRINCIPLE OF MARKETING",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "แนวคิดพื้นฐานและหน้าที่ทางการตลาด สภาพแวดล้อมทางการตลาด ระบบข้อมูลทางการตลาดและการวิจัยการตลาด พฤติกรรมผู้บริโภค การแบ่งส่วนตลาด การเลือกตลาดเป้าหมาย การวางตำแหน่งผลิตภัณฑ์ การบริหารผลิตภัณฑ์ การตั้งราคา  ช่องทางการจัดจำหน่าย และการกระจายสินค้า การจัดการโลจิสติกส์และโซ่อุปทาน การส่งเสริมการตลาด การตลาดระหว่างประเทศ การตลาดเพื่อสังคม",
+                    "courseDescEn": "Basic concepts  and functions of marketing; marketing environment; marketing information systems and marketing research; consumer behavior; segmentation; selection of targeted market; product positioning; product management; pricing; channels and distribution; logistics management and supply chain; marketing promotions; international marketing; social marketing.",
+                    "genEdType": "SO",
+                    "midterm": {
+                        "date": "2570-02-23T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "10:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-28T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "11:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 60,
+                                "__typename": "Capacity"
+                            },
+                            "note": "BUS ADMIN",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "226",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "NAR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 60,
+                                "__typename": "Capacity"
+                            },
+                            "note": "BUS ADMIN",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "107",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "TPK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "3",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 60,
+                                "__typename": "Capacity"
+                            },
+                            "note": "BUS ADMIN",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "206",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "THC"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "4",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 60,
+                                "__typename": "Capacity"
+                            },
+                            "note": "BUS ADMIN",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "224",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "RNK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "5",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 60,
+                                "__typename": "Capacity"
+                            },
+                            "note": "BUS ADMIN",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "107",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "CPS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "6",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 35,
+                                "__typename": "Capacity"
+                            },
+                            "note": "COMMART EDU STAT",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "108",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "PSS",
+                                        "RNK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "7",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 60,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "71",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 1,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED SU 65 STUDENTS",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "108",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "PSS",
+                                        "RNK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "72",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 65,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "205",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "PJJ",
+                                        "TSW"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "73",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 65,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "309",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "74",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 65,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED/SU",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "307",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "NAR",
+                                        "RNK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "75",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 60,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "RNK",
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "76",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "PSS",
+                                        "RNK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "77",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 66,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605412",
+                    "abbrName": "MKTG CHAN/PHY DIST",
+                    "courseNameTh": "ช่องทางการจำหน่ายและการกระจายสินค้า",
+                    "courseNameEn": "MARKETING CHANNELS AND PHYSICAL DISTRIBUTION",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2605311 OR 2605300",
+                    "courseDescTh": "การจัดการการตลาดของผู้ผลิตในด้านการขนส่ง การเก็บรักษาสินค้า การวิเคราะห์และควบคุมระบบต้นทุนของการกระจายสินค้า การเลือกช่องทางการตลาด การจัดองค์การและการวางแผนและการควบคุมช่องทางการตลาด",
+                    "courseDescEn": "Producer management of transportation, storage, and inventory controls, emphasizing the analysis and control of the total cost system of the physical distribution; selecting marketing channels; developing the organization and planning the marketing channels; the bargaining roles among members in marketing channels; cooperation and control of marketing channels.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-28T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 62,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MARKET ONLY",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "309",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "PJJ"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605501",
+                    "abbrName": "MARKETING MGT",
+                    "courseNameTh": "การจัดการด้านการตลาด",
+                    "courseNameEn": "MARKETING MANAGEMENT",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "บทบาทและหน้าที่การตลาดในธุรกิจ สภาวะแวดล้อมภายในและภายนอกที่มีผลกระทบต่อการจัดการด้านการตลาด การวางแผนการตลาดเชิงยุทธ์ การวิเคราะห์การแข่งขัน พฤติกรรมผู้บริโภค ระบบสารสนเทศทางการตลาดและการวิจัยการตลาด การแบ่งส่วนตลาด การเลือกตลาดเป้าหมาย การวางตำแหน่งผลิตภัณฑ์ การตัดสินใจด้านส่วนประสมทางการตลาด การควบคุมทางการตลาด จรรยาบรรณในการจัดการด้านการตลาด",
+                    "courseDescEn": "Roles and functions of marketing in business; internal and external environment affecting marketing management; strategic market planning; competition analysis; consumer behaviro; marketing information systems and marketing research; market segmentation; targeting; product positioning; marketing mix decisions; marketing control; ethics in marketing management.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 50,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "AR",
+                                    "period": {
+                                        "start": "AR",
+                                        "end": "AR",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "6",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 60,
+                                "__typename": "Capacity"
+                            },
+                            "note": "IT EXEC",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "18:00",
+                                        "end": "21:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "606",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "SUN"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "13",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 38,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA-REGULAR",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "NPS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "20",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 56,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MSB",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "18:00",
+                                        "end": "21:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605611",
+                    "abbrName": "COMP MKTG STRAT",
+                    "courseNameTh": "กลยุทธ์การตลาดเพื่อการแข่งขัน",
+                    "courseNameEn": "COMPETITIVE MARKETING STRATEGY",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2605501 OR C.F.",
+                    "courseDescTh": "การประยุกต์แนวคิดและวิธีการทางด้านการจัดการระดับสูงในการแก้ปัญหาที่ซับซ้อนทางการตลาด การบูรณาการหน้าที่งานการตลาดกับหน้าที่อื่นของธุรกิจ กลยุทธ์ที่นำไปสู่ความได้เปรียบในการแข่งขันสำหรับผลิตภัณฑ์และบริการ การวัดคุณค่าของสินค้าและบริการบทบาทของเทคโนโลยีในการสร้างคุณค่าของผลิตภัณฑ์และความได้เปรียบในการแข่งขัน",
+                    "courseDescEn": "Applications of advanced managerial concepts and methods to solve multifaceted marketing problems; integration of the marketing function with other business functions; strategies to gain competitive advantage for product and service; measurement of products' or services; roles of technology in creating product value and competitive advantage.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 1,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBM THAI",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "SA",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605491",
+                    "abbrName": "SEM MARKETING",
+                    "courseNameTh": "สัมมนาการตลาด",
+                    "courseNameEn": "SEMINAR IN MARKETING",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2605311,2605314",
+                    "courseDescTh": "การบูรณาการองค์ประกอบสำคัญทางการตลาด ปัญหาและประเด็นสำคัญของการจัดการด้านการตลาดในปัจจุบันในตลาดภายในประเทศและระหว่างประเทศ",
+                    "courseDescEn": "The seminar encourages student to investigate various phases of marketing. Report are prepared individually, but students investigating related subjects participate in group discussions with experienced marketing executives.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 80,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MKT YR4",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "220",
+                                    "building": "COM2",
+                                    "teachers": [
+                                        "APK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605325",
+                    "abbrName": "BRAND PROD MGT",
+                    "courseNameTh": "การจัดการแบรนด์และผลิตภัณฑ์",
+                    "courseNameEn": "BRAND AND PRODUCT MANAGEMENT",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2605311",
+                    "courseDescTh": "การเลือกตลาดเป้าหมาย คำจำกัดความของแบรนด์ การวางตำแหน่งแบรนด์ กลยุทธ์การสร้างแบรนด์ การจัดการแบรนด์ การบูรณาการแบรนด์กับส่วนประสมทางการตลาด การประเมินค่าแบรนด์ ความหมายของผลิตภัณฑ์ ประเภทของผลิตภัณฑ์ การจัดการผลิตภัณฑ์ กลยุทธ์ผลิตภัณฑ์ กระบวนการพัฒนาผลิตภัณฑ์ใหม่ ประเด็นปัญหาในการจัดแบรนด์และผลิตภัณฑ์ และการแก้ไขจรรยาบรรณใรการสร้างแบรนด์และการจัดการผลิตภัณฑ์",
+                    "courseDescEn": "Target market selection; definitions of brand; brand positioning; brand building strategies; brand management; integrating brand with marketing mix; brand evaluation; meaning of products; types of products; product management; product strategies; new product development process; issues in brand and product management and corrections; ethics in brand building and product management.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": "2570-03-01T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "15:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-29T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "11:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 46,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MARKETING 2ND YEAR",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "225",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "DHP",
+                                        "KAR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "search": [
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605511",
+                    "abbrName": "MARKETING ANALYSIS",
+                    "courseNameTh": "การวิเคราะห์การตลาด",
+                    "courseNameEn": "MARKETING ANALYSIS",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 1.5,
+                    "creditHours": "LECT 1.5 CR(LECT 1.5 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "บทบาทและหน้าที่การตลาดในธุรกิจ สภาวะแวดล้อมทางการตลาด การวิเคราะห์ตลาด การวิเคราะห์อุตสาหกรรม และการวิเคราะห์การแข่งขัน กระบวนการตัดสินใจของผู้บริโภค ระบบสารสนเทศทางการตลาดและการวิจัยการตลาด การพยากรณ์อุปสงค์ การแบ่งส่วนตลาด การเลือกตลาดเป้าหมาย และการวางตำแหน่งผลิตภัณฑ์",
+                    "courseDescEn": "Roles and functions of marketing in business; marketing environment; marketing analysis; industry and competition analyses; consumer decision making process; marketing information systems and marketing research; demand forecasting; market segmentation; targeting; product positioning.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "10",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 60,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA EXECUTIVE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "18:00",
+                                        "end": "21:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "208",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "SUN"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "18",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 50,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA YOUNG EXEC",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "18:00",
+                                        "end": "21:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "224",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "AKV"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605413",
+                    "abbrName": "FASHION MARKETING",
+                    "courseNameTh": "การตลาดสินค้าแฟชั่น",
+                    "courseNameEn": "FASHION MARKETING",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 2.0 HR + DISC 1.0 HR)",
+                    "courseCondition": "PRER 2605311",
+                    "courseDescTh": "แนวคิด ประเภท และลักษณะของสินค้าแฟชั่น ประวัติศาสตร์ของแฟชั่น วัฏจักรแฟชั่นและภาพรวมอุตสาหกรรมแฟชั่น ฟฤติกรรมผู้บริโภคในตลาดสินค้าแฟชั่น บทบาทการตลาดในอุตสาหกรรมแฟชั่น การออกแบบและพัฒนาผลิตภัณฑ์สำหรับอุตสาหกรรมแฟชั่น กลยุทธ์ตราสินค้าแฟชั่น การตั้งราคาสินค้าแฟชั่น ช่องทางการกระจายสินค้าในตลาดสินค้าแฟชั่นการจัดหาสินค้าและการค้าปลีกสินค้าแฟชั่น การวางแผนพิสัยสินค้าแฟชั่น การจัดตกแต่งในอุตสาหกรรมแฟชั่น การเสริมภาพลักษณ์ของตราสินค้าแฟชั่นและการสื่อสารทางการตลาดแบบบูรณาการ กฎหมายและจริยธรรมในอุตสาหกรรมแฟชั่น",
+                    "courseDescEn": "Concept; types and characteristics of fashion products; history of fashion; fashion cycle and fashion industry overview; consumer behavior in market fashion; marketing roles in fashion industry; product design and development for fashion industry; fashion branding strategy; pricing of fashion products; distribution channels in fashion markets; fashion merchandising and retailing; range planning of fashion products; visual merchandising in fashion industry; brand image enhancement of fashion products and integrated marketing communication; laws and ethics in fashion industry.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 38,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MKT ONLY",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "11:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "134",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "PRS"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "11:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "134",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "PRS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605610",
+                    "abbrName": "MARKETING STRATEGY",
+                    "courseNameTh": "กลยุทธ์การตลาด",
+                    "courseNameEn": "MARKETING STRATEGY",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 1.5,
+                    "creditHours": "LECT 1.5 CR(LECT 1.5 HR)",
+                    "courseCondition": "PRER 2605512 OR C.F.",
+                    "courseDescTh": "การประยุกต์แนวคิดและวิธีการด้านการจัดการตลาด กลยุทธ์การตลาดเพื่อความได้เปรียบในการแข่งขัน    การบูรณาการหน้าที่งานการตลาดกับหน้าที่อื่นของธุรกิจ",
+                    "courseDescEn": "Application of marketing management concepts and methods; marketing strategies for competitive advantage; integration of marketing function with other business functions.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA REGULAR",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "307",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "SEL"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "21",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA ENGLISH",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "SA",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "609",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "PJJ"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605628",
+                    "abbrName": "SERV MKT STRAT",
+                    "courseNameTh": "กลยุทธ์การตลาดบริการ",
+                    "courseNameEn": "SERVICE MARKETING STRATEGY",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 1.5,
+                    "creditHours": "LECT 1.5 CR(LECT 1.5 HR)",
+                    "courseCondition": "PRER 2605512 OR C.F.",
+                    "courseDescTh": "ความหมาย ลักษณะ และประเภทของการบริการ การวิเคราะห์ช่องว่างการบริการ ส่วนประสมการตลาดของธุรกิจบริการ กลยุทธ์แบรนด์บริการ",
+                    "courseDescEn": "Meanings, characteristics and types of services; service gap analysis; marketing mix for service businesses; service brand strategy.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "8",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 65,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA YOUNG EXEC",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "SU",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "224",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "APK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605617",
+                    "abbrName": "BRAND MANAGEMENT",
+                    "courseNameTh": "การจัดการแบรนด์",
+                    "courseNameEn": "BRAND MANAGEMENT",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 1.5,
+                    "creditHours": "LECT 1.5 CR(LECT 1.5 HR)",
+                    "courseCondition": "PRER 2605512 OR C.F.",
+                    "courseDescTh": "นิยาม บทบาท และความสำคัญของแบรนด์ ความแตกต่างระหว่างการตลาดกับการทำแบรนด์ ตัวแบบแบรนด์อิควิตี้ องค์ประกอบของแบรนด์ การวางตำแหน่งแบรนด์และบุคลิกภาพของแบรนด์ การวัดที่มาของแบรนด์อิควิตี้",
+                    "courseDescEn": "Definition, roles and importance of brand; differences between marketing and branding; models of brand equity; brand elements; brand positioning and brand personality; measuring sources of brand equity.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "8",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 40,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA YOUNG EXEC",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "SU",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "305",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "GRR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "21",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA ENGLISH",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "SU",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "307",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "GRR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605646",
+                    "abbrName": "BRAND BUILD STRAT",
+                    "courseNameTh": "กลยุทธ์การสร้างแบรนด์",
+                    "courseNameEn": "BRAND BUILDING STRATEGY",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2605501",
+                    "courseDescTh": "ประเภทการสร้างและออกแบบแบรนด์   การสร้างแบรนด์องค์กรและแบรนด์สินค้า   การสร้างแบรนด์บนพื้นฐานความคิดสร้างสรรค์และการสร้างแบรนด์บนพื้นฐานข้อมูลลูกค้า ปัจจัยที่ต้องพิจารณาในการสร้างแบรนด์ กระบวนการสร้างแบรนด์ การวางตำแหน่งแบรนด์อย่างมีประสิทธิภาพ  การวิเคราะห์ช่องว่างแบรนด์  การพัฒนากลยุทธ์เพื่อปิดช่องว่างของ แบรนด์  ขั้นตอนการรีแบรนด์",
+                    "courseDescEn": "Types of brand building; corporate brand and product brand building, creative-based brand building and customer-data-based brand building, factors considered in brand building;  brand building process; effective brand positioning; brand gap analysis; brand gap closing strategy development; rebranding procedure.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBM ENG",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "AR",
+                                    "period": {
+                                        "start": "AR",
+                                        "end": "AR",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "307",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "APK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605648",
+                    "abbrName": "SEM GLOBAL BRAND",
+                    "courseNameTh": "สัมมนาแบรนด์ระดับโลก",
+                    "courseNameEn": "SEMINAR IN GLOBAL BRANDING",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2605501",
+                    "courseDescTh": "ขั้นตอนการพัฒนาแบรนด์สู่ความเป็นแบรนด์ระดับโลกที่ยั่งยืน ปัจจัยที่ส่งผลกระทบต่อความสำเร็จของแบรนด์ระดับโลก การวางแผนกลยุทธ์แบรนด์ระดับโลก ความเป็นเลิศในการปฏิบัติด้านการสร้างแบรนด์ ประเด็นปัจจุบันในการทำแบรนด์ระดับโลก นวัตกรรมด้านแบรนด์และการนำไปปฏิบัติ",
+                    "courseDescEn": "Steps in developing brands to be sustainability global brands; factors influencing global brand success; strategic planning for global brands; excellence in branding practices; current issues in global branding; branding innovation and implementation.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 1,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBM ENG",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "AR",
+                                    "period": {
+                                        "start": "AR",
+                                        "end": "AR",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605671",
+                    "abbrName": "MKT RESEARCH",
+                    "courseNameTh": "การวิจัยตลาด",
+                    "courseNameEn": "MARKETING RESEARCH",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2605501 OR C.F.",
+                    "courseDescTh": "ความสำคัญและบทบาทของการวิจัยการตลาด ประเภทของการวิจัยการตลาด กระบวนการวิจัยการตลาด การระบุปัญหาและวัตถุประสงค์ การออกแบบการวิจัย แหล่งข้อมูล การสุ่มตัวอย่าง การกำหนดขนาดตัวอย่าง การวัดทัศนคติผู้บริโภค สเกล ความถูกต้องและความเชื่อถือได้ในการวัด กระบวนการเก็บข้อมูล เครื่องมือในการวิจัย การวิเคราะห์ข้อมูลและการแปลความหมาย การเขียนรายงานการวิจัย",
+                    "courseDescEn": "Importance and roles of marketing research; types of marketing research; marketing research process; problem identification and objectives; research design; source of data; sampling; sample size determination; measurement of consumer attitudes; scale; validity and reliability of the measurement; data collection procedures; research instrument; data analysis and interpretation; research report writing.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "25",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 48,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBM SERVICE RETAIL MM",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "18:00",
+                                        "end": "21:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "135",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "AKV"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "26",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 45,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBM RETAIL MM",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "18:00",
+                                        "end": "21:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "134",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "AKV"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "27",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBM ENG",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "AR",
+                                    "period": {
+                                        "start": "AR",
+                                        "end": "AR",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "307",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605637",
+                    "abbrName": "CONS BEH DSGN",
+                    "courseNameTh": "การออกแบบพฤติกรรมผู้บริโภค",
+                    "courseNameEn": "CONSUMER BEHAVIOR DESIGN",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 1.5,
+                    "creditHours": "LECT 1.5 CR(LECT 1.5 HR)",
+                    "courseCondition": "PRER 2605512 AND COREQ 2605636 OR C.F.",
+                    "courseDescTh": "ปัจจัยต่างๆ ที่มีอิทธิพลต่อพฤติกรรมผู้บริโภค การออกแบบสิ่งเร้าทางการตลาดและการตอบสนองของลูกค้า",
+                    "courseDescEn": "Factors affecting consumer behavior; designing marketing stimuli and customer’s responses.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "8",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 50,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA YOUNG EXEC",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "SU",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "224",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "WPW"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605679",
+                    "abbrName": "DIGI MKT DATA ANA",
+                    "courseNameTh": "การตลาดดิจิทัลและดาต้าอนาลิติกส์",
+                    "courseNameEn": "DIGITAL MARKETING AND DATA ANALYTICS",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2605501 OR C.F.",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 45,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBM",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "18:00",
+                                        "end": "21:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 45,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBM",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "18:00",
+                                        "end": "21:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "3",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 1,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBM ENG",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "AR",
+                                    "period": {
+                                        "start": "AR",
+                                        "end": "AR",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605673",
+                    "abbrName": "IBMC STRATEGY",
+                    "courseNameTh": "กลยุทธ์การสื่อสารแบรนด์และการตลาดแบบบูรณาการ",
+                    "courseNameEn": "INTEGRATED BRAND AND MARKETING COMMUNICATION STRATEGY",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2605501 OR C.F.",
+                    "courseDescTh": "บทบาทและความสำคัญของการสื่อสารแบรนด์และการตลาดแบบบูรณาการ สภาพแวดล้อมภายในและภายนอกของการสื่อสารแบรนด์และการตลาด ประเภทของการสื่อสารแบรนด์และการตลาดแบบบูรณาการ การโฆษณา การประชาสัมพันธ์ การส่งเสริมการขาย การขายโดยพนักขาย การตลาดตรง กลยุทธ์การสื่อสารแบรนด์และการตลาดแบบบูรณาการ ขั้นตอนการวางแผนและควบคุมการสื่อสารแบรนด์และการตลาด การจัดสรรงบประมาณ การวิเคราะห์ข้อมูล การวัดประสิทธิผลของการสื่อสารแบรนด์และการตลาดแบบบูรณาการ",
+                    "courseDescEn": "Roles and importance of integrated brand and marketing communications; internal and external environment of brand and marketing communications; types of integrated brand and marketing communications; advertising; public relation; sales promotion; personal selling; direct marketing; integrated brand and marketing communications strategies; procedure in planning and control of integrated brand and marketing communications; allocating budget; data analysis; measurement the effectiveness of the integrated brand and marketing communications.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 45,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBM SERVICE RETAIL MM",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "SA",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "135",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "WPW"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 45,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBM SERVICE RETAIL MM",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "SA",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "134",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "WPW"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "3",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBM ENG",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "AR",
+                                    "period": {
+                                        "start": "AR",
+                                        "end": "AR",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "307",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605636",
+                    "abbrName": "CONS INSIGHT ANAL",
+                    "courseNameTh": "การวิเคราะห์ผู้บริโภคเชิงลึก",
+                    "courseNameEn": "CONSUMER INSIGHT ANALYSIS",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 1.5,
+                    "creditHours": "LECT 1.5 CR(LECT 1.5 HR)",
+                    "courseCondition": "PRER 2605512 OR C.F.",
+                    "courseDescTh": "บทบาทและความสำคัญของผู้บริโภค ทฤษฎีสิ่งเร้าและการตอบสนอง ตัวแบบการตัดสินใจที่ซับซ้อนของผู้บริโภค การจูงใจ การรับรู้ บุคลิกภาพ การเรียนรู้ ทัศนคติและการเปลี่ยนแปลงทัศนคติ ปัจจัยด้านวัฒนธรรม ชั้นทางสังคม ครอบครัวและกลุ่มอ้างอิงที่มีผลต่อกระบวนการตัดสินใจของผู้บริโภค",
+                    "courseDescEn": "Roles and importance of consumers; stimulus and response theory; model of consumers’ complex decision making; motivation; perception; personality; learning; attitudes and changing of attitudes; cultural factors; social class; family and reference groups affecting consumer decision making process.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA REGULAR",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "305",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "TPK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "10",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 40,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA EXECUTIVE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "SA",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "307",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "WPW"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "18",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 40,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA YOUNG EXEC",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "18:00",
+                                        "end": "21:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "225",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "WPW"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605618",
+                    "abbrName": "INNO PROD DEV",
+                    "courseNameTh": "การพัฒนาผลิตภัณฑ์ที่มีนวัตกรรม",
+                    "courseNameEn": "INNOVATIVE PRODUCT DEVELOPMENT",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 1.5,
+                    "creditHours": "LECT 1.5 CR(LECT 1.5 HR)",
+                    "courseCondition": "PRER 2605512 OR C.F.",
+                    "courseDescTh": "นิยามและความสำคัญของผลิตภัณฑ์ที่มีนวัตกรรม ประเภทของนวัตกรรม กระบวนการพัฒนาผลิตภัณฑ์ที่มีนวัตกรรม ปัจจัยที่มีผลต่อการแพร่กระจายผลิตภัณฑ์ที่มีนวัตกรรม",
+                    "courseDescEn": "Definition and importance of innovative products; types of innovation; innovative product development process; determinants of innovative product diffusion.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA REGULAR",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "309",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "DHP",
+                                        "DHP"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "8",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 40,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA YOUNG EXEC",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "SA",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "226",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "DHP"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605631",
+                    "abbrName": "RETAIL MKT CHANNEL",
+                    "courseNameTh": "การค้าปลีกและช่องทางการตลาด",
+                    "courseNameEn": "RETAILING AND MARKETING CHANNEL",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "C.F.",
+                    "courseDescTh": "บทบาทและความสำคัญของการค้าปลีกในช่องทางการตลาด ประเภทของร้านค้าปลีกและการเปลี่ยนแปลงของการค้าปลีก  การจัดการร้านค้าปลีก  การวางแผนกลยุทธ์ทางการตลาดสำหรับการค้าปลีก  การตั้งราคาขายปลีก      ระบบบัญชีและการจัดการทางการเงินสำหรับธุรกิจค้าปลีก  การสร้างความสัมพันธ์กับลูกค้า    การส่งเสริมการตลาด  การบริหารทรัพยากรบุคคล    เทคโนโลยีสารสนเทศในการค้าปลีก     การค้าปลีกทางอิเล็กทรอนิกส์  การค้าปลีกระหว่างประเทศ   กฎหมายและจรรยาบรรณในการค้าปลีก",
+                    "courseDescEn": "Roles and importance of retailing in marketing channels;  types of retail stores and changes in retailing; management of retail stores; strategic market planning for retailing; retail pricing; accounting system and financial management for retailing; customer relationship building; marketing promotions; human resources management; information technology in retailing; e-retailing; international retailing; law and ethics in retailing.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 40,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBM RETAIL MM",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "18:00",
+                                        "end": "21:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "134",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "PJJ"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 40,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBM RETAIL MM",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "18:00",
+                                        "end": "21:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "135",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "PJJ"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605612",
+                    "abbrName": "INTEGRAT MKT COMM",
+                    "courseNameTh": "การสื่อสารการตลาดแบบบูรณาการ",
+                    "courseNameEn": "INTEGRATED MARKETING COMMUNICATIONS",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 1.5,
+                    "creditHours": "LECT 1.5 CR(LECT 1.5 HR)",
+                    "courseCondition": "PRER 2605512 OR C.F.",
+                    "courseDescTh": "บทบาทและความสำคัญของการสื่อสารการตลาดแบบบูรณาการ สภาพแวดล้อมภายในและภายนอกของการสื่อสารการตลาดแบบบูรณาการ ประเภทของการสื่อสารการตลาดแบบบูรณาการ กลยุทธ์การสื่อสารการตลาดแบบบูรณาการ การวางแผนและการควบคุมการสื่อสารการตลาดแบบบูรณาการ การจัดสรรงบประมาณและการวัดประสิทธิผลของการสื่อสารการตลาดแบบบูรณาการ",
+                    "courseDescEn": "Roles and importance of Integrated Marketing Communications; internal and external environments of Integrated Marketing Communications; types of Integrated Marketing Communications; Integrated Marketing Communications strategies; planning and control of Integrated Marketing Communications; allocating budget and measurement of the Integrated Marketing Communications effectiveness.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "21",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA ENGLISH",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "18:00",
+                                        "end": "21:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "306",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "search": [
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605644",
+                    "abbrName": "SERV MKT BRAND MGT",
+                    "courseNameTh": "การจัดการตลาดบริการและแบรนด์บริการ",
+                    "courseNameEn": "SERVICE MARKETING AND SERVICE BRAND MANAGEMENT",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2605501",
+                    "courseDescTh": "ความหมาย ลักษณะและประเภทของการตลาดบริการ การจัดการแบรนด์และการตลาดบริการ การวิเคราะห์และการวางแผนธุรกิจบริการ การวิเคราะห์ลูกค้า การกำหนดส่วนประสมสำหรับแบรนด์และธุรกิจบริการ การวิเคราะห์ช่องว่างการบริการ  การวัดคุณภาพการบริการ การเพิ่มผลผลิตของการบริการ กลยุทธ์การตลาดบริการ การนำกลยุทธ์การบริการไปปฏิบัติและการควบคุม",
+                    "courseDescEn": "Meaning, characteristics and types of service marketing; service brand and marketing management; analysis and planning of service business; customer analysis; marketing mix for brand and service business; service gap analysis; service quality measurement; increasing productivity of service; service marketing strategy; implementing service strategy and control.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBM SERVICE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "18:00",
+                                        "end": "21:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "134",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605619",
+                    "abbrName": "PRICING STRATEGY",
+                    "courseNameTh": "กลยุทธ์การตั้งราคา",
+                    "courseNameEn": "PRICING STRATEGY",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 1.5,
+                    "creditHours": "LECT 1.5 CR(LECT 1.5 HR)",
+                    "courseCondition": "PRER 2605512 OR C.F.",
+                    "courseDescTh": "บทบาทและความสำคัญของการตั้งราคา ทฤษฎีเศรษฐศาสตร์การตั้งราคา ความยืดหยุ่นของอุปสงค์ต่อราคา องค์ประกอบของราคา ปัจจัยที่มีผลกระทบต่อการตั้งราคา กระบวนการตั้งราคา วิธีการตั้งราคา การตอบสนองต่อการเปลี่ยนแปลงราคาของคู่แข่ง",
+                    "courseDescEn": "Roles and importance of pricing; economic theory of pricing; demand elasticity on price; components of price; determinants of pricing; pricing process; pricing methods; responding to competitors’ price changes.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBA REGULAR",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "306",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "NAR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605700",
+                    "abbrName": "SPECIAL PROJECT I",
+                    "courseNameTh": "โครงการพิเศษ 1",
+                    "courseNameEn": "SPECIAL PROJECT I",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "NL36 3.0 CR (S/U)(IDPS 12.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "การศึกษาหัวข้อและนำเสนอโครงร่างโครงการ โดยที่หัวข้อต้องแสดงให้เห็นถึงความสามารถในการนำทฤษฎีทางการตลาดในสาขาวิชาที่ศึกษามาประยุกต์เพื่อเพิ่มขีดความสามารถในการแข่งขันขององค์กร",
+                    "courseDescEn": "Studying the topic and presenting the proposal. The topic must demonstrate the ability to apply theories in marketing in the area of study to enhance the organization's competitiveness.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 90,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MS MARKETING",
+                            "classes": [
+                                {
+                                    "type": "IDPS",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBM",
+                            "classes": [
+                                {
+                                    "type": "IDPS",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605742",
+                    "abbrName": "ADV CON BEH ANAL",
+                    "courseNameTh": "การวิเคราะห์พฤติกรรมผู้บริโภคขั้นสูง",
+                    "courseNameEn": "ADVANCED CONSUMER BEHAVIOR ANALYSIS",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "งานวิจัยเชิงคุณภาพและเชิงปริมาณที่เกี่ยวกับพฤติกรรมผู้บริโภค การก่อตัวของทัศนคติ การจัดหมวดหมู่ การอนุมาน ความรู้และความทรงจำของผู้บริโภค การตัดสินใจและการเลือก พฤติกรรมหลังการซื้อ ปัจจัยอื่นที่มีผลกระทบต่อพฤติกรรมผู้บริโภค",
+                    "courseDescEn": "Qualitative and quantitative research in consumer behavior; attitude formation; categorization; inference making; consumer knowledge and memory; decision making and choice; post-purchase behavior; other factors that affect consumer behavior",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "62",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 40,
+                                "__typename": "Capacity"
+                            },
+                            "note": "PHD",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "AR",
+                                    "period": {
+                                        "start": "AR",
+                                        "end": "AR",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605745",
+                    "abbrName": "ADV MKT RES/MOD",
+                    "courseNameTh": "การวิจัยการตลาดขั้นสูงและการสร้างตัวแบบการตลาด",
+                    "courseNameEn": "ADVANCED MARKETING RESEARCH AND MARKETING MODELING",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "แนวคิดการตลาดที่ขยายกว้างขึ้น  ทฤษฎีการตลาดต่างๆ และทฤษฎีพฤติกรรมผู้บริโภคที่เป็นพื้นฐานของตัวแบบด้านการตลาด การระบุปัญหาวิจัยและการออกแบบระเบียบวิธีวิจัย การวัดปรากฏการณ์ทางการตลาดโดยใช้เทคนิคทางสถิติขั้นสูงสำหรับการวิเคราะห์ข้อมูล  การวิเคราะห์ตัวแบบสมการโครงสร้างและตัวแบบเส้นตรงเชิงลดหลั่นเพื่อประเมินความตรงและประมาณค่าความสัมพันธ์เชิงสาเหตุระหว่างตัวแปรแบบกลุ่มและตัวแปรต่อเนื่องในตัวแบบ",
+                    "courseDescEn": "The broadened concept of marketing; various marketing theories and theories of consumer behavior underpinning marketing models; research problem identification and designing the research methodology; measuring marketing phenomenon by using advanced statistical techniques for data analysis; validity and reliability in measurement; the analysis of Structural Equation Model (SEM) and hierarchical linear model (HLM) to validate and estimate the causal relationships among both categorical and continuous variables in the model.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 10,
+                                "__typename": "Capacity"
+                            },
+                            "note": "DBA",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "610",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "PJJ",
+                                        "AKV"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605752",
+                    "abbrName": "MKTG COMM THEO APP",
+                    "courseNameTh": "ทฤษฎีการสื่อสารทางการตลาดและการประยุกต์",
+                    "courseNameEn": "MARKETING COMMUNICATION THEORY AND APPLICATIONS",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "งานวิจัยเชิงคุณภาพและงานวิจัยเชิงปริมาณที่เกี่ยวข้องกับการสื่อสารทางการตลาด งานวิจัยด้านโฆษณา การสื่อสารแบบปากต่อปาก การสื่อสารทางอินเตอร์เน็ต การตลาดขายตรง การสื่อสารทางการตลาดข้ามวัฒนธรรม",
+                    "courseDescEn": "Qualitative and quantitative research in marketing communication; advertising research; word-of-mouth communication; internet communication; direct marketing; cross-cultural marketing communication.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 10,
+                                "__typename": "Capacity"
+                            },
+                            "note": "DBA",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF",
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605680",
+                    "abbrName": "PROD INNO BRND VAL",
+                    "courseNameTh": "นวัตกรรมผลิตภัณฑ์เพื่อการสร้างคุณค่าแบรนด์",
+                    "courseNameEn": "PRODUCT INNOVATION FOR BRAND VALUE CREATION",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "PRER 2605501 OR C.F.",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 1,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBM",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "AR",
+                                    "period": {
+                                        "start": "AR",
+                                        "end": "AR",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "DHP"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605896",
+                    "abbrName": "COMPREHENSIVE EXAM",
+                    "courseNameTh": "การสอบประมวลความรู้",
+                    "courseNameEn": "COMPREHENSIVE EXAMINATION",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 0,
+                    "creditHours": "(S/U)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 90,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MS MARKETING",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBM",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "APK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605701",
+                    "abbrName": "SPECIAL PROJECT II",
+                    "courseNameTh": "โครงการพิเศษ 2",
+                    "courseNameEn": "SPECIAL PROJECT II",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "NL36 3.0 CR (S/U)(IDPS 12.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "การนำหัวข้อวิจัยที่ได้รับอนุมัติแล้วมาดำเนินการ โดยเน้นกระบวนการเก็บข้อมูล วิเคราะห์ข้อมูล การตีความ การเขียนและนำเสนอรายงานฉบับสมบูรณ์",
+                    "courseDescEn": "Implementing the research topic by focusing on data collection process; data analysis; interpretation; writing and presenting the report.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 90,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MS MARKETING",
+                            "classes": [
+                                {
+                                    "type": "IDPS",
+                                    "dayOfWeek": "AR",
+                                    "period": {
+                                        "start": "AR",
+                                        "end": "AR",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MBM",
+                            "classes": [
+                                {
+                                    "type": "IDPS",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605746",
+                    "abbrName": "ADV MKTG THEO",
+                    "courseNameTh": "ทฤษฎีการตลาดขั้นสูง",
+                    "courseNameEn": "ADVANCED MARKETING THEORY",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ความรู้และพัฒนาการของทฤษฎีด้านการตลาด ตัวแบบทวินามเชิงพหุ วิธีวิทยาศาสตร์ทางการตลาด สัณฐานวิทยาของการอธิบาย ระบบแนวคิดในการค้นหาและทดสอบความสัมพันธ์แบบเป็นเหตุเป็นผลทางการตลาด ทฤษฎีและกฎ ทฤษฎีทั่วไปของการตลาด หัวข้อทางการตลาดขั้นสูง การนิยามและทบทวนประเด็นด้านพฤติกรรม การจัดการและสภาพแวดล้อมในทฤษฎีการตลาดและการประยุกต์",
+                    "courseDescEn": "Knowledge and development of marketing theory; three dichotomy model; scientific method in marketing; morphology of explanation; conceptual system for discovering and testing causal relationships in marketing; theory and laws; general theory of marketing; topics in advanced marketing; defining and reviewing behavioral, managerial, and environmental issues in marketing theory and its applications.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 1,
+                                "__typename": "Capacity"
+                            },
+                            "note": "DBA",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "10:00",
+                                        "end": "13:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "APK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605753",
+                    "abbrName": "RES SERV MKTG",
+                    "courseNameTh": "การวิจัยด้านการตลาดบริการ",
+                    "courseNameEn": "RESEARCH IN SERVICE MARKETING",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "งานวิจัยเชิงคุณภาพและงานวิจัยเชิงปริมาณที่เกี่ยวข้องกับการตลาดบริการ ธรรมชาติของการบริการ การวัดคุณภาพการบริการ ความพึงพอใจในการบริการ ปัจจัยที่มีผลต่อความพึงพอใจในการบริการ งานวิจัยด้านการบริการข้ามวัฒนธรรม",
+                    "courseDescEn": "Qualitative and quantitative research in service marketing; nature of service; service quality measurement; service satisfaction; factors influencing service satisfaction; cross cultural service maketing research.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 1,
+                                "__typename": "Capacity"
+                            },
+                            "note": "DBA",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "AR",
+                                    "period": {
+                                        "start": "AR",
+                                        "end": "AR",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                }
+            ]
+        }
+    }
+]
