@@ -1,0 +1,978 @@
+[
+    {
+        "data": {
+            "search": [
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "0299004",
+                    "abbrName": "DATA ANLYS PYTHON",
+                    "courseNameTh": "การวิเคราะห์ข้อมูลด้วยภาษาไพทอน",
+                    "courseNameEn": "DATA ANALYSIS WITH PYTHON",
+                    "faculty": "02",
+                    "department": "รายวิชาศึกษาทั่วไปที่มีรูปแบบการเรียนที่ยืดหยุ่น",
+                    "credit": 3,
+                    "creditHours": "LECT 2.0 CR + NL36 1.0 CR (S/U)(LECT 1.0 HR + SMNA 1.0 HR + IDPS 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-27T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 500,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-IN ONLINE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "IDPS",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "SMNA",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "0299002",
+                    "abbrName": "WEB DEV FUND",
+                    "courseNameTh": "พื้นฐานการพัฒนาเว็บ",
+                    "courseNameEn": "WEB DEVELOPMENT FUNDAMENTALS",
+                    "faculty": "02",
+                    "department": "รายวิชาศึกษาทั่วไปที่มีรูปแบบการเรียนที่ยืดหยุ่น",
+                    "credit": 3,
+                    "creditHours": "LECT 2.0 CR + NL36 1.0 CR (S/U)(LECT 1.0 HR + SMNA 1.0 HR + IDPS 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-27T00:00:00.000Z",
+                        "period": {
+                            "start": "09:00",
+                            "end": "12:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 500,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-IN ONLINE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "IDPS",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "SMNA",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "0299003",
+                    "abbrName": "PROTO IOT APP",
+                    "courseNameTh": "การสร้างต้นแบบแอปพลิเคชันอินเทอร์เน็ตของทุกสรรพสิ่ง",
+                    "courseNameEn": "PROTOTYPING INTERNET OF THINGS APPLICATIONS",
+                    "faculty": "02",
+                    "department": "รายวิชาศึกษาทั่วไปที่มีรูปแบบการเรียนที่ยืดหยุ่น",
+                    "credit": 3,
+                    "creditHours": "LECT 2.0 CR + NL36 1.0 CR (S/U)(LECT 1.0 HR + SMNA 1.0 HR + IDPS 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-29T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 500,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-IN ONLINE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "IDPS",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "SMNA",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "0299005",
+                    "abbrName": "DATA ANLYS ML",
+                    "courseNameTh": "การวิเคราะห์ข้อมูลด้วยเทคนิคการเรียนรู้ของเครื่อง",
+                    "courseNameEn": "DATA ANALYSIS WITH MACHINE LEARNING TECHNIQUES",
+                    "faculty": "02",
+                    "department": "รายวิชาศึกษาทั่วไปที่มีรูปแบบการเรียนที่ยืดหยุ่น",
+                    "credit": 3,
+                    "creditHours": "LECT 2.0 CR + NL36 1.0 CR (S/U)(LECT 1.0 HR + SMNA 1.0 HR + IDPS 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-26T00:00:00.000Z",
+                        "period": {
+                            "start": "09:00",
+                            "end": "12:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 500,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-IN ONLINE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "IDPS",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "SMNA",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "0299010",
+                    "abbrName": "IGN AI POTN CODING",
+                    "courseNameTh": "การจุดประกายศักยภาพเอไอด้วยการเขียนโค้ด",
+                    "courseNameEn": "IGNITING AI POTENTIAL WITH CODING",
+                    "faculty": "02",
+                    "department": "รายวิชาศึกษาทั่วไปที่มีรูปแบบการเรียนที่ยืดหยุ่น",
+                    "credit": 3,
+                    "creditHours": "LECT 2.0 CR + NL36 1.0 CR (S/U)(LECT 1.0 HR + SMNA 1.0 HR + IDPS 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-30T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 500,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-IN ONLINE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "IDPS",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "SMNA",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "0299009",
+                    "abbrName": "ENGNG AI WELL RND",
+                    "courseNameTh": "การใช้งานเอไอด้วยสมรรถนะรอบด้าน",
+                    "courseNameEn": "ENGAGING AI THROUGH WELL-ROUNDED COMPETENCIES",
+                    "faculty": "02",
+                    "department": "รายวิชาศึกษาทั่วไปที่มีรูปแบบการเรียนที่ยืดหยุ่น",
+                    "credit": 3,
+                    "creditHours": "LECT 2.0 CR + NL36 1.0 CR (S/U)(LECT 1.0 HR + SMNA 1.0 HR + IDPS 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-30T00:00:00.000Z",
+                        "period": {
+                            "start": "09:00",
+                            "end": "12:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 500,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-IN ONLINE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "IDPS",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "SMNA",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "0299008",
+                    "abbrName": "PDP TECH SVC PROV",
+                    "courseNameTh": "การคุ้มครองข้อมูลส่วนบุคคลสำหรับผู้ให้บริการเทคโนโลยี",
+                    "courseNameEn": "PERSONAL DATA PROTECTION FOR TECHNOLOGY SERVICE PROVIDERS",
+                    "faculty": "02",
+                    "department": "รายวิชาศึกษาทั่วไปที่มีรูปแบบการเรียนที่ยืดหยุ่น",
+                    "credit": 3,
+                    "creditHours": "LECT 2.0 CR + NL36 1.0 CR (S/U)(LECT 1.0 HR + SMNA 1.0 HR + IDPS 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-28T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 500,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-IN ONLINE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "IDPS",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "SMNA",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "0299001",
+                    "abbrName": "DIG DATA AI",
+                    "courseNameTh": "การรู้เท่าทันดิจิทัล ข้อมูล และปัญญาประดิษฐ์",
+                    "courseNameEn": "DIGITAL, DATA AND AI LITERACY",
+                    "faculty": "02",
+                    "department": "รายวิชาศึกษาทั่วไปที่มีรูปแบบการเรียนที่ยืดหยุ่น",
+                    "credit": 3,
+                    "creditHours": "LECT 2.0 CR + NL36 1.0 CR (S/U)(LECT 1.0 HR + SMNA 1.0 HR + IDPS 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-26T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 500,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-IN ONLINE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "IDPS",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "SMNA",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "0299006",
+                    "abbrName": "COM VISION IND APP",
+                    "courseNameTh": "วิสัยทัศน์คอมพิวเตอร์และการประยุกต์ใช้ในอุตสาหกรรม",
+                    "courseNameEn": "COMPUTER VISION AND ITS INDUSTRIAL APPLICATIONS",
+                    "faculty": "02",
+                    "department": "รายวิชาศึกษาทั่วไปที่มีรูปแบบการเรียนที่ยืดหยุ่น",
+                    "credit": 3,
+                    "creditHours": "LECT 2.0 CR + NL36 1.0 CR (S/U)(LECT 1.0 HR + SMNA 1.0 HR + IDPS 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-28T00:00:00.000Z",
+                        "period": {
+                            "start": "09:00",
+                            "end": "12:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 100,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-IN",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "IDPS",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "SMNA",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "0299007",
+                    "abbrName": "MOD APP PROJ MGMT",
+                    "courseNameTh": "การบริหารโครงการการพัฒนาแอปพลิเคชันยุคใหม่",
+                    "courseNameEn": "MODERN APPLICATION DEVELOPMENT PROJECT MANAGEMENT",
+                    "faculty": "02",
+                    "department": "รายวิชาศึกษาทั่วไปที่มีรูปแบบการเรียนที่ยืดหยุ่น",
+                    "credit": 3,
+                    "creditHours": "LECT 2.0 CR + NL36 1.0 CR (S/U)(LECT 1.0 HR + SMNA 1.0 HR + IDPS 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-29T00:00:00.000Z",
+                        "period": {
+                            "start": "09:00",
+                            "end": "12:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 100,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-IN",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "IDPS",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "SMNA",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                }
+            ]
+        }
+    }
+]
