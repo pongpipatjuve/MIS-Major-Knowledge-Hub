@@ -1,0 +1,3258 @@
+[
+    {
+        "data": {
+            "search": [
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2737201",
+                    "abbrName": "MUSIC FOR ESTHE",
+                    "courseNameTh": "กิจกรรมดนตรีเพื่อสุนทรียภาพ",
+                    "courseNameEn": "MUSIC FOR ESTHETIC",
+                    "faculty": "27",
+                    "department": "สาขาวิชาดนตรีศึกษา",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR (S/U)(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ดนตรีกับการพัฒนามนุษย์ หลักการปฏิบัติดนตรี ความซาบซึ้งและการแสดงออกทางดนตรี ทักษะพื้นฐาน ทางดนตรี",
+                    "courseDescEn": "Music and human development; principles of musical practices; music appreciation and expression; basic music skills.",
+                    "genEdType": "SO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "3",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "SINGING-STUDENTS ONLINE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": "EDU2",
+                                    "teachers": [
+                                        "WTC"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "4",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 33,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GUITAR MUST HAVE THE INSTRUMENT",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "15:00",
+                                        "end": "18:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "509",
+                                    "building": "EDU2",
+                                    "teachers": [
+                                        "CTM"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "7",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 40,
+                                "__typename": "Capacity"
+                            },
+                            "note": "SONG WRITING",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "15:00",
+                                        "end": "18:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "509",
+                                    "building": "EDU2",
+                                    "teachers": [
+                                        "CTM"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "9",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 10,
+                                "__typename": "Capacity"
+                            },
+                            "note": "THAI MUSIC MAJOR",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "AR",
+                                    "period": {
+                                        "start": "AR",
+                                        "end": "AR",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "EDU2",
+                                    "teachers": [
+                                        "WST"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "10",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 9,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GUITAR MUST HAVE THE INSTRUMENT ID 63-65",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "15:00",
+                                        "end": "17:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "509",
+                                    "building": "EDU2",
+                                    "teachers": [
+                                        "CTM"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "AR",
+                                    "period": {
+                                        "start": "AR",
+                                        "end": "AR",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "EDU2",
+                                    "teachers": [
+                                        "CTM"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2746292",
+                    "abbrName": "EDU SUS DEV",
+                    "courseNameTh": "การศึกษาเพื่อการพัฒนาที่ยั่งยืน",
+                    "courseNameEn": "EDUCATION FOR SUSTAINABLE DEVELOPMENT",
+                    "faculty": "27",
+                    "department": "สาขาวิชาพัฒนศึกษา",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 1.0 HR + DISC 2.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ความรู้ ความเข้าใจในสังคมไทยและสังคมโลกเพื่อการรู้เท่าทันการเปลี่ยนแปลง อย่างมีสํานึกสากล ที่สอดคล้อง กับกระบวนทัศน์การพัฒนา การคิดและวิเคราะห์เชิงระบบในประเด็นและปัญหาที่เกิดขึ้น เป็นผู้ประกอบการที่ตระหนักรู้และ ความเข้าใจในแนวทางการพัฒนาที่ยั่งยืน การเสนอทางเลือกการพัฒนาตามปรัชญาของเศรษฐกิจพอเพียงบนฐานความร่วมมือ ระดับท้องถิ่น ภูมิภาค ระดับโลก และกลยุทธ์การจัดการศึกษาเพื่อความเป็นพลเมืองตื่นรู้ ที่มีค่านิยมและคุณลักษณะ เป็นประชาธิปไตย เพื่อการเปลี่ยนผ่านและพัฒนาสังคมอย่างยั่งยืน",
+                    "courseDescEn": "Knowledge and understanding of Thai and global societies for seeing through their changes with a global mindset in line with the development paradigm; analysis and systems thinking of emerging issues; being an entrepreneur with an awareness and understandings of sustainable development; abilities to propose development alternatives according to the sufficiency economy philosophy on the basis of local, regional, and global cooperation; strategies of the educational provision for active citizens possessing democratic values and traits for the\r\ntransformation and development of sustainable societies",
+                    "genEdType": "SO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-27T00:00:00.000Z",
+                        "period": {
+                            "start": "09:00",
+                            "end": "12:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "EDU",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "10:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "506",
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "FPL"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "10:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "506",
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "FPL"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "EDU",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "10:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "508",
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "SCN"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "10:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "508",
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "SCN"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "3",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "EDU",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "10:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "509",
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "PCP"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "10:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "509",
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "PCP"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "4",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "EDU",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "10:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "609",
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "PTL"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "10:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "609",
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "PTL"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "5",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "EDU",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "10:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "714",
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "SCW"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "10:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "714",
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "SCW"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "11",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 60,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-SO LETTER GRADE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "14:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "710",
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "DBC"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "14:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "710",
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "DBC"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "13",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 10,
+                                "__typename": "Capacity"
+                            },
+                            "note": "EDU",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "14:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "801",
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "RMW"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "14:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "801",
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "RMW"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 60,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-SO S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "14:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "710",
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "DBC"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "14:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "710",
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "DBC"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2605311",
+                    "abbrName": "PRIN MKTG",
+                    "courseNameTh": "หลักการตลาด",
+                    "courseNameEn": "PRINCIPLE OF MARKETING",
+                    "faculty": "26",
+                    "department": "ภาควิชาการตลาด",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "แนวคิดพื้นฐานและหน้าที่ทางการตลาด สภาพแวดล้อมทางการตลาด ระบบข้อมูลทางการตลาดและการวิจัยการตลาด พฤติกรรมผู้บริโภค การแบ่งส่วนตลาด การเลือกตลาดเป้าหมาย การวางตำแหน่งผลิตภัณฑ์ การบริหารผลิตภัณฑ์ การตั้งราคา  ช่องทางการจัดจำหน่าย และการกระจายสินค้า การจัดการโลจิสติกส์และโซ่อุปทาน การส่งเสริมการตลาด การตลาดระหว่างประเทศ การตลาดเพื่อสังคม",
+                    "courseDescEn": "Basic concepts  and functions of marketing; marketing environment; marketing information systems and marketing research; consumer behavior; segmentation; selection of targeted market; product positioning; product management; pricing; channels and distribution; logistics management and supply chain; marketing promotions; international marketing; social marketing.",
+                    "genEdType": "SO",
+                    "midterm": {
+                        "date": "2570-02-23T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "10:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-28T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "11:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 60,
+                                "__typename": "Capacity"
+                            },
+                            "note": "BUS ADMIN",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "1/206",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "NAR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 60,
+                                "__typename": "Capacity"
+                            },
+                            "note": "BUS ADMIN",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "3/106",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "TPK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "3",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 60,
+                                "__typename": "Capacity"
+                            },
+                            "note": "BUS ADMIN",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "8/205",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "THC"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "4",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 60,
+                                "__typename": "Capacity"
+                            },
+                            "note": "BUS ADMIN",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "1/204",
+                                    "building": "COM1",
+                                    "teachers": [
+                                        "RNK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "5",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 60,
+                                "__typename": "Capacity"
+                            },
+                            "note": "BUS ADMIN",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "107",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "CPS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "6",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 35,
+                                "__typename": "Capacity"
+                            },
+                            "note": "COMMART EDU STAT",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "3/105",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "PSS",
+                                        "RNK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "7",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 60,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "71",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 1,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED SU 65 STUDENTS",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "108",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "PSS",
+                                        "RNK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "72",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 65,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "3/207",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "TSW",
+                                        "PJJ"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "73",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 65,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "8/309",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "74",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 65,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED/SU",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "3/305",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "NAR",
+                                        "RNK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "75",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 60,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "RNK",
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "76",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "3/105",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "PSS",
+                                        "RNK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "77",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 66,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "3404124",
+                    "abbrName": "LAW SOCIETY",
+                    "courseNameTh": "กฎหมายกับสังคม",
+                    "courseNameEn": "LAW AND SOCIETY",
+                    "faculty": "34",
+                    "department": "ภาควิชากฎหมายการปกครองและกฎหมายทั่วไป",
+                    "credit": 2,
+                    "creditHours": "LECT 2.0 CR(LECT 2.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ความสัมพันธ์ระหว่างสังคม รัฐ กับกฏหมาย ทฤษฎีและแนวคิดทางสังคมวิทยาทางกฏหมายปฏิสัมพันธ์ระหว่างกฏหมายกับสังคมต่อกระบวนการสร้างกฏเกณฑ์แห่งกฏหมาย การบังคับใช้กฏหมาย และการปฏิบัติตามกฏหมาย ในสภาพความเป็นจริงของสังคม กรณีศึกษาและสถานการณ์จำลองบทบาทของกฏหมายกับสังคมในมิติทาง เศรษฐกิจ สังคม การเมือง วัฒนธรรมและสิ่งแวดล้อม กฏหมายกับการพัฒนาประเทศ การพัฒนาโครงสร้างพื้นฐานของระบบกฏหมาย",
+                    "courseDescEn": "Relationship among society, state and law; theories and concepts of sociology of law; interaction between law and society affecting law-making, law-enforcement and law-complying processes in reality; case studies and simulation on roles of law and society in socio-economic, political, cultural, and environmental dimensions; law and country development; development of legal infrastructure.",
+                    "genEdType": "SO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-05-01T00:00:00.000Z",
+                        "period": {
+                            "start": "09:00",
+                            "end": "11:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 5,
+                                "__typename": "Capacity"
+                            },
+                            "note": "LAWONLY",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "08:00",
+                                        "end": "10:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "505",
+                                    "building": "PINIT",
+                                    "teachers": [
+                                        "PNS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 5,
+                                "__typename": "Capacity"
+                            },
+                            "note": "LAWONLY",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "08:00",
+                                        "end": "10:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "505",
+                                    "building": "PINIT",
+                                    "teachers": [
+                                        "KKJ"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "3404129",
+                    "abbrName": "LEGAL ETHICS",
+                    "courseNameTh": "จริยธรรมและปรัชญาพื้นฐานสำหรับนักกฎหมาย",
+                    "courseNameEn": "LEGAL ETHICS",
+                    "faculty": "34",
+                    "department": "ภาควิชากฎหมายการปกครองและกฎหมายทั่วไป",
+                    "credit": 2,
+                    "creditHours": "LECT 2.0 CR(LECT 1.0 HR + DISC 1.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ศึกษาความหมาย วิวัฒนาการ หลักการและสาระสําคัญของจริยธรรมทางกฎหมายและปรัชญากฎหมายที่จําเป็น และเป็นพื้นฐานสําหรับการศึกษาและประกอบอาชีพทางนิติศาสตร์",
+                    "courseDescEn": "Study of necessary and basical meaning, evolution, Concepts and principles of legal ethics, for studying and working in law profession.",
+                    "genEdType": "SO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-05-07T00:00:00.000Z",
+                        "period": {
+                            "start": "09:00",
+                            "end": "11:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 5,
+                                "__typename": "Capacity"
+                            },
+                            "note": "LAWONLY",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "10:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "505",
+                                    "building": "PINIT",
+                                    "teachers": [
+                                        "ADA",
+                                        "KSI",
+                                        "CBW"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "11",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 10,
+                                "__typename": "Capacity"
+                            },
+                            "note": "LAWONLY",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "SA",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "15:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "505",
+                                    "building": "PINIT",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "3800101",
+                    "abbrName": "GENERAL PSYCHOLOGY",
+                    "courseNameTh": "จิตวิทยาทั่วไป",
+                    "courseNameEn": "GENERAL PSYCHOLOGY",
+                    "faculty": "38",
+                    "department": "ไม่สังกัดภาควิชา/เทียบเท่า",
+                    "credit": 3,
+                    "creditHours": "LECT 2.0 CR + NL23 1.0 CR(LECT 2.0 HR + LAB 2.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ข้อมูลและวิธีการจิตวิทยา พื้นฐานสรีรภาพของพฤติกรรม การรู้สึก การรับรู้ การเรียนรู้ การจำ การคิด การตัดสินใจ แรงผลักดันพฤติกรรม การกล่อมเกลาบุคลิกภาพ พฤติกรรมเบี่ยงเบน การบำบัด และการควบคุมพฤติกรรมเบี่ยงเบน",
+                    "courseDescEn": "Data and methods of psychology; physiological foundations of behavior; feelings, perception, learning, memory, thinking, judgement, motivation,and personality adjustment, deviant behavior, theraphy and control of deviant behavior.",
+                    "genEdType": "SO",
+                    "midterm": {
+                        "date": "2570-02-23T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "15:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-05-05T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "15:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 40,
+                                "__typename": "Capacity"
+                            },
+                            "note": "MINOR ONLINE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "15:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "801",
+                                    "building": "PSY",
+                                    "teachers": [
+                                        "SLL"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "LAB",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "15:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "1M101",
+                                    "building": "CUP13",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "3800250",
+                    "abbrName": "HUMAN RELATIONS",
+                    "courseNameTh": "มนุษยสัมพันธ์",
+                    "courseNameEn": "HUMAN RELATIONS",
+                    "faculty": "38",
+                    "department": "ไม่สังกัดภาควิชา/เทียบเท่า",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "SO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED SO LETTER GRADE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "AUM"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 10,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED SO LETTER GRADE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 80,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED SO,S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "AUM"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "72",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 90,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED SO S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2601111",
+                    "abbrName": "BUS ACCTG",
+                    "courseNameTh": "การบัญชีธุรกิจ",
+                    "courseNameEn": "BUSINESS ACCOUNTING",
+                    "faculty": "26",
+                    "department": "ภาควิชาการบัญชี",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR (S/U)(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "รูปแบบและประเภทของธุรกิจ ความหมายและประโยชน์ของการบัญชี รายงานการเงินและองค์ประกอบการวิเคราะห์รายการทางธุรกิจ กระบวนการทางบัญชีและงบการเงินของธุรกิจให้บริการ ซื้อขายสินค้า และผลิตสินค้า ภาษีธุรกิจเบื้องต้น การวิเคราะห์รายงานการเงิน การใช้ข้อมูลทางการบัญชีเพื่อการจัดการ",
+                    "courseDescEn": "Forms and types of businesses; definition of accounting and its usefulness; financial reports and their elements; analysis of business transactions; accounting processes and financial statements of servicing, merchandising, and manufacturing firms; introduction to business tax; analysis of financial reports; use of accounting information for management.",
+                    "genEdType": "SO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-29T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "11:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 100,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-SO",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "3/308",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "UTT",
+                                        "NPP"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2747406",
+                    "abbrName": "LEAD ED PRO 21STCE",
+                    "courseNameTh": "ภาวะผู้นำในการจัดการศึกษาในศตวรรษที่ 21",
+                    "courseNameEn": "LEADERSHIP IN EDUCATIONAL PROVISION FOR THE 21ST CENTURY",
+                    "faculty": "27",
+                    "department": "สาขาวิชาบริหารการศึกษา",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "C.F.",
+                    "courseDescTh": "ภาวะผู้นําในการจัดการศึกษาเพื่อการพัฒนาที่ยั่งยืน ในบริบท การเปลี่ยนแปลงของชุมชน สังคมและโลกใน อนาคตในศตวรรษที่ 21 บนพื้นฐานความแตกต่างทางวัฒนธรรม ภาวะผู้นําในการบริหารระบบการศึกษาและสถานศึกษาให้เป็น ชุมชนแห่งการเรียนรู้ หลักการบริหารการศึกษาตามแนวคิดการพัฒนาที่ยั่งยืน การประกันคุณภาพการศึกษา การสร้างความ ร่วมมือกับผู้ปกครอง ชุมชน สังคมในการพัฒนาผู้เรียนให้ มีค่านิยมและคุณลักษณะเป็นประชาธิปไตย มีความเป็นผู้ประกอบการ นวัตกร บนพื้นฐานคุณธรรม จริยธรรม และเป็นพลเมืองที่เข้มแข็ง และสามารถดําเนินชีวิตตามหลักปรัชญาเศรษฐกิจพอเพียง และ เป็นผู้นํารุ่นใหม่ในโลกอนาคต",
+                    "courseDescEn": "Leadership in educational provision for Sustainable development amidst the changing contexts of community, society and the future World in the 21st Century based on a variety of cultures. Leadership in educational system and school governance towards a professional learning community, Principles of educational governance based on the concept of sustainable development, Educational quality assurance, Creation of\r\npartnerships between parents, the community and society in developing students to be equipped with democratic\r\nvalues and characteristics and to be entrepreneurs, innovators based on morality and ethics, and to be good citizens\r\nwho can properly conduct their lives based on the sufficiency economy philosophy as well as new generation leaders\r\nin the future world.",
+                    "genEdType": "SO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "BIO ED (19)",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "812",
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "PXV"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "3",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "EDU",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "714",
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "AJR",
+                                        "PPW"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "4",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "EDU",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "714",
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "PAS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "5",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "EDU",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "705",
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "DKP"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-SO",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "805",
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "PPP"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "3401102",
+                    "abbrName": "TAX LAW DLY LIFE",
+                    "courseNameTh": "กฎหมายภาษีอากรในชีวิตประจำวัน",
+                    "courseNameEn": "TAX LAW IN DAILY LIFE",
+                    "faculty": "34",
+                    "department": "ภาควิชากฎหมายแพ่งและพาณิชย์",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "หลักการพื้นฐานเกี่ยวกับกฎหมายภาษีอากร และโครงสร้างของภาษีอากรประเภทต่างๆ",
+                    "courseDescEn": "Basic principles of tax law and the structure of different kinds of tax.",
+                    "genEdType": "SO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 100,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-SO ID 66-69 S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "TPS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "72",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 50,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-SO ID 66-69 S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "HSP"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "73",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 50,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-SO ID 66-69 S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "PPT"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "3404123",
+                    "abbrName": "LEGAL HISTORY",
+                    "courseNameTh": "ประวัติศาสตร์กฎหมาย",
+                    "courseNameEn": "LEGAL HISTORY",
+                    "faculty": "34",
+                    "department": "ภาควิชากฎหมายการปกครองและกฎหมายทั่วไป",
+                    "credit": 2,
+                    "creditHours": "LECT 2.0 CR(LECT 2.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ที่มาของกฎหมายไทย กฎหมายไทยตั้งแต่ยุคสุโขทัยจนถึงยุคก่อนการปฏิรูประบบกฎหมาย การปฏิรูประบบกฎหมายและกระบวนการยุติธรรมของไทย กำเนิดและวิวัฒนาการของระบบกฎหมายต่างๆ ที่สำคัญ ตลอดจนอิทธิพลของระบบกฎหมายดังกล่าวที่มีต่อกฎหมายของนานาประเทศ รวมทั้งประเทศไทย",
+                    "courseDescEn": "Sources of Thai laws; Thai laws from Sukhothai era to pre-reforming era of Thai legal system; legal system and Thai judicial process reformation; origin and evolution of major legal systems, including their influences upon various countries including Thailand.",
+                    "genEdType": "SO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "11",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 250,
+                                "__typename": "Capacity"
+                            },
+                            "note": "LAWONLY",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "18:00",
+                                        "end": "20:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "505",
+                                    "building": "PINIT",
+                                    "teachers": [
+                                        "CJP"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "3404117",
+                    "abbrName": "INTRO TO LAW",
+                    "courseNameTh": "ความรู้เบื้องต้นเกี่ยวกับกฎหมายทั่วไป",
+                    "courseNameEn": "INTRODUCTION TO LAW",
+                    "faculty": "34",
+                    "department": "ภาควิชากฎหมายการปกครองและกฎหมายทั่วไป",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": "Introduction to the study of laws; nature and sources of law, kinds and characteristics of law; the making, application, and interpretation of law and its abrogation; law of persons: natural and juristic persons; legal rights; nature and kinds of rights; rights under the Civil and Commercial Codes; other laws having economic implication, including antitrust laws and consumer protection law. (Designed for students of Arts)",
+                    "genEdType": "SO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 300,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-SO ID 66-69 S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "MJP"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "72",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 50,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-SO (TH LECT) ID 66-69 S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "NLK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "73",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 50,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-SO (EN LECT) ID 66-69 S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "NLK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2602121",
+                    "abbrName": "INTRO BUSINESS",
+                    "courseNameTh": "ความรู้เบื้องต้นเกี่ยวกับธุรกิจ",
+                    "courseNameEn": "INTRODUCTION TO BUSINESS",
+                    "faculty": "26",
+                    "department": "ภาควิชาพาณิชยศาสตร์",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "แนวคิดพื้นฐานทางธุรกิจ ระบบธุรกิจ สิ่งแวดล้อมของธุรกิจ รูปแบบการประกอบธุรกิจ การเป็นผู้ประกอบการ หน้าที่ธุรกิจด้านการตลาด การผลิต การบัญชี การเงิน และทรัพยากรบุคคล การจัดการองค์กร ระบบสารสนเทศเพื่อการจัดการ ธุรกิจระหว่างประเทศ จริยธรรมธุรกิจและความรับผิดชอบต่อสังคม",
+                    "courseDescEn": null,
+                    "genEdType": "SO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-30T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "11:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 5,
+                                "__typename": "Capacity"
+                            },
+                            "note": "ID 65,EVALUATION (GRADE)",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "8/309",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "SPS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 40,
+                                "__typename": "Capacity"
+                            },
+                            "note": "ID 66 ONWARDS (S/U) ONLY",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "8/309",
+                                    "building": "COM8",
+                                    "teachers": [
+                                        "SPS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2894100",
+                    "abbrName": "FASN COMM",
+                    "courseNameTh": "แฟชั่นและการสื่อสารในโลกร่วมสมัย",
+                    "courseNameEn": "FASHION AND COMMUNICATION IN CONTEMPORARY WORLD",
+                    "faculty": "28",
+                    "department": "การศึกษาทั่วไปในศตวรรษที่ 21 หมวดสังคมศาสตร์",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR (S/U)(LECT 2.0 HR + DISC 1.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "บทบาทของการสื่อสารที่มีต่อวงการแฟชั่นในมิติต่างๆ ศักยภาพอันหลากหลายของสื่อในการนำเสนออัตลักษณ์ของแบรนด์เสื้อผ้า ผลกระทบของสื่อต่อกลุ่มเป้าหมายและสังคมในภาพรวม การวิเคราะห์อิทธิพลของสื่อและวงการแฟชั่นที่มีต่อบุคคลและสังคม โดยใช้แนวคิดทางด้านนิเทศศาสตร์ มานุษยวิทยา จิตวิทยาสังคม สัญศาสตร์ และอื่นๆ ที่เกี่ยวข้อง",
+                    "courseDescEn": "The role of communication in different dimensions of fashion industry; varied potentials of media in presenting an identity of a fashion brand; the media's effect on target audiences and society as a whole; concept of communication, anthropology, psycho-sociology, semiology and other related fields as a tool for analysis of the influence of media and fashion industry on individuals and society.",
+                    "genEdType": "SO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "71",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 1,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "16:00",
+                                        "end": "18:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "408",
+                                    "building": "MKSW",
+                                    "teachers": [
+                                        "PSP"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "18:00",
+                                        "end": "19:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "408",
+                                    "building": "MKSW",
+                                    "teachers": [
+                                        "PSP"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "3404130",
+                    "abbrName": "LAW ECON",
+                    "courseNameTh": "นิติเศรษฐศาสตร์",
+                    "courseNameEn": "LAW AND ECONOMICS",
+                    "faculty": "34",
+                    "department": "ภาควิชากฎหมายการปกครองและกฎหมายทั่วไป",
+                    "credit": 2,
+                    "creditHours": "LECT 2.0 CR(LECT 2.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "การวิเคราะห์กฎหมายในเชิงเศรษฐศาสตร์ โดยพิจารณาถึงหัวข้อในวิชานิติศาสตร์ต่าง ๆ ซึ่งรวมถึง กระบวนการ ยุติธรรม ละเมิด ทรัพย์สิน สัญญา เศรษฐศาสตร์พฤติกรรม การแข่งขันทางการค้า และหัวข้ออื่น ๆ ที่เกี่ยวข้อง",
+                    "courseDescEn": "Students will learn how to analyses different aspects of law through the lens of economics. The topics include law and economics analyses of different legal topics including, but not limited to, litigation, tort, property, contract, behavioral economics, competition law, etc.",
+                    "genEdType": "SO",
+                    "midterm": {
+                        "date": "2570-02-23T00:00:00.000Z",
+                        "period": {
+                            "start": "09:00",
+                            "end": "11:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-05-07T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "15:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 256,
+                                "__typename": "Capacity"
+                            },
+                            "note": "LAWONLY WEEK8",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "08:00",
+                                        "end": "10:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "505",
+                                    "building": "PINIT",
+                                    "teachers": [
+                                        "STC"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "10:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "904",
+                                    "building": "THEB",
+                                    "teachers": [
+                                        "PCS"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "10:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "904",
+                                    "building": "THEB",
+                                    "teachers": [
+                                        "PCS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "2",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 128,
+                                "__typename": "Capacity"
+                            },
+                            "note": "LAWONLY WEEK1-7",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "08:00",
+                                        "end": "10:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "505",
+                                    "building": "PINIT",
+                                    "teachers": [
+                                        "PCS"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "08:00",
+                                        "end": "10:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "906",
+                                    "building": "PINIT",
+                                    "teachers": [
+                                        "PCS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                }
+            ]
+        }
+    }
+,
+    {
+        "data": {
+            "search": [
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "3404131",
+                    "abbrName": "FREE ASM LAW",
+                    "courseNameTh": "เสรีภาพในการชุมนุมกับกฎหมาย",
+                    "courseNameEn": "FREEDOM OF ASSEMBLY AND LAW",
+                    "faculty": "34",
+                    "department": "ภาควิชากฎหมายการปกครองและกฎหมายทั่วไป",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 2.0 HR + DISC 1.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "บทบาทและคุณค่าของเสรีภาพในการชุมนุมในสังคมประชาธิปไตย แนวคิดทั่วไปและลักษณะสําคัญของเสรีภาพ ในการชุมนุมภายใต้กฎหมายสิทธิมนุษยชนระหว่างประเทศ มาตรฐานสากลในการดูแลการชุมนุมสาธารณะ การจํากัดเสรีภาพในการ ชุมนุมผ่านกลไกทางกฎหมาย การควบคุมฝูงชน หลักการสลายการชุมนุมและการปราบจลาจล พระราชบัญญัติการชุมนุมสาธารณะ พ.ศ.2558 หลักการพื้นฐานของกฎหมายมหาชนและกฎหมายรัฐธรรมนูญ",
+                    "courseDescEn": "Roles and values of freedom of assembly in a democratic society, general concept and important characteristics of freedom of assembly under international human rights law, international standards on regulating the principle of public assembly, restricting freedom of assembly through legal mechanisms; crowd control; crowd dispersal and suppression of unrest; Public Assembly Act B.E. 2558, basic principles of public law and constitutional law.",
+                    "genEdType": "SO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "71",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 60,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-SO ID 66-69 S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "PNS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "72",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 60,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-SO ID 66-69 S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "PNS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "4000204",
+                    "abbrName": "INTRO AGRO FOOD CH",
+                    "courseNameTh": "ห่วงโซ่การเกษตรและอาหารเบื้องต้น",
+                    "courseNameEn": "INTRODUCTION TO AGRO FOOD CHAIN",
+                    "faculty": "40",
+                    "department": "ไม่สังกัดภาควิชา/เทียบเท่า",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "วิวัฒนาการและการปรับโครงสร้างของระบบการเกษตรและอาหารของโลก บทบาทของผู้ที่เกี่ยวข้องในระบบการเกษตรและอาหารระหว่างประเทศและในประเทศ ความท้าท้ายทางเทคนิคและเศรษฐกิจ สังคม และสิ่งแวดล้อม กรอบยุทธศาสตร์ในการยกระดับห่วงโซ่การเกษตรและอาหาร",
+                    "courseDescEn": "Evolution and restructuring of global agro food system; roles of stakeholders in the international and domestic agro food system; technical, economic, social, and environmental challenges; strategic framework for the enhancement of agro food chain.",
+                    "genEdType": "SO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "1",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 1,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-SO",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "905",
+                                    "building": "C13SA",
+                                    "teachers": [
+                                        "SVN"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "71",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 1,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-SO",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "905",
+                                    "building": "C13SA",
+                                    "teachers": [
+                                        "SVN"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "5100101",
+                    "abbrName": "POP/DEV",
+                    "courseNameTh": "ประชากรและการพัฒนา",
+                    "courseNameEn": "POPULATION AND DEVELOPMENT",
+                    "faculty": "51",
+                    "department": "ไม่สังกัดภาควิชา/เทียบเท่า",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "แนวคิดพื้นฐานเกี่ยวกับประชากรศาสตร์ที่ครอบคลุมในเรื่องการเกิด การตาย การย้ายถิ่น การเปลี่ยนแปลงในองค์ประกอบประชากร และผลกระทบต่อการพัฒนาเศรษฐกิจสังคม และคุณภาพชีวิตของประชากรโดยรวม",
+                    "courseDescEn": "Basic concept of demography which  covers many important issues: births, deaths, migration, population change, and its impacts on socio-economic development, and on population quality of life.",
+                    "genEdType": "SO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 10,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-SO",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "810",
+                                    "building": "PRAJ8",
+                                    "teachers": [
+                                        "KTS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "2",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-SO",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "810",
+                                    "building": "PRAJ8",
+                                    "teachers": [
+                                        "NPP"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "3",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-SO",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "510",
+                                    "building": "POL3",
+                                    "teachers": [
+                                        "COT"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 40,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-SO",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "810",
+                                    "building": "PRAJ8",
+                                    "teachers": [
+                                        "KTS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "72",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 15,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-SO",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "810",
+                                    "building": "PRAJ8",
+                                    "teachers": [
+                                        "NPP"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "73",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-SO",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "810",
+                                    "building": "PRAJ8",
+                                    "teachers": [
+                                        "COT",
+                                        "COT"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2403185",
+                    "abbrName": "JUV DEL",
+                    "courseNameTh": "การกระทำผิดของเด็กและเยาวชน",
+                    "courseNameEn": "JUVENILE DELINQUENCY",
+                    "faculty": "24",
+                    "department": "ภาควิชาสังคมวิทยาและมานุษยวิทยา",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ความหมาย ลักษณะ และขอบเขตการกระทำผิดของเด็กและเยาวชน ทฤษฎีอาชญาวิทยาและสังคมวิทยาที่อธิบายสาเหตุการกระทำผิดของเด็กและเยาชน อิทธิพลของสิ่งแวดล้อมทางสังคมที่มีผลต่อการกระทำผิด กระบวนการยุติธรรม และวิธีปฏิบัติสำหรับเด็กและเยาวชน ประเด็นปัญหาร่วมสมัยรวมทั้งแนวทางในการป้องกัน",
+                    "courseDescEn": "Meaning, nature and scope of juvenile delinquency, criminological and sociological theories of delinquency, social influences on delinquency, justice procedure and guidelines for children and adolescents; contemporary issues and prevention of delinquency.",
+                    "genEdType": "SO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-28T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "15:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 50,
+                                "__typename": "Capacity"
+                            },
+                            "note": "ID 65,64,63,62 LETTER GRADE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "608",
+                                    "building": "POL3",
+                                    "teachers": [
+                                        "ULK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "3",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": "POLSCI ONLY NO GEN-ED",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "608",
+                                    "building": "POL3",
+                                    "teachers": [
+                                        "ULK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 100,
+                                "__typename": "Capacity"
+                            },
+                            "note": "ID 66-69 GENED-SO",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "608",
+                                    "building": "POL3",
+                                    "teachers": [
+                                        "ULK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2603244",
+                    "abbrName": "GEN PRIN INSURANCE",
+                    "courseNameTh": "ความรู้ทั่วไปเกี่ยวกับการประกันภัย",
+                    "courseNameEn": "GENERAL PRINCIPLES OF INSURANCE",
+                    "faculty": "26",
+                    "department": "ภาควิชาสถิติ",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "การเสี่ยงภัยและการจัดการเสี่ยงภัย การประกันภัย ชนิดของการประกันภัย หลักของสัญญาประกันภัย สถาบันประกันภัย การประกันชีวิตและการประกันวินาศภัยแบบต่างๆ",
+                    "courseDescEn": null,
+                    "genEdType": "SO",
+                    "midterm": {
+                        "date": "2570-02-23T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "10:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-05-10T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 27,
+                                "__typename": "Capacity"
+                            },
+                            "note": "EDU ONLY LETTERGRADE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "3/106",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "SCP"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 40,
+                                "__typename": "Capacity"
+                            },
+                            "note": "S/U ONLY ID66, 67, ...",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "3/106",
+                                    "building": "COM3",
+                                    "teachers": [
+                                        "SCP"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2801321",
+                    "abbrName": "NEWS INFO/SOC",
+                    "courseNameTh": "ข่าวและสารสนเทศกับสังคม",
+                    "courseNameEn": "NEWS INFORMATION AND SOCIETY",
+                    "faculty": "28",
+                    "department": "ภาควิชาวารสารสนเทศ",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 2.0 HR + DISC 1.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "แนวคิดและทฤษฎีเบื้องต้นที่เกี่ยวข้องกับการทำหน้าที่และการแสดงบทบาทของสื่อมวลชนในสังคม ธรรมชาติของสื่อประเภทต่าง ๆ ข้อได้เปรียบและเสียเปรียบของสื่อ ผลกระทบของข่าวสารที่สื่อมวลชนนำเสนอต่อปัจเจกบุคคลและสังคมในด้านต่าง ๆ รวมทั้งการสร้างทัศนคติของคนในสังคม เสรีภาพในการแสดงความเห็น สิทธิมนุษยชน ตลอดจนการแพร่กระจายและครอบงำทางวัฒนธรรม",
+                    "courseDescEn": "Fundamental concepts and theories concerning mass media and their functions and roles in society; the nature, advantages and drawbacks of popular media; the impact of news on invididuals and society in several aspects, including people's preceptions, freedom of expression, human rights, and cultural imperialism.",
+                    "genEdType": "SO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "1",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 25,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GEN-ED SO LETTER GRAD",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "16:00",
+                                        "end": "18:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "410",
+                                    "building": "MKSW",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "18:00",
+                                        "end": "19:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "410",
+                                    "building": "MKSW",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 25,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GEN-ED SO S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "16:00",
+                                        "end": "18:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "18:00",
+                                        "end": "19:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2900151",
+                    "abbrName": "FOUNDATION ECON",
+                    "courseNameTh": "ความรู้พื้นฐานทางเศรษฐศาสตร์",
+                    "courseNameEn": "FOUNDATION OF ECONOMICS",
+                    "faculty": "29",
+                    "department": "ไม่สังกัดภาควิชา/เทียบเท่า",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ความหมายของวิชาเศรษฐศาสตร์ รายได้รายจ่าย อุปสงค์ อุปทาน ตลาดเงินทุนและธนาคาร การคลัง เศรษฐกิจมหภาค การพัฒนาเศรษฐกิจ การค้าระหว่างประเทศ กลไกเศรษฐกิจระหว่างประเทศ แรงงานและทรัพยากรมนุษย์และเศรษฐศาสตร์เกี่ยวกับทรัพยากรธรรมชาติและสิ่งแวดล้อม",
+                    "courseDescEn": "Microeconomics and macroeconomics; monetary and public economics; international economics; and economic development; economic problems and environment.",
+                    "genEdType": "SO",
+                    "midterm": {
+                        "date": "2570-02-24T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-05-05T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "11:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 70,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-SO ID 66-69 S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "MAHIT",
+                                    "teachers": [
+                                        "KTL"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "3404201",
+                    "abbrName": "LAW ACCTG",
+                    "courseNameTh": "กฎหมายกับการบัญชี",
+                    "courseNameEn": "LAW AND ACCOUNTING",
+                    "faculty": "34",
+                    "department": "ภาควิชากฎหมายการปกครองและกฎหมายทั่วไป",
+                    "credit": 2,
+                    "creditHours": "LECT 2.0 CR(LECT 2.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ความสัมพันธ์ระหว่างกฎหมายกับการบัญชี  หลักการเบื้องต้นเกี่ยวกับการบัญชี  แนวคิดและหลักการบัญชีที่สำคัญ  การวิเคราะห์ประเด็นกฎหมายและภาษีอากรที่มีข้อพิจารณาทางการบัญชีเข้ามาเกี่ยวข้อง  กฎหมายเกี่ยวกับการบัญชี  และการกำกับวิชาชีพบัญชี",
+                    "courseDescEn": "Relationship between law and accounting, introduction to accounting, major accounting concept and principles,  analysis of legal and tax issues with accounting consideration, laws relating to accounting and supervision of accounting profession.",
+                    "genEdType": "SO",
+                    "midterm": {
+                        "date": "2570-02-23T00:00:00.000Z",
+                        "period": {
+                            "start": "09:00",
+                            "end": "11:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-05-07T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "15:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "SO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 250,
+                                "__typename": "Capacity"
+                            },
+                            "note": "LAWONLY",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "10:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "505",
+                                    "building": "PINIT",
+                                    "teachers": [
+                                        "TPS",
+                                        "TCC"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                }
+            ]
+        }
+    }
+]
