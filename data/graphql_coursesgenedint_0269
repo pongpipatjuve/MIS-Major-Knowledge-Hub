@@ -1,0 +1,1528 @@
+[
+    {
+        "data": {
+            "search": [
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "0295103",
+                    "abbrName": "LRNG LIFE",
+                    "courseNameTh": "การเรียนรู้เพื่อชีวิต",
+                    "courseNameEn": "LEARNING FOR LIFE",
+                    "faculty": "02",
+                    "department": "การศึกษาทั่วไปในศตวรรษที่ 21 หมวดสหศาสตร์",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR (S/U)(DISC 1.0 HR + SMNA 2.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "การวิเคราะห์ความต้องการการพัฒนาตนเอง การวางแผนการพัฒนาตนเอง การฝึกปฏิบัติการสะท้อนคิด การ สร้างแฟ้มสะสมงานรายบุคคลด้วยการเรียนรู้ผ่านกิจกรรมเสริมหลักสูตรเชิงบูรณาการด้านคุณค่าของ จุฬาฯ",
+                    "courseDescEn": "Analysis of personal development needs; personal development plan; reflective practice developing personal portfolio through Chulalongkorn University Value Integration Programme (CUVIP).",
+                    "genEdType": "IN",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "IN",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 100,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-IN ONLINE",
+                            "classes": [
+                                {
+                                    "type": "SMNA",
+                                    "dayOfWeek": "AR",
+                                    "period": {
+                                        "start": "AR",
+                                        "end": "AR",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "WPC"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "AR",
+                                    "period": {
+                                        "start": "AR",
+                                        "end": "AR",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "WPC"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2750178",
+                    "abbrName": "LLL",
+                    "courseNameTh": "การเรียนรู้ตลอดชีวิต",
+                    "courseNameEn": "LIFELONG LEARNING",
+                    "faculty": "27",
+                    "department": "สาขาวิชาการศึกษานอกระบบโรงเรียน",
+                    "credit": 3,
+                    "creditHours": "LECT 1.0 CR + NL23 2.0 CR(LECT 1.0 HR + PRAC 4.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ระบบการเรียนรู้ของแต่ละบุคคลในบริบทการศึกษาตลอดชีวิต คุณลักษณะและทักษะที่จำเป็นสำหรับการเป็นบุคคลผู้มีความรักในการเรียนรู้ตลอดชีวิตโดยใช้แหล่งเรียนรู้ในวิถีชีวิตประจำวัน",
+                    "courseDescEn": "Learning system of each individual within the context of lifelong education; essential attributes and skills for becoming a person with love of lifelong learning; practical approaches for the fostering of a person with love of lifelong learning.",
+                    "genEdType": "IN",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "IN",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 100,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-IN",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "14:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "101",
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "PRAC",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "14:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "101",
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "PRAC",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "IN",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 100,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-IN S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "14:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "101",
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "PRAC",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "14:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "101",
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "PRAC",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": "EDU3",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "3900204",
+                    "abbrName": "REC BUS TOUR",
+                    "courseNameTh": "ธุรกิจนันทนาการเพื่อการท่องเที่ยว",
+                    "courseNameEn": "RECREATION BUSINESS FOR TOURISM",
+                    "faculty": "39",
+                    "department": "ไม่สังกัดภาควิชา/เทียบเท่า",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 2.0 HR + DISC 1.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "หลักการและแนวคิดพื้นฐานเกี่ยวกับนันทนาการและนันทนาการเพื่อธุรกิจ ความเกี่ยวข้องระหว่าง นันทนาการกับการท่องเที่ยว ความหมายและความสําคัญของธุรกิจนันทนาการเพื่อการท่องเที่ยว ธุรกิจ ในอุตสาหกรรมการท่องเที่ยว การท่องเที่ยวเชิงกีฬา นโยบายการส่งเสริมการท่องเที่ยวของรัฐที่เกี่ยวข้องกับธุรกิจ นันทนาการเพื่อการท่องเที่ยว องค์การส่งเสริมธุรกิจนันทนาการเพื่อการท่องเที่ยวในระดับชาติและระดับนานาชาติ แนวโน้มและทิศทางของธุรกิจนันทนาการเพื่อการท่องเที่ยว การปลูกฝังจิตสํานึกและการพัฒนาการท่องเที่ยวแบบ ยั่งยืน",
+                    "courseDescEn": "Basic principle and concept of recreation and recreation for business; interrelation between recreation and tourism; definition and importance of recreation business for tourism; businesses in tourism industry; sport tourism; the government's policies in tourism promotion related to recreation business for tourism; organizations to promote recreation business for tourism at national and international levels; trends and directions of recreation business for tourism; cultivating consciousness and sustainable tourism development.",
+                    "genEdType": "IN",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "IN",
+                            "sectionNo": "1",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 10,
+                                "__typename": "Capacity"
+                            },
+                            "note": "ID 63 64 65 LETTER GRADE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "11:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "8M802",
+                                    "building": "CU14S",
+                                    "teachers": [
+                                        "SST"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "11:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "8M802",
+                                    "building": "CU14S",
+                                    "teachers": [
+                                        "SST"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "IN",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 25,
+                                "__typename": "Capacity"
+                            },
+                            "note": "S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "11:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "8M802",
+                                    "building": "CU14S",
+                                    "teachers": [
+                                        "SST"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "11:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "8M802",
+                                    "building": "CU14S",
+                                    "teachers": [
+                                        "SST"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "0201232",
+                    "abbrName": "MULTI STUD RUR DEV",
+                    "courseNameTh": "สหสาขาศึกษาเพื่อพัฒนาชนบท",
+                    "courseNameEn": "MULTIDISCIPLINARY STUDY FOR RURAL DEVELOPMENT",
+                    "faculty": "02",
+                    "department": "ศูนย์การศึกษาทั่วไป",
+                    "credit": 3,
+                    "creditHours": "LECT 2.0 CR + NL36 1.0 CR(LECT 1.0 HR + DISC 1.0 HR + FWK 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "องค์รวมของการพัฒนาชนบททั้งในทางทฤษฎีและปฏิบัติ ความสัมพันธ์ของวัฒนธรรม ศาสนา เศรษฐกิจ การเมือง การปกครอง ทรัพยากรธรรมชาติและอนามัยชุมชน การศึกษาภาคสนาม โดยเน้นทักษะการสื่อสาร การเปลี่ยนแปลงพฤติกรรมการทำงานร่วมกันและความเป็นผู้นำ",
+                    "courseDescEn": "Principles and practices in a holistic approach to community development in rural area; interrelating culture, religion, economics, politics, education, natural resources and community health; field work focusing on communication skills, behavioral change, teamwork, and leadership.",
+                    "genEdType": "IN",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "IN",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 40,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-IN ONLINE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "14:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "WPC"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "FWK",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "WPC"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "14:00",
+                                        "end": "15:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "WPC"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "3000396",
+                    "abbrName": "HLTH PROM",
+                    "courseNameTh": "การสร้างเสริมสุขภาพ",
+                    "courseNameEn": "HEALTH PROMOTION",
+                    "faculty": "30",
+                    "department": "ไม่สังกัดภาควิชา/เทียบเท่า",
+                    "credit": 1,
+                    "creditHours": "NL36 1.0 CR(FWK 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "การประยุกต์ความรู้วิทยาศาสตร์การแพทย์พื้นฐานเพื่อสร้างสรรค์กิจกรรมสร้างเสริมสุขภาพ         การบริหารโครงการ ภาวะผู้นำและการทำงานเป็นทีม จิตสาธารณะ",
+                    "courseDescEn": "Application of basic medical science knowledge to create health promotion activities; project management; leadership and teamwork; community-mindedness.",
+                    "genEdType": "IN",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "IN",
+                            "sectionNo": "41",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 1,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "FWK",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": "CBH",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "4000102",
+                    "abbrName": "AGRI NAT ENV MGT",
+                    "courseNameTh": "การจัดการทรัพยากรธรรมชาติและสิ่งแวดล้อมทางการเกษตร",
+                    "courseNameEn": "AGRICULTURAL NATURAL RESOURCES AND ENVIRONMENTAL MANAGEMENT",
+                    "faculty": "40",
+                    "department": "ไม่สังกัดภาควิชา/เทียบเท่า",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 2.0 HR + DISC 1.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ทฤษฎีเศรษฐศาสตร์ทรัพยากรธรรมชาติและสิ่งแวดล้อม ทฤษฎีเศรษฐศาสตร์แรงงาน การจัดการความเสี่ยงภาคการเกษตร ธุรกิจเกษตร เทคโนโลยีด้านการเกษตร วัฒนธรรมและวิวัฒนาการการเกษตร สังคมเกษตร การเกษตรในปัจจุบันและอนาคต",
+                    "courseDescEn": "Natural resources and environmental economics theory; labor economics theory; agricultural risk management; agribusiness; agricultural technologies; agricultural culture and evolution; agricultural community; agriculture at present and in the future.",
+                    "genEdType": "IN",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "IN",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 5,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-IN",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "15:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "RKC"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "15:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "RKC"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "IN",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 35,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-IN",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "15:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "RKC"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "15:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": null,
+                                    "teachers": [
+                                        "RKC"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2305100",
+                    "abbrName": "NATIONAL RESOURCES",
+                    "courseNameTh": "ทรัพยากรของชาติ",
+                    "courseNameEn": "NATIONAL RESOURCES",
+                    "faculty": "23",
+                    "department": "ภาควิชาพฤกษศาสตร์",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 2.0 HR + DISC 1.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "IN",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-05-05T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "IN",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 50,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "15:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "309",
+                                    "building": "BOT",
+                                    "teachers": [
+                                        "SPS"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "15:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "309",
+                                    "building": "BOT",
+                                    "teachers": [
+                                        "SPS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2104181",
+                    "abbrName": "HF ERGO DAILY LIFE",
+                    "courseNameTh": "ปัจจัยมนุษย์และการยศาสตร์ในชีวิตประจำวัน",
+                    "courseNameEn": "HUMAN FACTORS AND ERGONOMICS IN DAILY LIFE",
+                    "faculty": "21",
+                    "department": "ภาควิชาวิศวกรรมอุตสาหการ",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ประวัติ ความสำคัญ และหลักการของปัจจัยมนุษย์และการยศาสตร์ ขีดจำกัดด้านความสามารถของมนุษย์ พฤติกรรมมนุษย์บนฐานของการรู้คิดและตอบสนอง ปัจจัยด้านอายุและเพศ วิธีการประเมินและแนวทางในการนำไปประยุกต์ใช้ในชีวิตประจำวัน  การเลือกใช้อุปกรณ์ เครื่องมือ และสินค้าต่าง ๆ รวมทั้งท่าทางและการเคลื่อนไหวในกิจกรรมต่าง ๆ ในชีวตประจำวัน เทคโนโลยีที่เกี่ยวข้องในปัจจุบันและแนวโน้มในอนาคต คำแนะนำสำหรับการศึกษาต่อในขั้นสูง",
+                    "courseDescEn": "History, importance and principles of Human factors and Ergonomics; limitations of human capacities: human behaviors based on cognition and reaction; age and Sex factors: evaluations and guidelines for applying in daily life: selection of devices, tools and goods including postures and movements in daily life activities: current related technologies and future trends: advice on further studies.",
+                    "genEdType": "IN",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "IN",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 15,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GRADE A-F",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "4616",
+                                    "building": "ENG4",
+                                    "teachers": [
+                                        "PLD"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "IN",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 15,
+                                "__typename": "Capacity"
+                            },
+                            "note": "S/U ONLY",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "4616",
+                                    "building": "ENG4",
+                                    "teachers": [
+                                        "PLD"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2305106",
+                    "abbrName": "PLANTS/HUMANITY",
+                    "courseNameTh": "พืชกับมนุษยชาติ",
+                    "courseNameEn": "PLANTS AND HUMANITY",
+                    "faculty": "23",
+                    "department": "ภาควิชาพฤกษศาสตร์",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "พืชในวัฒนธรรม ขนบธรรมเนียม และประเพณีของไทย ของชาวตะวันตกและของชาวตะวันออก พืชในพุทธศาสนาและศาสนาอื่น ๆ พืชที่ปรากฏในศิลปะ วรรณกรรม และสถาปัตยกรรมไทย พืชที่พบในตลาด พืชกับเศรษฐกิจของไทย พืชที่พบในแหล่งโบราณคดี พืชที่มีผลต่อร่างกาย จิตใจ และอารมณ์ บทบาทที่สำคัญของพืชในประวัติศาสตร์โลก พืชกับวงการวิทยาศาสตร์ในปัจจุบัน",
+                    "courseDescEn": "Plants in Thai, western and eastern customs, traditions and cultures; plants in Buddhism and other religions; plants in Thai arts, literature and architecture; plants in the markets; plants and Thai economy; plats from archeological sites; plants that affect body, mind, and emotion; crucial plant roles in the world history; plants and modern science.",
+                    "genEdType": "IN",
+                    "midterm": {
+                        "date": "2570-02-24T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-05-06T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "IN",
+                            "sectionNo": "1",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 15,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "309",
+                                    "building": "BOT",
+                                    "teachers": [
+                                        "ARB"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "IN",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 50,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "309",
+                                    "building": "BOT",
+                                    "teachers": [
+                                        "ARB"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2305104",
+                    "abbrName": "MAN/NATURE",
+                    "courseNameTh": "มนุษย์กับธรรมชาติ",
+                    "courseNameEn": "MAN AND NATURE",
+                    "faculty": "23",
+                    "department": "ภาควิชาพฤกษศาสตร์",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 2.0 HR + DISC 1.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "IN",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "IN",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 40,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "207",
+                                    "building": "BOT",
+                                    "teachers": [
+                                        "SPP"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2502390",
+                    "abbrName": "INTRO PACK DESIGN",
+                    "courseNameTh": "การออกแบบบรรจุภัณฑ์เบื้องต้น",
+                    "courseNameEn": "INTRODUCTION TO PACKAGING DESIGN",
+                    "faculty": "25",
+                    "department": "ภาควิชาการออกแบบอุตสาหกรรม",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ความสำคัญของการออกแบบบรรจุภัณฑ์ หลักการเบื้องต้นในการออกแบบบรรจุภัณฑ์ ทั้งในด้านรูปลักษณ์และโครงสร้าง ตลอดจนปัจจัยต่าง ๆ ที่มีผลต่อการออกแบบบรรจุภัณฑ์ ตั้งแต่วัสดุ กระบวนการผลิต การตลาด และการจัดส่ง",
+                    "courseDescEn": "The importance of packaging design, basic principles of packaging design in terms of surface design and structural design, including various factors affecting packaging design: materials, process, marketing, and distribution.",
+                    "genEdType": "IN",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "IN",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 10,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-IN,ID60-65 LETTER GRADE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "3201",
+                                    "building": "ARC04",
+                                    "teachers": [
+                                        "SSV"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "IN",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 10,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-IN, ID60-65 LETTER GRADE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "16:00",
+                                        "end": "19:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "3201",
+                                    "building": "ARC04",
+                                    "teachers": [
+                                        "VPT"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "IN",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-IN ID 66-69, S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "3201",
+                                    "building": "ARC04",
+                                    "teachers": [
+                                        "SSV"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "IN",
+                            "sectionNo": "72",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-IN, ID 66-69, S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "16:00",
+                                        "end": "19:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "3201",
+                                    "building": "ARC04",
+                                    "teachers": [
+                                        "VPT"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "3914101",
+                    "abbrName": "REC QUAL LIFE DEV",
+                    "courseNameTh": "นันทนาการเพื่อพัฒนาคุณภาพชีวิต",
+                    "courseNameEn": "RECREATION FOR QUALITY OF LIFE DEVELOPMENT",
+                    "faculty": "39",
+                    "department": "กลุ่มวิชาการจัดการนันทนาการและการท่องเที่ยว",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ทฤษฎี หลักการ และแนวคิดของนันทนาการ สรีระวิทยาของการออกกำลังกาย ประเภทของกิจกรรมนันทนาการ การจัดการนันทนาการของของภาครัฐ ภาคเอกชน และอาสาสมัคร กิจกรรมนันทนาการและท่องเที่ยว กิจกรรมนันทนาการในประเทศกลุ่มอาเซียน แหล่งท่องเที่ยวมรดกโลกของอาเซียน  นันทนาการเพื่อการท่องเที่ยวและทัศนศึกษา การวางแผนโครงการจัดกิจกรรมนันทนาการเพื่อพัฒนาคุณภาพชีวิต",
+                    "courseDescEn": "Theories, principles and concepts of recreation; exercise physiology; types of recreational activities; recreation management by public and private sectors and volunteers; recreational activities and tourism; recreational activities in ASEAN countries; world heritage sites of ASEAN; recreation for tourism and field trips; recreational program planning for quality life development.",
+                    "genEdType": "IN",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "IN",
+                            "sectionNo": "1",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 10,
+                                "__typename": "Capacity"
+                            },
+                            "note": "ID 63 64 65 LETTER GRADE",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "8M802",
+                                    "building": "CU14S",
+                                    "teachers": [
+                                        "GPD"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "IN",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "S/U",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "8M802",
+                                    "building": "CU14S",
+                                    "teachers": [
+                                        "GPD"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "3303100",
+                    "abbrName": "Q LIFE",
+                    "courseNameTh": "คุณภาพชีวิต",
+                    "courseNameEn": "QUALITY OF LIFE",
+                    "faculty": "33",
+                    "department": "ภาควิชาเภสัชเคมี",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": "Basic knowledge in quality of drugs, health care products,\r\nand medicinal products, including chemicals used for\r\ninvestigation, treatment, and prevention for the purpose of\r\ngood quality of life, with emphasis on physical and mental\r\nhealth.",
+                    "genEdType": "IN",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "IN",
+                            "sectionNo": "1",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-IN ID 65,64,63",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "504",
+                                    "building": "PHA80",
+                                    "teachers": [
+                                        "STAFF",
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "IN",
+                            "sectionNo": "71",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 170,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED ID 66, 67, 68, 69",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "504",
+                                    "building": "PHA80",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "3303191",
+                    "abbrName": "CHEM DRUG DAILY",
+                    "courseNameTh": "สารเคมีและยาในชีวิตประจำวัน",
+                    "courseNameEn": "CHEMICALS AND DRUGS IN DAILY LIFE",
+                    "faculty": "33",
+                    "department": "ภาควิชาเภสัชเคมี",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "IN",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "IN",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-IN ID 65, 64, 63",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "504",
+                                    "building": "PHA80",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "IN",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 170,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-IN ID 66, 67, 68, 69",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "504",
+                                    "building": "PHA80",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "0295107",
+                    "abbrName": "PATIENT SAFETY",
+                    "courseNameTh": "ความปลอดภัยของผู้ป่วย",
+                    "courseNameEn": "PATIENT SAFETY",
+                    "faculty": "02",
+                    "department": "การศึกษาทั่วไปในศตวรรษที่ 21 หมวดสหศาสตร์",
+                    "credit": 3,
+                    "creditHours": "LECT 1.0 CR + NL23 2.0 CR (S/U)(LECT 1.0 HR + PRAC 4.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ความรู้พื้นฐานเกี่ยวกับความปลอดภัยของผู้ป่วยที่ประชาชนทั่วไปควรรู้และเข้าใจ ซึ่งรวมถึงหลักการด้านความ ปลอดภัยของผู้ป่วยและบทบาทในการลดอุบัติการณ์และผลกระทบจากเหตุการณ์ที่ไม่พึงประสงค์ให้เหลือน้อยที่สุด รวมถึงวิธีการ แก้ไขเพื่อการคืนสภาพจากเหตุการณ์ที่ไม่พึงประสงค์เหล่านั้นให้ได้มากที่สุด ความสัมพันธ์ระหว่างปัจจัยด้านมนุษย์กับความ ปลอดภัยของผู้ป่วย ความเข้าใจระบบและผลของความซับซ้อนในการดูแลผู้ป่วย ความสําคัญของการเป็นสมาชิกที่มีประสิทธิภาพ ของทีม การเรียนรู้ธรรมชาติของความผิดพลาดเพื่อ(การ)ป้องกันอันตราย ความเข้าใจและการจัดการกับความเสี่ยงทางคลินิก หลักการปรับปรุงคุณภาพและวิธีการ ตลอดจน เครื่องมือที่ใช้ในการวัดดูสภาพด้านความปลอดภัยของผู้ป่วยและความเสี่ยงที่ สําคัญในที่ทํางาน การมีส่วนร่วมของผู้ป่วยและผู้ดูแล การป้องกันและควบคุมการติดเชื้อ ความปลอดภัยของผู้ป่วยและหัตถการที่ รุกล้ํา และความปลอดภัยในการใช้ยา",
+                    "courseDescEn": "Basic knowledge of patient safety that people in general should know and understand, including the principle\r\nof patient safety and its role in minimizing the incidence and the impact of adverse events, as well as maximizing\r\nrecovery from these events; the relationship between human factors and patient safety; understanding systems and\r\ncomplex effects on patient care; the importance of being an effective member of the team; learning the nature of errors to prevent harms; understanding and managing clinical risks; the principle of quality improvement and the basic methods and tools used for measuring the improvement in patient safety and potential risks in the workplace; participation of patients and carers; infection prevention and control; patient safety and invasive procedures; the safety\r\nof medication use.",
+                    "genEdType": "IN",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "IN",
+                            "sectionNo": "71",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 2,
+                                "__typename": "Capacity"
+                            },
+                            "note": "GENED-IN MEDONLY",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "14:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "PRAC",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "14:00",
+                                        "end": "17:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                }
+            ]
+        }
+    }
+]
