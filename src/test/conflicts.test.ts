@@ -75,10 +75,17 @@ describe("real catalog", () => {
             expect(m.start).toBeLessThan(m.end);
           }
   });
-  it("missing core codes stay as stubs, not invented", () => {
-    const stub = allCourses.find((c) => c.code === "2301115");
-    expect(stub?.stub).toBe(true);
-    expect(stub?.sections).toHaveLength(0);
+  it("curriculum codes missing from the data stay as empty stubs, not invented", () => {
+    const stubs = allCourses.filter((c) => c.stub);
+    for (const c of stubs) {
+      expect(c.sections).toHaveLength(0);
+      expect(c.nameEn).toBe("");
+      expect(c.nameTh).toBe("");
+      expect(c.credits).toBe(0);
+    }
+    // รหัสที่เป็น stub ต้องไม่ซ้ำกับวิชาจริงที่มีในข้อมูล
+    const real = new Set(allCourses.filter((c) => !c.stub).map((c) => c.code));
+    for (const c of stubs) expect(real.has(c.code)).toBe(false);
   });
 });
 
