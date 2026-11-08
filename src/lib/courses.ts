@@ -93,10 +93,10 @@ export type Course = {
 
 /** ชื่อหมวด GenEd ตามรหัสของ CU Get Reg; ถ้าเป็น GenEd แต่ไม่ทราบหมวด (เช่น ระบุแค่ในหมายเหตุ) จะไม่มีป้ายย่อย */
 export const GENED_LABELS: Record<string, string> = {
-  SO: "สังคมศาสตร์",
-  HU: "มนุษยศาสตร์",
-  SC: "วิทยาศาสตร์และคณิตศาสตร์",
-  IN: "สหศาสตร์",
+  SC: "หมวดวิทย์",
+  SO: "หมวดสังคม",
+  HU: "หมวดมนุษย์",
+  IN: "หมวดสหฯ",
 };
 
 const GENED_NOTE_NEG = /\b(NO|NON|NOT)[\s-]*GEN[\s-]*ED/i;
