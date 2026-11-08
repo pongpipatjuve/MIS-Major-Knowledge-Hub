@@ -1,120 +1,219 @@
 import { useSyncExternalStore } from "react";
-import { categoryOf, CORE_CODES, MAJOR_ELECTIVE_CODES, MAJOR_REQUIRED_CODES, type Category } from "./curriculum";
+import catalogJson from "@/data/catalog.json";
+import { CORE_CODES, MAJOR_ELECTIVE_CODES, MAJOR_REQUIRED_CODES, categoryOf, type Category } from "./curriculum";
+import { toMinutes, type Exam, type Slot } from "./conflicts";
 
+// ข้อมูลมาจาก data/*.json (response ดิบของ CU Get Reg) ผ่าน scripts/build-data.mjs -> src/data/catalog.json
+// รัน `node scripts/build-data.mjs` ใหม่ทุกครั้งที่เพิ่ม/เปลี่ยนไฟล์ใน data/
+
+/** ภาคเรียนที่ใช้วางแผน (ปีการศึกษา/ภาค) */
+export const ACTIVE_TERM = "2569/2";
+export const ACTIVE_TERM_LABEL = "ภาคเรียนที่ 2 ปีการศึกษา 2569";
+
+export const DAYS = ["จันทร์", "อังคาร", "พุธ", "พฤหัสบดี", "ศุกร์", "เสาร์", "อาทิตย์"] as const;
+const DAY_CODES = ["MO", "TU", "WE", "TH", "FR", "SA", "SU"];
+
+type RawExam = { date: string | null; start: string | null; end: string | null } | null;
+type RawClass = {
+  type: string | null;
+  day: string | null;
+  start: string | null;
+  end: string | null;
+  room: string | null;
+  building: string | null;
+  teachers: string[];
+};
+type RawSection = {
+  sec: string;
+  closed: boolean;
+  enrolled: number;
+  max: number;
+  note: string | null;
+  genEd: string | null;
+  classes: RawClass[];
+};
+type RawOffering = { year: number; sem: string; midterm: RawExam; final: RawExam; sections: RawSection[] };
+type RawCourse = {
+  code: string;
+  abbr: string | null;
+  nameTh: string | null;
+  nameEn: string | null;
+  dept: string | null;
+  credits: number;
+  creditHours: string | null;
+  condition: string | null;
+  genEd: string;
+  descTh: string | null;
+  descEn: string | null;
+  offerings: RawOffering[];
+};
+const catalog = catalogJson as unknown as { terms: string[]; courses: RawCourse[] };
+
+/** คาบเรียนหนึ่งช่วง: timed=false คือไม่มีวัน/เวลาจริง (AR/IA) เช่น นัดกันเอง */
+export type Meeting = {
+  type: string;
+  timed: boolean;
+  day: number; // -1 ถ้าไม่มีเวลาจริง
+  start: number; // นาที; -1 ถ้าไม่มีเวลาจริง
+  end: number;
+  dayRaw: string;
+  startRaw: string;
+  endRaw: string;
+  room: string;
+  teachers: string[];
+};
 export type Section = {
   sec: string;
-  day: number; // 0=Mon..4=Fri
-  start: number;
-  end: number;
-  room: string;
-  instructor: string;
-  seats: number;
-  left: number;
-  instructorShort?: string | undefined;
-  midtermExam?: string;
-  finalExam?: string;
+  closed: boolean;
+  enrolled: number;
+  max: number;
+  note: string | null;
+  meetings: Meeting[];
 };
-
 export type Course = {
   code: string;
   nameEn: string;
   nameTh: string;
   credits: number;
-  dept: "บัญชี" | "บริหารธุรกิจ" | "สถิติ";
-  major: string;
-  type: "วิชาบังคับ" | "วิชาเลือก";
-  restriction: string;
-  sections: Section[];
-  grades: number[]; // A,B+,B,C+,C,D+,D,F
-  rating: number;
-  reviews: { name: string; year: string; stars: number; text: string; tags: string[]; sec?: string; instructor?: string }[];
+  dept: string;
+  condition: string | null;
+  creditHours: string | null;
+  descTh: string | null;
+  descEn: string | null;
+  genEdType: string; // ค่าจาก CU Get Reg: NO/SC/SO/HU/IN
+  isGenEd: boolean;
   category?: Category | undefined;
-  term?: "ต้น" | "ปลาย";
-  description?: string;
-  isSample?: boolean;
+  offeredTerms: string[]; // เช่น ["2569/1","2569/2"]
+  sections: Section[]; // ของ ACTIVE_TERM เท่านั้น
+  midterm: Exam | null;
+  final: Exam | null;
   stub?: boolean;
 };
 
-export const DAYS = ["จันทร์", "อังคาร", "พุธ", "พฤหัสบดี", "ศุกร์"];
-export const GRADES = ["A", "B+", "B", "C+", "C", "D+", "D", "F"];
+const GENED_NOTE_NEG = /\b(NO|NON|NOT)[\s-]*GEN[\s-]*ED/i;
+const GENED_NOTE = /GEN[\s-]*ED/i;
 
-export const courses: Course[] = [
-  {
-    code: "2602313", nameEn: "MANAGEMENT AND ORGANIZATION", nameTh: "การจัดการและองค์การ", credits: 3,
-    dept: "บริหารธุรกิจ", major: "การจัดการ", type: "วิชาบังคับ", restriction: "ไม่มีข้อจำกัด",
-    sections: [
-      { sec: "01", day: 0, start: 9, end: 12, room: "ห้อง 2301 อาคารคณะพาณิชย์ฯ", instructor: "รศ. ดร.สมชาย ใจดี", seats: 40, left: 18 },
-      { sec: "02", day: 2, start: 13, end: 16, room: "ห้อง 2205 อาคารคณะพาณิชย์ฯ", instructor: "ผศ. ดร.กนกวรรณ ศรีสวัสดิ์", seats: 40, left: 5 },
-    ],
-    grades: [28, 24, 20, 18, 6, 3, 1, 0], rating: 4.6,
-    reviews: [
-      { name: "นิสิตปี 3", year: "1/2566", stars: 5, text: "วิชานี้ช่วยให้เข้าใจภาพรวมขององค์การ อาจารย์สอนดีมาก มีกรณีศึกษาจากธุรกิจจริง แนะนำเลยครับ", tags: ["เนื้อหาแน่น", "อาจารย์สอนดี"] },
-      { name: "นิสิตปี 2", year: "2/2566", stars: 4, text: "งานกลุ่มเยอะหน่อยแต่ได้ฝึกนำเสนอ เหมาะกับคนที่อยากเรียนการจัดการ", tags: ["งานกลุ่ม", "ได้ความรู้จริง"] },
-    ],
-  },
-  {
-    code: "2602314", nameEn: "ORGANIZATIONAL BEHAVIOR", nameTh: "พฤติกรรมองค์การ", credits: 3,
-    dept: "บริหารธุรกิจ", major: "การจัดการ", type: "วิชาเลือก", restriction: "ปี 2 ขึ้นไป",
-    sections: [{ sec: "01", day: 1, start: 13, end: 16, room: "ห้อง 3102", instructor: "อ. ดร.พิมพ์ชนก วงศ์ทอง", seats: 50, left: 22 }],
-    grades: [22, 26, 22, 14, 10, 4, 2, 0], rating: 4.3,
-    reviews: [{ name: "นิสิตปี 3", year: "1/2566", stars: 4, text: "สนุก ได้เข้าใจคนในที่ทำงาน", tags: ["งานไม่หนัก"] }],
-  },
-  {
-    code: "2602355", nameEn: "HUMAN RESOURCE MANAGEMENT", nameTh: "การจัดการทรัพยากรมนุษย์", credits: 3,
-    dept: "บริหารธุรกิจ", major: "การจัดการทรัพยากรมนุษย์", type: "วิชาเลือก", restriction: "ไม่มีข้อจำกัด",
-    sections: [{ sec: "01", day: 3, start: 9, end: 12, room: "ห้อง 2204", instructor: "รศ. ดร.วิไล ทองดี", seats: 40, left: 12 }],
-    grades: [20, 25, 25, 15, 10, 3, 2, 0], rating: 4.4, reviews: [],
-  },
-  {
-    code: "2603201", nameEn: "PRINCIPLES OF MARKETING", nameTh: "หลักการตลาด", credits: 3,
-    dept: "บริหารธุรกิจ", major: "การตลาด", type: "วิชาบังคับ", restriction: "ไม่มีข้อจำกัด",
-    sections: [{ sec: "01", day: 1, start: 9, end: 12, room: "ห้อง 4201", instructor: "ผศ. ดร.ธนา รุ่งเรือง", seats: 60, left: 30 }],
-    grades: [25, 25, 20, 15, 8, 4, 3, 0], rating: 4.5, reviews: [],
-  },
-  {
-    code: "2604210", nameEn: "CORPORATE FINANCE", nameTh: "การเงินธุรกิจ", credits: 3,
-    dept: "บริหารธุรกิจ", major: "การเงิน", type: "วิชาบังคับ", restriction: "ต้องผ่าน 2601101",
-    sections: [{ sec: "01", day: 4, start: 9, end: 12, room: "ห้อง 2304", instructor: "รศ. ดร.ปิยะ มั่นคง", seats: 45, left: 8 }],
-    grades: [18, 20, 24, 18, 12, 5, 3, 0], rating: 4.1, reviews: [],
-  },
-  {
-    code: "2601201", nameEn: "INTERMEDIATE ACCOUNTING I", nameTh: "การบัญชีขั้นกลาง 1", credits: 3,
-    dept: "บัญชี", major: "การบัญชี", type: "วิชาบังคับ", restriction: "เฉพาะนิสิตบัญชี",
-    sections: [{ sec: "01", day: 2, start: 9, end: 12, room: "ห้อง 2101", instructor: "ศ. ดร.สุนีย์ บุญมา", seats: 80, left: 20 }],
-    grades: [15, 20, 25, 20, 12, 5, 3, 0], rating: 4.0, reviews: [],
-  },
-  {
-    code: "2603330", nameEn: "BUSINESS STATISTICS", nameTh: "สถิติธุรกิจ", credits: 3,
-    dept: "สถิติ", major: "สถิติ", type: "วิชาบังคับ", restriction: "ไม่มีข้อจำกัด",
-    sections: [{ sec: "01", day: 3, start: 13, end: 16, room: "ห้อง 2201", instructor: "อ. ดร.ณัฐ แสงทอง", seats: 60, left: 25 }],
-    grades: [20, 18, 22, 18, 12, 6, 4, 0], rating: 4.2, reviews: [],
-  },
-];
-
-// วิชาเดิมทั้งหมดข้างบนเป็นข้อมูลตัวอย่าง (AI สร้างขึ้น) ไม่ใช่ข้อมูลจริง
-for (const c of courses) {
-  c.isSample = true;
-  c.category = categoryOf(c.code);
+function toMeeting(c: RawClass): Meeting {
+  const di = DAY_CODES.indexOf(c.day ?? "");
+  const s = toMinutes(c.start);
+  const e = toMinutes(c.end);
+  const timed = di >= 0 && s !== null && e !== null && e > s;
+  return {
+    type: c.type ?? "",
+    timed,
+    day: timed ? di : -1,
+    start: timed ? s : -1,
+    end: timed ? e : -1,
+    dayRaw: c.day ?? "",
+    startRaw: c.start ?? "",
+    endRaw: c.end ?? "",
+    room: [c.building, c.room].filter((x) => x && x !== "IA" && x !== "AR").join(" ") || "",
+    teachers: c.teachers,
+  };
 }
 
-// รายวิชาตามหลักสูตร MIS ที่ยังไม่มีรายละเอียด: มีเพียงรหัสและหมวด
+function toCourse(raw: RawCourse): Course {
+  const active = raw.offerings.find((o) => `${o.year}/${o.sem}` === ACTIVE_TERM);
+  const sections: Section[] = (active?.sections ?? []).map((s) => ({
+    sec: s.sec,
+    closed: s.closed,
+    enrolled: s.enrolled,
+    max: s.max,
+    note: s.note,
+    meetings: s.classes.map(toMeeting),
+  }));
+  // วิชาเป็น GenEd ถ้าระดับวิชาไม่ใช่ NO หรือ section ใดระบุ GenEd ใน note (และไม่ใช่ NO GEN-ED)
+  const isGenEd =
+    raw.genEd !== "NO" ||
+    sections.some((s) => s.note && GENED_NOTE.test(s.note) && !GENED_NOTE_NEG.test(s.note));
+  return {
+    code: raw.code,
+    nameEn: raw.nameEn ?? "",
+    nameTh: raw.nameTh ?? "",
+    credits: raw.credits,
+    dept: raw.dept ?? "",
+    condition: raw.condition && raw.condition !== "-" ? raw.condition : null,
+    creditHours: raw.creditHours,
+    descTh: raw.descTh,
+    descEn: raw.descEn,
+    genEdType: raw.genEd,
+    isGenEd,
+    category: categoryOf(raw.code) ?? (raw.genEd !== "NO" ? "GenEd" : undefined),
+    offeredTerms: raw.offerings.map((o) => `${o.year}/${o.sem}`),
+    sections,
+    midterm: active?.midterm ?? null,
+    final: active?.final ?? null,
+  };
+}
+
+const courses: Course[] = catalog.courses.map(toCourse);
+
+// รหัสตามหลักสูตร MIS ที่ยังไม่มีในข้อมูลที่ดึงมา: แสดงเป็นรหัสเปล่า ๆ ไม่แต่งข้อมูลเอง
 const stub = (code: string): Course => ({
-  code, nameEn: "", nameTh: "", credits: 0, dept: "บริหารธุรกิจ", major: "MIS", type: "วิชาบังคับ",
-  restriction: "", sections: [], grades: [], rating: 0, reviews: [], stub: true, category: categoryOf(code),
+  code,
+  nameEn: "",
+  nameTh: "",
+  credits: 0,
+  dept: "",
+  condition: null,
+  creditHours: null,
+  descTh: null,
+  descEn: null,
+  genEdType: "NO",
+  isGenEd: false,
+  category: categoryOf(code),
+  offeredTerms: [],
+  sections: [],
+  midterm: null,
+  final: null,
+  stub: true,
 });
 export const curriculumStubs: Course[] = [...CORE_CODES, ...MAJOR_REQUIRED_CODES, ...MAJOR_ELECTIVE_CODES]
   .filter((code) => !courses.some((c) => c.code === code))
   .map(stub);
 
 export const allCourses: Course[] = [...courses, ...curriculumStubs];
-export const isMis = (c: Course) => !!c.category;
+/** วิชาที่อยู่ในรายการหลักสูตร MIS (แกน/บังคับ/เลือกสาขา) */
+export const isMis = (c: Course) => c.category !== undefined && c.category !== "GenEd";
+export const isOfferedNow = (c: Course) => c.sections.length > 0;
 
 export const findCourse = (code: string) => courses.find((c) => c.code === code);
 export const findAnyCourse = (code: string) => allCourses.find((c) => c.code === code);
 
-// simple in-memory registration store
+export const dataTerms = catalog.terms;
+
+/** ข้อความสั้น ๆ ของคาบเรียน เช่น "จันทร์ 09:30-12:30" หรือ "ไม่ระบุเวลา (AR)" */
+export const fmtMeeting = (m: Meeting) =>
+  m.timed
+    ? `${DAYS[m.day]} ${m.startRaw}-${m.endRaw}`
+    : `ไม่ระบุวัน/เวลา${m.dayRaw ? ` (${m.dayRaw})` : ""}`;
+
+/** แปลงวันที่สอบ "2569-09-24" เป็น "24/09/2569" */
+export const fmtExamDate = (e: Exam | null) => {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(e?.date ?? "");
+  return m ? `${m[3]}/${m[2]}/${m[1]}` : null;
+};
+
+/** แปลง section ที่ลงทะเบียนไว้เป็น Slot สำหรับตรวจชน (เฉพาะคาบที่มีเวลาจริง) */
+export function slotsFor(course: Course, sec: string): Slot[] {
+  const s = course.sections.find((x) => x.sec === sec);
+  if (!s) return [];
+  return s.meetings
+    .filter((m) => m.timed)
+    .map((m) => ({
+      code: course.code,
+      sec: s.sec,
+      day: m.day,
+      start: m.start,
+      end: m.end,
+      midterm: course.midterm,
+      final: course.final,
+    }));
+}
+
+// ที่เก็บรายวิชาที่เลือกในตาราง (ในหน่วยความจำ — รีเฟรชแล้วหาย)
 type Reg = { code: string; sec: string };
-let regs: Reg[] = [{ code: "2602313", sec: "01" }];
+let regs: Reg[] = [];
 const subs = new Set<() => void>();
 const emit = () => subs.forEach((f) => f());
 export const regStore = {

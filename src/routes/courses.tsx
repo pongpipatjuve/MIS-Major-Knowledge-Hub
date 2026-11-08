@@ -2,9 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Check, ChevronRight, Plus, Search } from "lucide-react";
 import { toast } from "sonner";
-import { allCourses, isMis, regStore, useRegs } from "@/lib/courses";
+import { ACTIVE_TERM_LABEL, allCourses, isMis, isOfferedNow, regStore, useRegs } from "@/lib/courses";
 import { CATEGORIES } from "@/lib/curriculum";
-import { CategoryBadge, NoData, SampleBadge } from "@/components/Labels";
+import { CategoryBadge, NoData } from "@/components/Labels";
 
 export const Route = createFileRoute("/courses")({
   validateSearch: (search: Record<string, unknown>) => ({
@@ -32,15 +32,16 @@ function Courses() {
   const [q, setQ] = useState(search);
   const [cat, setCat] = useState("ทั้งหมด");
   const [showOther, setShowOther] = useState(false);
+  const [onlyOffered, setOnlyOffered] = useState(true);
+  const [limit, setLimit] = useState(50);
   const regs = useRegs();
-  const terms = [...new Set(allCourses.map((c) => c.term).filter(Boolean))];
-  const [term, setTerm] = useState("ทั้งหมด");
+  const query = q.trim().toLowerCase();
   const list = allCourses.filter(
     (c) =>
-      (showOther || isMis(c)) &&
+      (showOther || query !== "" || cat === "GenEd" || isMis(c)) &&
       (cat === "ทั้งหมด" || c.category === cat) &&
-      (term === "ทั้งหมด" || c.term === term) &&
-      `${c.code} ${c.nameEn} ${c.nameTh}`.toLowerCase().includes(q.toLowerCase()),
+      (!onlyOffered || isOfferedNow(c) || c.stub) &&
+      `${c.code} ${c.nameEn} ${c.nameTh}`.toLowerCase().includes(query),
   );
   const chip = (on: boolean) =>
     `rounded-full border px-3 py-1 text-sm ${on ? "border-primary bg-primary-soft text-primary" : "bg-card"}`;
@@ -51,7 +52,10 @@ function Courses() {
         <Search className="m-3 h-5 w-5 text-muted-foreground" />
         <input
           value={q}
-          onChange={(e) => setQ(e.target.value)}
+          onChange={(e) => {
+            setQ(e.target.value);
+            setLimit(50);
+          }}
           placeholder="รหัสวิชา หรือชื่อรายวิชา..."
           className="flex-1 bg-transparent outline-none"
         />
@@ -61,35 +65,37 @@ function Courses() {
           <button
             key={x}
             title={CATEGORIES.find((c) => c.key === x)?.desc}
-            onClick={() => setCat(x)}
+            onClick={() => {
+              setCat(x);
+              setLimit(50);
+            }}
             className={chip(cat === x)}
           >
             {x}
           </button>
         ))}
       </div>
-      {terms.length > 0 && (
-        <div className="flex flex-wrap gap-2">
-          {["ทั้งหมด", ...terms].map((t) => (
-            <button key={t} onClick={() => setTerm(t!)} className={chip(term === t)}>
-              {t === "ทั้งหมด" ? "ทุกเทอม" : `เทอม${t}`}
-            </button>
-          ))}
-        </div>
-      )}
+      <label className="flex items-center gap-2 text-sm text-muted-foreground">
+        <input
+          type="checkbox"
+          checked={onlyOffered}
+          onChange={(e) => setOnlyOffered(e.target.checked)}
+        />{" "}
+        เฉพาะวิชาที่เปิดสอนใน{ACTIVE_TERM_LABEL}
+      </label>
       <label className="flex items-center gap-2 text-sm text-muted-foreground">
         <input
           type="checkbox"
           checked={showOther}
           onChange={(e) => setShowOther(e.target.checked)}
         />{" "}
-        แสดงวิชาตัวอย่างอื่นที่ไม่อยู่ในรายการหลักสูตร MIS
+        แสดงวิชาอื่นที่ไม่อยู่ในรายการวิชาของหลักสูตร MIS (พิมพ์ค้นหาแล้วจะค้นทุกวิชาอยู่แล้ว)
       </label>
       <p className="text-sm text-muted-foreground">
-        ผลการค้นหา {list.length} รายการ · วิชาที่ไม่มีชื่อคือรหัสตามหลักสูตรที่ยังไม่มีรายละเอียด
+        ผลการค้นหา {list.length} รายการ · วิชาที่ไม่มีชื่อคือรหัสตามหลักสูตรที่ยังไม่มีข้อมูลจากระบบ CU Get Reg
       </p>
       <div className="space-y-3">
-        {list.map((c) => (
+        {list.slice(0, limit).map((c) => (
           <div
             key={c.code}
             className="flex items-center gap-4 rounded-xl border bg-card p-4 transition hover:border-primary hover:shadow-card"
@@ -108,10 +114,9 @@ function Courses() {
               )}
               <div className="mt-2 flex flex-wrap gap-2">
                 <CategoryBadge cat={c.category} />
-                {c.term && (
-                  <span className="rounded-md bg-muted px-2 py-0.5 text-xs">เทอม{c.term}</span>
+                {!c.stub && !isOfferedNow(c) && (
+                  <span className="rounded-md bg-muted px-2 py-0.5 text-xs">ไม่เปิดสอนในภาคนี้</span>
                 )}
-                {c.isSample && <SampleBadge />}
               </div>
             </Link>
             <div className="text-center">
@@ -133,6 +138,15 @@ function Courses() {
           </div>
         ))}
       </div>
+      {list.length > limit && (
+        <button
+          type="button"
+          onClick={() => setLimit(limit + 50)}
+          className="w-full rounded-xl border bg-card py-2 text-sm font-medium hover:border-primary"
+        >
+          แสดงเพิ่ม (เหลืออีก {list.length - limit} รายการ)
+        </button>
+      )}
     </div>
   );
 }
