@@ -4,7 +4,7 @@ import { Check, ChevronRight, Plus, Search } from "lucide-react";
 import { toast } from "sonner";
 import { ACTIVE_TERM_LABEL, GENED_LABELS, allCourses, isMis, isOfferedNow, regStore, useRegs } from "@/lib/courses";
 import { CATEGORIES } from "@/lib/curriculum";
-import { CategoryBadge, GenEdTag, NoData } from "@/components/Labels";
+import { CategoryBadge, GenEdTag, NoData, Notice } from "@/components/Labels";
 
 export const Route = createFileRoute("/courses")({
   validateSearch: (search: Record<string, unknown>) => ({
@@ -40,7 +40,7 @@ function Courses() {
   const list = allCourses.filter(
     (c) =>
       (showOther || query !== "" || cat === "GenEd" || isMis(c)) &&
-      (cat === "ทั้งหมด" || c.category === cat) &&
+      (cat === "ทั้งหมด" || (cat === "วิชาเลือก" ? c.category === "วิชาเลือก" || c.category === "วิชาเลือกสาขา" : c.category === cat)) &&
       (cat !== "GenEd" || gened === "ทั้งหมด" || (gened === "ไม่ระบุหมวด" ? !c.genEdLabel : c.genEdLabel === gened)) &&
       (!onlyOffered || isOfferedNow(c) || c.stub) &&
       `${c.code} ${c.nameEn} ${c.nameTh}`.toLowerCase().includes(query),
@@ -92,6 +92,11 @@ function Courses() {
             </button>
           ))}
         </div>
+      )}
+      {cat === "วิชาเลือก" && (
+        <Notice>
+          ตอนนี้แสดงเฉพาะวิชาเลือกสาขา MIS ต้องเรียนให้ครบ 12 หน่วยกิตก่อน หน่วยกิตส่วนที่เกินจึงนับเป็นวิชาเลือกได้ ส่วนวิชาของคณะที่รหัส 3 ตัวหลังตั้งแต่ 300 ขึ้นไป และวิชาโทนอกคณะ ยังไม่แสดงในรายการนี้
+        </Notice>
       )}
       <label className="flex items-center gap-2 text-sm text-muted-foreground">
         <input

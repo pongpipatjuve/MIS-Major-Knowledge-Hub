@@ -22,7 +22,7 @@ function Curriculum() {
     วิชาแกน: `${CREDITS.core} หน่วยกิต`,
     วิชาบังคับสาขา: `${CREDITS.majorRequired} หน่วยกิต`,
     วิชาเลือกสาขา: `อย่างน้อย ${CREDITS.majorElective} หน่วยกิต`,
-    วิชาเลือกตามเงื่อนไข: `อย่างน้อย ${CREDITS.otherElective} หน่วยกิต`,
+    วิชาเลือก: `อย่างน้อย ${CREDITS.otherElective} หน่วยกิต`,
     วิชาเลือกเสรี: `${CREDITS.free} หน่วยกิต`,
   };
 

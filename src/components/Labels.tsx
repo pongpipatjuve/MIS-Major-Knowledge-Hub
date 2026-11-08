@@ -7,7 +7,7 @@ const CAT_CLASS: Record<Category, string> = {
   วิชาแกน: "bg-block-1",
   วิชาบังคับสาขา: "bg-primary text-primary-foreground",
   วิชาเลือกสาขา: "bg-block-3",
-  วิชาเลือกตามเงื่อนไข: "bg-block-4",
+  วิชาเลือก: "bg-block-4",
   วิชาเลือกเสรี: "bg-block-5",
 };
 
