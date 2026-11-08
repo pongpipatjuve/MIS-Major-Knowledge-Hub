@@ -2,9 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Check, ChevronRight, Plus, Search } from "lucide-react";
 import { toast } from "sonner";
-import { ACTIVE_TERM_LABEL, allCourses, isMis, isOfferedNow, regStore, useRegs } from "@/lib/courses";
+import { ACTIVE_TERM_LABEL, GENED_LABELS, allCourses, isMis, isOfferedNow, regStore, useRegs } from "@/lib/courses";
 import { CATEGORIES } from "@/lib/curriculum";
-import { CategoryBadge, NoData } from "@/components/Labels";
+import { CategoryBadge, GenEdTag, NoData } from "@/components/Labels";
 
 export const Route = createFileRoute("/courses")({
   validateSearch: (search: Record<string, unknown>) => ({
@@ -32,6 +32,7 @@ function Courses() {
   const [q, setQ] = useState(search);
   const [cat, setCat] = useState("ทั้งหมด");
   const [showOther, setShowOther] = useState(false);
+  const [gened, setGened] = useState("ทั้งหมด");
   const [onlyOffered, setOnlyOffered] = useState(true);
   const [limit, setLimit] = useState(50);
   const regs = useRegs();
@@ -40,6 +41,7 @@ function Courses() {
     (c) =>
       (showOther || query !== "" || cat === "GenEd" || isMis(c)) &&
       (cat === "ทั้งหมด" || c.category === cat) &&
+      (cat !== "GenEd" || gened === "ทั้งหมด" || (gened === "ไม่ระบุหมวด" ? !c.genEdLabel : c.genEdLabel === gened)) &&
       (!onlyOffered || isOfferedNow(c) || c.stub) &&
       `${c.code} ${c.nameEn} ${c.nameTh}`.toLowerCase().includes(query),
   );
@@ -75,6 +77,22 @@ function Courses() {
           </button>
         ))}
       </div>
+      {cat === "GenEd" && (
+        <div className="flex flex-wrap gap-2">
+          {["ทั้งหมด", ...Object.values(GENED_LABELS), "ไม่ระบุหมวด"].map((g) => (
+            <button
+              key={g}
+              onClick={() => {
+                setGened(g);
+                setLimit(50);
+              }}
+              className={chip(gened === g)}
+            >
+              {g}
+            </button>
+          ))}
+        </div>
+      )}
       <label className="flex items-center gap-2 text-sm text-muted-foreground">
         <input
           type="checkbox"
@@ -114,6 +132,7 @@ function Courses() {
               )}
               <div className="mt-2 flex flex-wrap gap-2">
                 <CategoryBadge cat={c.category} />
+                <GenEdTag label={c.genEdLabel} />
                 {!c.stub && !isOfferedNow(c) && (
                   <span className="rounded-md bg-muted px-2 py-0.5 text-xs">ไม่เปิดสอนในภาคนี้</span>
                 )}

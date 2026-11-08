@@ -1,7 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Calendar, Check, ClipboardList, MapPin, Plus, User, Users } from "lucide-react";
 import { ACTIVE_TERM_LABEL, findAnyCourse, fmtExamDate, fmtMeeting, regStore, useRegs } from "@/lib/courses";
-import { CategoryBadge, NoData } from "@/components/Labels";
+import { CategoryBadge, GenEdTag, NoData } from "@/components/Labels";
 
 export const Route = createFileRoute("/course/$code")({
   loader: ({ params }) => {
@@ -71,7 +71,7 @@ function CourseDetail() {
           <CategoryBadge cat={c.category} />
           {!c.stub && <span className="rounded-full bg-muted px-3 py-1">{c.credits} หน่วยกิต</span>}
           {c.creditHours && <span className="rounded-full bg-muted px-3 py-1">{c.creditHours}</span>}
-          {c.isGenEd && <span className="rounded-full bg-muted px-3 py-1">วิชา GenEd ({c.genEdType})</span>}
+          <GenEdTag label={c.genEdLabel} />
           {c.dept && <span className="rounded-full bg-muted px-3 py-1">{c.dept}</span>}
         </div>
       </header>

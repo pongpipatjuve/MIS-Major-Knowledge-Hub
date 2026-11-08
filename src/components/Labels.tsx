@@ -17,6 +17,11 @@ export function CategoryBadge({ cat }: { cat?: Category | undefined }) {
   return <span title={desc} className={`rounded-md px-2 py-0.5 text-xs font-medium ${CAT_CLASS[cat]}`}>{cat}</span>;
 }
 
+export function GenEdTag({ label }: { label?: string | undefined }) {
+  if (!label) return null;
+  return <span className="rounded-md bg-muted px-2 py-0.5 text-xs">{label}</span>;
+}
+
 export function SampleBadge() {
   return <span className="inline-flex items-center gap-1 rounded-md border border-warning px-2 py-0.5 text-xs text-warning"><FlaskConical className="h-3 w-3" /> ข้อมูลตัวอย่าง</span>;
 }

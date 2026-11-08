@@ -82,12 +82,21 @@ export type Course = {
   descEn: string | null;
   genEdType: string; // ค่าจาก CU Get Reg: NO/SC/SO/HU/IN
   isGenEd: boolean;
+  genEdLabel?: string | undefined; // หมวดย่อยของ GenEd ถ้าทราบ
   category?: Category | undefined;
   offeredTerms: string[]; // เช่น ["2569/1","2569/2"]
   sections: Section[]; // ของ ACTIVE_TERM เท่านั้น
   midterm: Exam | null;
   final: Exam | null;
   stub?: boolean;
+};
+
+/** ชื่อหมวด GenEd ตามรหัสของ CU Get Reg; ถ้าเป็น GenEd แต่ไม่ทราบหมวด (เช่น ระบุแค่ในหมายเหตุ) จะไม่มีป้ายย่อย */
+export const GENED_LABELS: Record<string, string> = {
+  SO: "สังคมศาสตร์",
+  HU: "มนุษยศาสตร์",
+  SC: "วิทยาศาสตร์และคณิตศาสตร์",
+  IN: "สหศาสตร์",
 };
 
 const GENED_NOTE_NEG = /\b(NO|NON|NOT)[\s-]*GEN[\s-]*ED/i;
@@ -138,7 +147,8 @@ function toCourse(raw: RawCourse): Course {
     descEn: raw.descEn,
     genEdType: raw.genEd,
     isGenEd,
-    category: categoryOf(raw.code) ?? (raw.genEd !== "NO" ? "GenEd" : undefined),
+    genEdLabel: GENED_LABELS[raw.genEd],
+    category: categoryOf(raw.code) ?? (isGenEd ? "GenEd" : undefined),
     offeredTerms: raw.offerings.map((o) => `${o.year}/${o.sem}`),
     sections,
     midterm: active?.midterm ?? null,
