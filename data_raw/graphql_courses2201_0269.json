@@ -1,0 +1,2880 @@
+[
+    {
+        "data": {
+            "search": [
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201214",
+                    "abbrName": "LANG MASS MEDIA",
+                    "courseNameTh": "ภาษาสื่อสารมวลชน",
+                    "courseNameEn": "LANGUAGE FOR THE MASS MEDIA",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 2.0 HR + DISC 1.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "โครงสร้าง รูปแบบ และพัฒนาการของสื่อมวลชนประเภทต่างๆ ลักษณะภาษาไทยปรากฎในสื่อต่างๆ",
+                    "courseDescEn": "Structure, forms and development of various types of mass media ; characteristics of the Thai language in the mass media.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "15:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "NTK"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "15:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "NTK"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201152",
+                    "abbrName": "THAI LIT",
+                    "courseNameTh": "วรรณคดีไทย",
+                    "courseNameEn": "THAI LITERATURE",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ลักษณะและคุณค่าของหนังสือที่เป็นวรรณคดีไทย เลือกศึกษาวรรณคดีที่สำคัญบางเรื่อง",
+                    "courseDescEn": "Characteristics and value of Thai works considered to be literature; selections from important literary works of various periods.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-29T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 120,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201215",
+                    "abbrName": "SPEECH PLAY TH",
+                    "courseNameTh": "การเล่นทางภาษาในภาษาไทย",
+                    "courseNameEn": "SPEECH PLAY IN THAI",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "รูปแบบต่างๆ ของการเล่นทางภาษาในภาษาไทยจากมุมมองทางด้านคติชนวิทยา ภาษาศาสตร์ และวรรณคดี",
+                    "courseDescEn": "Different forms of speech play in Thai from the points of view of folklore, linguistics and literature.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "09:30",
+                                        "end": "12:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "SPS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201208",
+                    "abbrName": "TH LIT APP FOREIGN",
+                    "courseNameTh": "วรรณกรรมวิจักษ์สำหรับชาวต่างชาติ",
+                    "courseNameEn": "THAI LITERARY APPRECIATION FOR FOREIGNERS",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 1.0 HR + DISC 2.0 HR)",
+                    "courseCondition": "C.F.",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "10:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "ASR",
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "10:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "ASR",
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201227",
+                    "abbrName": "TH CAREERS DIGIT",
+                    "courseNameTh": "ภาษาไทยเพื่อวิชาชีพในยุคดิจิทัล",
+                    "courseNameEn": "THAI LANGUAGE FOR CAREERS IN DIGITAL AGE",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 2.0 HR + DISC 1.0 HR)",
+                    "courseCondition": "PRER 2201111",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-28T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "11:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:30",
+                                        "end": "11:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "11:30",
+                                        "end": "12:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:30",
+                                        "end": "11:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "11:30",
+                                        "end": "12:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "3",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:30",
+                                        "end": "11:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "11:30",
+                                        "end": "12:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "4",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:30",
+                                        "end": "11:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "11:30",
+                                        "end": "12:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "5",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:30",
+                                        "end": "11:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "11:30",
+                                        "end": "12:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "6",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:30",
+                                        "end": "11:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "11:30",
+                                        "end": "12:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "7",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:30",
+                                        "end": "11:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "11:30",
+                                        "end": "12:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "8",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:30",
+                                        "end": "11:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "11:30",
+                                        "end": "12:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201364",
+                    "abbrName": "LIT PERF ARTS",
+                    "courseNameTh": "วรรณคดีการแสดง",
+                    "courseNameEn": "LITERATURE AND THE PERFORMING ARTS",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ลักษณะและความเป็นมาของวรรณคดีที่การแสดงของไทย  ความสัมพันธ์ระหว่างการแสดงกับตัวบท การวิเคราะห์วรรณคดีการแสดงบางเรื่อง",
+                    "courseDescEn": "Characteristics and history of Thai literature \r\nrelated to performing arts; relationship between performance and texts; analytical study of selected works.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "TJT"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201327",
+                    "abbrName": "THAI PRO WRIT",
+                    "courseNameTh": "การเขียนภาษาไทยเพื่อวิชาชีพ",
+                    "courseNameEn": "THAI PROFESSIONAL WRITING",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 2.0 HR + DISC 1.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "การฝึกประมวลและเรียบเรียงความคิดเป็นงานเขียนรูปแบบต่างๆ เพื่อประโยชน์แก่การประกอบอาชีพ",
+                    "courseDescEn": "Practice of gathering and organizing ideas into various forms of Thai writing for professional use.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-28T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "11:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 5,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:30",
+                                        "end": "11:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "APR"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "11:30",
+                                        "end": "12:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "APR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201209",
+                    "abbrName": "INTRO TH CULT FRGN",
+                    "courseNameTh": "ปริทัศน์วัฒนธรรมไทยสำหรับชาวต่างชาติ",
+                    "courseNameEn": "INTRODUCTION TO THAI CULTURE FOR FOREIGNERS",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 1.0 HR + DISC 2.0 HR)",
+                    "courseCondition": "C.F.",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 15,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "14:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "14:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201401",
+                    "abbrName": "ANALYSIS THAI",
+                    "courseNameTh": "การวิเคราะห์ภาษาไทย",
+                    "courseNameEn": "ANALYSIS OF THE THAI LANGUAGE",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "การวิเคราะห์ภาษาไทยในประเด็นปัญหาเรื่องเสียง คำ และวากยสัมพันธ์",
+                    "courseDescEn": "Analysis of the Thai language concerning problematic issues in sounds, words and syntax.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "09:30",
+                                        "end": "12:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "VPP"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201594",
+                    "abbrName": "INDEPT STUD IV",
+                    "courseNameTh": "เอกัตศึกษา 4",
+                    "courseNameEn": "INDEPENDENT STUDY IV",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 1.0 CR + NL36 2.0 CR(DISC 1.0 HR + IDPS 6.0 HR)",
+                    "courseCondition": "PRER 2201593",
+                    "courseDescTh": "การศึกษาอย่างลึกซึ้งในหัวข้อที่น่าสนใจทางภาษา วรรณคดี หรือวัฒนธรรมไทยหัวข้อใดหัวข้อหนึ่ง หรือหลายหัวข้อ",
+                    "courseDescEn": "In-depth study of one or more topics of special interest in Thai language, literature, and culture.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 5,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "IDPS",
+                                    "dayOfWeek": "AR",
+                                    "period": {
+                                        "start": "AR",
+                                        "end": "AR",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "AR",
+                                    "period": {
+                                        "start": "AR",
+                                        "end": "AR",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201472",
+                    "abbrName": "KING RAMA VI",
+                    "courseNameTh": "พระราชนิพนธ์ในพระบาทสมเด็จพระมงกุฎเกล้าเจ้าอยู่หัว",
+                    "courseNameEn": "KING RAMA VI",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "พระราชประวัติและพระราชนิพนธ์ในพระบาทสมเด็จพระมงกุฎเกล้าเจ้าอยู่หัวทั้งในด้านรูปแบบ เนื้อหา และลีลา การวิเคราะห์พระราชนิพนธ์บางเรื่อง",
+                    "courseDescEn": "King Rama VI's life and works: forms, contents and styles; analytical study of selected works.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-27T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 40,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "KAT"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201719",
+                    "abbrName": "TH SEC LANG",
+                    "courseNameTh": "ภาษาไทยในฐานะภาษาที่สอง",
+                    "courseNameEn": "THAI AS A SECOND LANGUAGE",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 2.0 HR + DISC 1.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "แนวทางที่เกี่ยวข้องกับภาษาไทยในฐานะภาาาที่สอง ได้แก่ การรับภาษาที่สอง การถ่ายโอนทางภาษา การสื่อสารระหว่างวัฒนธรรม ประเด็นทางภาษาและวรรณกรรมไทยที่เป็นประโยชน์ต่อการเรียนภาษาไทยในฐานะภาษาที่สอง",
+                    "courseDescEn": "Concepts of Thai as a second language; second language; second language acquisition, language transfer, intercultural intercultural communication ; issues on Thai Language and literature beneficial to studying Thai as a second language.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 5,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "09:30",
+                                        "end": "11:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "RSS"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "11:30",
+                                        "end": "12:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "RSS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201447",
+                    "abbrName": "SEM TH LANG",
+                    "courseNameTh": "สัมมนาเรื่องภาษาไทย",
+                    "courseNameEn": "SEMINAR IN THAI LANGUAGE",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(DISC 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "หัวข้อที่น่าสนใจเกี่ยวกับภาษาไทย เน้นเรื่องความสัมพันธ์ระหว่างภาษากับสังคมและวัฒนธรรม",
+                    "courseDescEn": "Interesting topics concerning the Thai language, with emphasis on the relationship between language and society, and culture.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:30",
+                                        "end": "12:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "SPS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201783",
+                    "abbrName": "PRAG ANAL TH",
+                    "courseNameTh": "การวิเคราะห์ภาษาไทยตามแนววัจนปฏิบัติศาสตร์",
+                    "courseNameEn": "PRAGMATIC ANALYSIS OF THAI",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 2.0 HR + DISC 1.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "การวิเคราะห์ถ้อยคำและการปฏิสัมพันธ์แบบต่างๆในภาษาไทยตามแนววัจนปฏิบัติศาสตร์",
+                    "courseDescEn": "Analysis of utterances and various types of interaction in Thai by pragmatic approach",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 5,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "15:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "NPT"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "15:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "NPT"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201432",
+                    "abbrName": "THAI PROSE WRIT",
+                    "courseNameTh": "ศิลปะการเขียนร้อยแก้ว",
+                    "courseNameEn": "THAI PROSE WRITING",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 1.0 HR + DISC 2.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "องค์ประกอบและกลวิธีในการสร้างงานเขียนที่ดี การเขียนสร้างสรรค์ประเภทร้อยแก้วแบบต่างๆ ในภาษาไทย",
+                    "courseDescEn": "Elements and strategies in good of prose writing, various types of creative prose writing in Thai.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 15,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "14:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "HAS"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "14:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "HAS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                }
+            ]
+        }
+    }
+,
+    {
+        "data": {
+            "search": [
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201397",
+                    "abbrName": "BOOK CULT CONT TH",
+                    "courseNameTh": "วัฒนธรรมหนังสือในสังคมไทยร่วมสมัย",
+                    "courseNameEn": "BOOK CULTURE IN CONTEMPORARY THAI SOCIETY",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 1.0 HR + DISC 2.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "14:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "HAS"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "14:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "HAS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201752",
+                    "abbrName": "SEM MOD TH LIT",
+                    "courseNameTh": "สัมมนาวรรณกรรมไทยปัจจุบัน",
+                    "courseNameEn": "SEMINAR ON MODERN THAI LITERATURE",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "การวิเคราะห์และอภิปรายมิติต่างๆ ของวรรณกรรมไทยปัจจุบัน ทั้งกวีนิพนธ์ นวนิยาย เรื่องสั้น สารคดี และรูปแบบงานวรรณศิลป์ร่วมสมัยอื่นๆ",
+                    "courseDescEn": "Analysis of and discussion on aspects of modern Thai literary works:             poetry, novels, short stories, documentaries and other contemporary                 forms of literary  works.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 5,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "CPM"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201324",
+                    "abbrName": "WRD FORM COIN",
+                    "courseNameTh": "การสร้างคำและการบัญญัติศัพท์",
+                    "courseNameEn": "WORD FORMATION AND WORD COINING",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ลักษณะคำไทย วิธีการสร้างคำของภาษาไทย\r\nการประสมคำ การแปลงคำ การซ้ำคำ การบัญญัติศัพท์",
+                    "courseDescEn": "Characteristics of Thai words; Thai word formation: compounding, derivation and reduplication; coining.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "09:30",
+                                        "end": "12:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "MSS",
+                                        "DWR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201325",
+                    "abbrName": "PALI SKT THAI",
+                    "courseNameTh": "ภาษาบาลีและสันสกฤตที่สัมพันธ์กับภาษาไทย",
+                    "courseNameEn": "PALI AND SANSKRIT IN RELATION TO THAI",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 2.0 HR + DISC 1.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-26T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "11:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 15,
+                                "__typename": "Capacity"
+                            },
+                            "note": "3RD YEAR STUDENTS",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "09:30",
+                                        "end": "11:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "APR"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "11:30",
+                                        "end": "12:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "APR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 15,
+                                "__typename": "Capacity"
+                            },
+                            "note": "2ND YEAR STUDENTS",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "09:30",
+                                        "end": "11:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "APR"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "11:30",
+                                        "end": "12:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "APR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201252",
+                    "abbrName": "SURV THAI LIT WRKS",
+                    "courseNameTh": "วิวัฒนาการวรรณกรรมไทย",
+                    "courseNameEn": "SURVEY OF THAI LITERARY WORKS",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "วิวัฒนาการวรรณกรรมไทยตั้งแต่ปลายสมัยรัชกาลที่ 3 จนถึงปัจจุบันในด้านรูปแบบ เนื้อหา และแนวคิด การวิเคราะห์วรรณกรรมที่เลือกมาศึกษา",
+                    "courseDescEn": "Development of Thai literary works from the end of the reign of King Rama III to the present: forms, contents and concepts; analytical study of selected works.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-29T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "HAS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201705",
+                    "abbrName": "RES METH",
+                    "courseNameTh": "วิธีวิทยาการวิจัย",
+                    "courseNameEn": "RESEARCH METHODOLOGY",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "วิธีวิทยาการวิจัยเพื่อศึกษาภาษาไทย วรรณคดีไทย และคติชนวิทยา การวิเคราะห์และอภิปรายตัวอย่างงานวิจัยที่ดีเพื่อประยุกต์ใช้ในการออกแบบงานวิจัยของนิสิต",
+                    "courseDescEn": "Research methodology for the study of Thai language, literature and folklore; analysis of and discussion on examples of good research for application to students’ research design.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 5,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "09:30",
+                                        "end": "12:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "APR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201609",
+                    "abbrName": "SEMANTIC ANALYSIS",
+                    "courseNameTh": "อรรถวิเคราะห์",
+                    "courseNameEn": "SEMANTIC ANALYSIS",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "การวิเคราะห์ความหมายของคำและประโยคในภาษาไทยตามแนวทฤษฎีทางความหมาย",
+                    "courseDescEn": "Analysis of word and sentence meanings in Thai according to semantic   theories.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 5,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "VPP"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201811",
+                    "abbrName": "THESIS",
+                    "courseNameTh": "วิทยานิพนธ์",
+                    "courseNameEn": "THESIS",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 12,
+                    "creditHours": "NL36 12.0 CR (S/U)(IDPS 48.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": "S/U",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "IDPS",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": "BRK",
+                                    "teachers": [
+                                        "ASR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201894",
+                    "abbrName": "DOC DISSERT SEM",
+                    "courseNameTh": "สัมมนาวิทยานิพนธ์ระดับดุษฎีบัณฑิต",
+                    "courseNameEn": "DOCTORAL DISSERTATION SEMINAR",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 0,
+                    "creditHours": "(S/U)",
+                    "courseCondition": "-",
+                    "courseDescTh": "โครงร่างวิทยานิพนธ์ด้านภาษาไทย วรรณคดีไทย และคติชนวิทยา การนำเสนอความก้าวหน้าในการทำวิทยานิพนธ์",
+                    "courseDescEn": "Outline of dissertation in the Thai language, Thai literature, and folklore; presentation of progress report.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "ASR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201828",
+                    "abbrName": "DISSERTATION",
+                    "courseNameTh": "วิทยานิพนธ์",
+                    "courseNameEn": "DISSERTATION",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 48,
+                    "creditHours": "NL36 48.0 CR (S/U)(IDPS 192.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": "(S/U)",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 30,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "IDPS",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": "BRK",
+                                    "teachers": [
+                                        "ASR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201873",
+                    "abbrName": "SPEC STUD TH LING",
+                    "courseNameTh": "การศึกษาพิเศษทางภาษาศาสตร์ภาษาไทย",
+                    "courseNameEn": "SPECIAL STUDIES IN THAI LINGUISTICS",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(DISC 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ประเด็นเกี่ยวกับการวิเคราะห์ภาษาไทยด้วยทฤษฎีภาษาศาสตร์",
+                    "courseDescEn": "Issues on the analysis of the Thai language using linguistic approaches.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 5,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "NPT"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201317",
+                    "abbrName": "TH PRAG PERSP",
+                    "courseNameTh": "ภาษาไทยในมุมมองวัจนปฏิบัติศาสตร์",
+                    "courseNameEn": "THAI FROM PRAGMATIC PERSPECTIVES",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 2.0 HR + DISC 1.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": null,
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "15:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "RSS"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "15:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "RSS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201843",
+                    "abbrName": "SEM JATAKA LIT",
+                    "courseNameTh": "สัมมนาวรรณคดีชาดก",
+                    "courseNameEn": "SEMINAR IN THE JATAKA LITERATURE",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 2.0 HR + DISC 1.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "วรรณคดีนิบาตชาดกและประเภทอื่น ในด้านเนื้อหา รูปแบบ คุณค่า และอิทธิพลที่มีต่อวรรณคดีไทย",
+                    "courseDescEn": "Jakata literature, its relation to and influence on Thai literature.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": true,
+                            "capacity": {
+                                "current": 0,
+                                "max": 5,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "09:30",
+                                        "end": "11:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "ASR"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "11:30",
+                                        "end": "12:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "ASR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201592",
+                    "abbrName": "INDEPT STUD II",
+                    "courseNameTh": "เอกัตศึกษา 2",
+                    "courseNameEn": "INDEPENDENT STUDY II",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 1.0 CR + NL36 2.0 CR(LECT 1.0 HR + IDPS 6.0 HR)",
+                    "courseCondition": "PRER 2201591",
+                    "courseDescTh": "การศึกษาอย่างลึกซึ้งในหัวข้อที่น่าสนใจทางภาษา วรรณคดี หรือวัฒนธรรมไทยหัวข้อใดหัวข้อหนึ่ง หรือหลายหัวข้อ",
+                    "courseDescEn": "In-depth study of one or more topics of special interest in Thai language, literature, and culture.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 5,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "AR",
+                                    "period": {
+                                        "start": "AR",
+                                        "end": "AR",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "BRK",
+                                    "teachers": [
+                                        "ASR"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "IDPS",
+                                    "dayOfWeek": "AR",
+                                    "period": {
+                                        "start": "AR",
+                                        "end": "AR",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "BRK",
+                                    "teachers": [
+                                        "ASR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201372",
+                    "abbrName": "KING RAMA V",
+                    "courseNameTh": "พระราชนิพนธ์ในพระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัว",
+                    "courseNameEn": "KING RAMA V",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "พระราชประวัติและพระราชนิพนธ์ในของพระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัวทั้งในด้านรูปแบบ เนื้อหา และลีลา การวิเคราะห์พระราชนิพนธ์บางเรื่อง",
+                    "courseDescEn": "King Rama V's life and works: contents, ideas, and styles; an analytical study of some selected works.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TH",
+                                    "period": {
+                                        "start": "09:30",
+                                        "end": "12:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "ASR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                }
+            ]
+        }
+    }
+,
+    {
+        "data": {
+            "search": [
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201230",
+                    "abbrName": "EVO THAI SCR ORTH",
+                    "courseNameTh": "วิวัฒนาการอักษรและอักขรวิธีไทย",
+                    "courseNameEn": "EVOLUTION OF THAI SCRIPTS AND ORTHOGRAPHY",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 2.0 HR + DISC 1.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "วิวัฒนาการและการเปลี่ยนแปลงของอักษรและอักขรวิธีไทยตั้งแต่สมัยสุโขทัยถึงปัจจุบัน ความแตกต่างของอักษรและอักขรวิธีของภาษาไทยกับภาษาอื่นที่เกี่ยวข้อง",
+                    "courseDescEn": "Development and changes in Thai scripts and orthography from the Sukhothai period to the present; differences of Thai scripts and orthography from other related languages.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 20,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "11:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "MSS"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "DISC",
+                                    "dayOfWeek": "FR",
+                                    "period": {
+                                        "start": "11:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "MSS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201897",
+                    "abbrName": "QUALIFYING EXAM",
+                    "courseNameTh": "การสอบวัดคุณสมบัติ",
+                    "courseNameEn": "QUALIFYING EXAMINATION",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 0,
+                    "creditHours": "(S/U)",
+                    "courseCondition": "-",
+                    "courseDescTh": null,
+                    "courseDescEn": "S/U",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 3,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "IA",
+                                    "period": {
+                                        "start": "IA",
+                                        "end": "IA",
+                                        "__typename": "Period"
+                                    },
+                                    "room": null,
+                                    "building": "BRK",
+                                    "teachers": [
+                                        "STAFF"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201671",
+                    "abbrName": "SOC-CULT TH LIT",
+                    "courseNameTh": "การศึกษาวรรณกรรมไทยเชิงสังคมและวัฒนธรรม",
+                    "courseNameEn": "SOCIO-CULTURAL STUDY OF THAI LITERATURE",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "วิเคราะห์วรรณกรรมไทยในแง่สังคมและวัฒนธรรมในปริบททางสังคมและวัฒนธรรมของผู้แต่งและผู้อ่าน",
+                    "courseDescEn": "Socio-cultural analysis of Thai literature with socio-cultural context of      authors and audiences.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 5,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "CPM"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                },
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2201664",
+                    "abbrName": "TH LIT SPEC PERIO",
+                    "courseNameTh": "วรรณคดีไทยเฉพาะสมัย",
+                    "courseNameEn": "THAI LITERATURE OF A SPECIFIC PERIOD",
+                    "faculty": "22",
+                    "department": "ภาควิชาภาษาไทย",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "วรรณคดีไทยสมัยใดสมัยหนึ่ง ลักษณะร่วมทางจารีตวรรณคดีของสมัยดังกล่าว ทั้งในด้านรูปแบบ เนื้อหา การใช้ภาษา รวมทั้งกลวิธีการแต่ง",
+                    "courseDescEn": "Thai literature of a specific period, literary conventions of the period      regarding forms, contents, language used and technique.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": null,
+                        "period": {
+                            "start": null,
+                            "end": null,
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 5,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "09:30",
+                                        "end": "12:30",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "ASR"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                }
+            ]
+        }
+    }
+]
