@@ -1,0 +1,474 @@
+[
+    {
+        "data": {
+            "search": [
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2301115",
+                    "abbrName": "CALCULUS BUS I",
+                    "courseNameTh": "แคลคูลัสสำหรับธุรกิจ 1",
+                    "courseNameEn": "CALCULUS FOR BUSINESS I",
+                    "faculty": "23",
+                    "department": "ภาควิชาคณิตศาสตร์และวิทยาการคอมพิวเตอร์",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ตัวแบบและฟังก์ชัน ฟังก์ชันเลขชี้กำลังและฟังก์ชันลอการิทึม ลำดับและอนุกรม สมการเชิงผลต่างอันดับที่หนึ่งลิมิตและความต่อเนื่อง อนุพันธ์ การร่างเส้นโค้ง ปัญหาค่าสุดขีดของตัวแปรเดียว การหาปริพันธ์ ปริพันธ์ไม่ตรงแบบ และการประยุกต์ทางธุรกิจและการเงิน",
+                    "courseDescEn": "Models and functions; exponential and logarithmic functions; sequences and series; first-order difference equations; limits and continuity; derivatives; curve sketching; extremal problems of a single variable; integration; improper integrals and applications in business and finance.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": "2570-02-23T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-04-29T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "11:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 80,
+                                "__typename": "Capacity"
+                            },
+                            "note": null,
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "15:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "412",
+                                    "building": "MAHIT",
+                                    "teachers": [
+                                        "TSN"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "TU",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "10:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "412",
+                                    "building": "MAHIT",
+                                    "teachers": [
+                                        "TSN"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                }
+            ]
+        }
+    }
+,
+    {
+        "data": {
+            "search": [
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "2900111",
+                    "abbrName": "ECONOMICS I",
+                    "courseNameTh": "เศรษฐศาสตร์ 1",
+                    "courseNameEn": "ECONOMICS I",
+                    "faculty": "29",
+                    "department": "ไม่สังกัดภาควิชา/เทียบเท่า",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "อุปสงค์และอุปทาน แนวคิดพื้นฐานของทฤษฎีพฤติกรรมผู้บริโภค แนวความคิดพื้นฐานของทฤษฎีพฤติกรรมผู้ผลิต ทฤษฎีการกำหนดราคา พฤติกรรมรูปแบบต่างๆ ของตลาดกับดุลยภาพของหน่วยผลิตและอุตสาหกรรม ทฤษฎีว่าด้วยตลาดและราคาของปัจจัยการผลิต",
+                    "courseDescEn": "Demand and supply; basic concepts of consumer behavior theory; basic concepts of producer behavior theory; theory of price determination; various forms of market and equilibrium of the firm and industry; theories of factor markets and factor pricing.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": "2570-02-23T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "10:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-05-06T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "11:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 150,
+                                "__typename": "Capacity"
+                            },
+                            "note": "ACCOUNTING",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "08:00",
+                                        "end": "10:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "MAHIT",
+                                    "teachers": [
+                                        "KTC"
+                                    ],
+                                    "__typename": "Class"
+                                },
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "10:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "MAHIT",
+                                    "teachers": [
+                                        "KTC"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 150,
+                                "__typename": "Capacity"
+                            },
+                            "note": "ACCOUNTING",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "WE",
+                                    "period": {
+                                        "start": "09:00",
+                                        "end": "12:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "MAHIT",
+                                    "teachers": [
+                                        "KDN"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                }
+            ]
+        }
+    }
+,
+    {
+        "data": {
+            "search": [
+                {
+                    "studyProgram": "S",
+                    "semester": "1",
+                    "academicYear": "2569",
+                    "courseNo": "3401255",
+                    "abbrName": "BUSINESS LAW I",
+                    "courseNameTh": "กฎหมายธุรกิจ 1",
+                    "courseNameEn": "BUSINESS LAW I",
+                    "faculty": "34",
+                    "department": "ภาควิชากฎหมายแพ่งและพาณิชย์",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "ความหมาย ระบบ ประเภทและศักดิ์ศรีของกฎหมาย การใช้ การตีความและการยกเลิกกฎหมาย การอุดช่องว่างกฎหมาย ผู้ทรงสิทธิในกฎหมาย หลักพื้นฐานของกฎหมายแพ่งพาณิชย์ ได้แก่ บุคคล นิติบุคคล โมฆะและโมฆียะกรรม ทรัพย์ ทรัพย์สิน หนี้ องค์การธุรกิจ ห้างหุ้นส่วนจำกัด บริษัทจำกัด บริษัทมหาชน",
+                    "courseDescEn": "Meaning, systems, types and hierarchy of law; the application\r\nand interpretation of law and its abrogation; filling the gaps\r\nin law; right holders; basic principles of the civil and \r\ncommercial code natural and juristic persons; voidable act\r\nand voidness; property; obligations; business organizations:\r\nlimited partnerships, limited companies and public\r\ncompanies.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": "2569-09-22T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "15:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2569-11-30T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 164,
+                                "max": 176,
+                                "__typename": "Capacity"
+                            },
+                            "note": "COMMERCE ONLY",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "401",
+                                    "building": "MAHIT",
+                                    "teachers": [
+                                        "MJP"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 178,
+                                "max": 176,
+                                "__typename": "Capacity"
+                            },
+                            "note": "COMMERCE ONLY",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "202",
+                                    "building": "MAHIT",
+                                    "teachers": [
+                                        "TPS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "3",
+                            "closed": false,
+                            "capacity": {
+                                "current": 177,
+                                "max": 176,
+                                "__typename": "Capacity"
+                            },
+                            "note": "COMMERCE ONLY",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "201",
+                                    "building": "MAHIT",
+                                    "teachers": [
+                                        "PPT",
+                                        "HSP"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                }
+            ]
+        }
+    }
+,
+    {
+        "data": {
+            "search": [
+                {
+                    "studyProgram": "S",
+                    "semester": "2",
+                    "academicYear": "2569",
+                    "courseNo": "3401256",
+                    "abbrName": "BUSINESS LAW II",
+                    "courseNameTh": "กฎหมายธุรกิจ 2",
+                    "courseNameEn": "BUSINESS LAW II",
+                    "faculty": "34",
+                    "department": "ภาควิชากฎหมายแพ่งและพาณิชย์",
+                    "credit": 3,
+                    "creditHours": "LECT 3.0 CR(LECT 3.0 HR)",
+                    "courseCondition": "-",
+                    "courseDescTh": "หลักกฎหมายเกี่ยวกับการซื้อขาย ยืม ตราสารเปลี่ยนมือและหลักประกัน บัญชีเดินสะพัด เช่าทรัพย์ เช่าซื้อ สัญญาลิซซิ่ง แฟคตอริ่ง สัญญาให้ใช้สิทธิทางทรัพย์สินทางปัญญา",
+                    "courseDescEn": "Principles of laws about sale, loan, negotiable instruments\r\nand suretyship; current accounts; hire of property; hire\r\npurchase, leasing, factoring and licensing agreement of\r\nintellectual property.",
+                    "genEdType": "NO",
+                    "midterm": {
+                        "date": "2570-02-24T00:00:00.000Z",
+                        "period": {
+                            "start": "08:30",
+                            "end": "10:30",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "final": {
+                        "date": "2570-05-10T00:00:00.000Z",
+                        "period": {
+                            "start": "13:00",
+                            "end": "16:00",
+                            "__typename": "Period"
+                        },
+                        "__typename": "ExamPeriod"
+                    },
+                    "sections": [
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "1",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 170,
+                                "__typename": "Capacity"
+                            },
+                            "note": "COMMERCE&ACC ONLY",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "MJP"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "2",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 170,
+                                "__typename": "Capacity"
+                            },
+                            "note": "COMMERCE&ACC ONLY",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "KPS"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        },
+                        {
+                            "genEdType": "NO",
+                            "sectionNo": "3",
+                            "closed": false,
+                            "capacity": {
+                                "current": 0,
+                                "max": 170,
+                                "__typename": "Capacity"
+                            },
+                            "note": "COMMERCE&ACC ONLY",
+                            "classes": [
+                                {
+                                    "type": "LECT",
+                                    "dayOfWeek": "MO",
+                                    "period": {
+                                        "start": "13:00",
+                                        "end": "16:00",
+                                        "__typename": "Period"
+                                    },
+                                    "room": "AR",
+                                    "building": "AR",
+                                    "teachers": [
+                                        "PPT",
+                                        "HSP"
+                                    ],
+                                    "__typename": "Class"
+                                }
+                            ],
+                            "__typename": "Section"
+                        }
+                    ],
+                    "__typename": "Course"
+                }
+            ]
+        }
+    }
+]
