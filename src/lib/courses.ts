@@ -1,6 +1,7 @@
 import catalogJson from "@/data/catalog.json";
 import minorCodesJson from "@/data/minor-codes.json";
 import reviewsJson from "@/data/reviews.json";
+import shortNamesJson from "@/data/short-names.json";
 import { CORE_CODES, MAJOR_ELECTIVE_CODES, MAJOR_REQUIRED_CODES, categoryOf, type Category } from "./curriculum";
 
 // ข้อมูลรายวิชามาจาก data/*.json (response ที่บันทึกจาก CU Get Reg) ผ่าน scripts/build-data.mjs -> src/data/catalog.json
@@ -40,6 +41,9 @@ export const GENED_LABELS: Record<string, string> = {
 const MINOR_CODES = new Set<string>(minorCodesJson as string[]);
 export const MINOR_CODE_COUNT = MINOR_CODES.size;
 
+/** ชื่อย่อรายวิชา (จากไฟล์ที่เพื่อนในกลุ่มรวบรวม src/data/short-names.json) ใช้เมื่อยังไม่มีชื่อเต็มจาก CU Get Reg ไม่ใช่ชื่อทางการ */
+const SHORT_NAMES = shortNamesJson as unknown as Record<string, string>;
+
 /**
  * วิชาระดับปริญญาตรีของคณะ CBS (รหัสขึ้นต้น 26) ที่รหัส 3 ตัวหลังตั้งแต่ 300 ขึ้นไป
  * ข้อสมมติ: "คณะฯ" ในข้อความหลักสูตรหมายถึง CBS และรหัส 3 ตัวหลังตั้งแต่ 500 ขึ้นไปเป็นระดับบัณฑิตศึกษา
@@ -67,6 +71,8 @@ export type Course = {
   code: string;
   nameEn: string;
   nameTh: string;
+  /** ชื่อย่อ (ไม่ใช่ชื่อทางการ) ว่างถ้าไม่มี แสดงเฉพาะเมื่อไม่มีชื่อเต็ม */
+  shortName: string;
   credits: number;
   dept: string;
   condition: string | null;
@@ -115,6 +121,7 @@ function toCourse(raw: RawCourse): Course {
     code: raw.code,
     nameEn: raw.nameEn ?? "",
     nameTh: raw.nameTh ?? "",
+    shortName: SHORT_NAMES[raw.code] ?? "",
     credits: raw.credits,
     dept: raw.dept ?? "",
     condition: raw.condition,
@@ -145,6 +152,7 @@ const stub = (code: string): Course => {
     code,
     nameEn: "",
     nameTh: "",
+    shortName: SHORT_NAMES[code] ?? "",
     credits: 0,
     dept: "",
     condition: null,
@@ -173,7 +181,11 @@ export const allCourses: Course[] = [...courses, ...curriculumStubs];
 /** วิชาที่อยู่ในรายการวิชาของหลักสูตร MIS (แกน/บังคับ/เลือกสาขา) */
 export const isMis = (c: Course) => c.category !== undefined && c.category !== "GenEd";
 
-export const findAnyCourse = (code: string) => allCourses.find((c) => c.code === code);
+/** ข้อความสำหรับค้นหา: รหัส + ชื่อเต็ม + ชื่อย่อ */
+export const searchText = (c: Pick<Course, "code" | "nameEn" | "nameTh" | "shortName">) =>
+  `${c.code} ${c.nameEn} ${c.nameTh} ${c.shortName}`.toLowerCase();
+
+export const findAnyCourse =(code: string) => allCourses.find((c) => c.code === code);
 
 /** ลิงก์ไปหน้าวิชานั้นใน CU Get Reg (S = หลักสูตรปกติ) ส่วนรีวิวอยู่ด้านล่างของหน้านั้น */
 export const cugetregUrl = (code: string) => `https://cugetreg.com/S/courses/${encodeURIComponent(code)}`;

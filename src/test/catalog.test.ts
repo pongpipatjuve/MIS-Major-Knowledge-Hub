@@ -69,6 +69,15 @@ describe("tags and filters", () => {
       if (c.category === "วิชาแกน" || c.category === "วิชาบังคับสาขา") expect(c.isCbs300).toBe(false);
     expect(allCourses.find((c) => c.code === "2602313")?.isCbs300).toBe(false);
   });
+  it("every minor-list course has a full name or a short name, and short names never replace full names", () => {
+    for (const c of allCourses.filter((x) => x.inMinorList)) {
+      expect(Boolean(c.nameEn || c.nameTh || c.shortName)).toBe(true);
+    }
+    for (const c of allCourses.filter((x) => x.stub)) {
+      expect(c.nameEn).toBe("");
+      expect(c.nameTh).toBe("");
+    }
+  });
   it("returns an empty list when a course has no curated reviews", () => {
     expect(reviewsFor("0000000")).toEqual([]);
   });

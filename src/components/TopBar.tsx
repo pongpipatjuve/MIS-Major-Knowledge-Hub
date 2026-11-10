@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Database, Menu, User, X } from "lucide-react";
+import { Database, Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const LINKS = [
@@ -31,18 +31,11 @@ export function TopBar() {
           </span>
         </Link>
         <nav className="hidden items-center gap-1 md:flex">{nav(false)}</nav>
-        <div className="hidden items-center gap-2 rounded-xl border px-3 py-1.5 lg:flex">
-          <span className="grid h-8 w-8 place-items-center rounded-full bg-primary-soft text-primary"><User className="h-4 w-4" /></span>
-          <div className="text-xs leading-tight">
-            <div className="font-semibold">โหมดสาธิต</div>
-            <div className="text-muted-foreground">ยังไม่ได้เข้าสู่ระบบ</div>
-          </div>
-        </div>
         <button aria-label="เมนู" onClick={() => setOpen(!open)} className="grid h-9 w-9 place-items-center rounded-lg border md:hidden">
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
       </div>
-      {open && <nav className="space-y-1 border-t px-4 py-3 md:hidden">{nav(true)}<p className="px-4 pt-2 text-xs text-muted-foreground">โหมดสาธิต · ยังไม่ได้เข้าสู่ระบบ</p></nav>}
+      {open && <nav className="space-y-1 border-t px-4 py-3 md:hidden">{nav(true)}</nav>}
     </header>
   );
 }

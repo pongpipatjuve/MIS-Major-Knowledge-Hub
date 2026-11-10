@@ -3,14 +3,17 @@ import {
   BookOpen,
   CalendarDays,
   ChevronRight,
+  Compass,
+  ExternalLink,
   FileText,
-  Megaphone,
+  ListChecks,
   Search,
   GraduationCap,
+  UserCheck,
 } from "lucide-react";
 import { useEffect, useRef, useState, type FormEvent } from "react";
-import { NoData } from "@/components/Labels";
-import { allCourses } from "@/lib/courses";
+import { allCourses, searchText } from "@/lib/courses";
+import { CUGETREG_URL, PETRA_URL, REG_CHULA_URL } from "@/lib/config";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -19,13 +22,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "ศูนย์รวมเอกสาร คู่มือ ปฏิทินการศึกษา ข่าวสาร และข้อมูลรายวิชาสำหรับนิสิตสาขาระบบสารสนเทศทางการจัดการ",
+          "ช่วยนิสิต MIS เข้าใจวิชาเลือกเสรี วิชาเลือก และวิชาโทนอกคณะ หาวิชารหัส 300 ขึ้นไปและวิชาโทที่ลงได้ในที่เดียว พร้อมลิงก์ดูรีวิว",
       },
       { property: "og:title", content: "MIS Major Knowledge Hub" },
       {
         property: "og:description",
         content:
-          "เอกสาร คู่มือ ปฏิทิน ข่าวสาร และหลักสูตรสำหรับนิสิต MIS คณะพาณิชยศาสตร์และการบัญชี จุฬาฯ",
+          "ค้นหาวิชาเลือก วิชาโทนอกคณะ และวิชา 300+ สำหรับนิสิต MIS คณะพาณิชยศาสตร์และการบัญชี จุฬาฯ (ไม่ใช่เว็บทางการ)",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
@@ -44,6 +47,12 @@ const DOCS: { title: string; icon: typeof FileText; url: string }[] = [
   },
 ];
 
+const EXTERNAL_LINKS: { title: string; desc: string; icon: typeof FileText; url: string }[] = [
+  { title: "Petra (ตรวจหลักสูตร)", desc: "ดูว่าเรายังขาดวิชาอะไรบ้างเพื่อให้จบ", icon: ListChecks, url: PETRA_URL },
+  { title: "CU Get Reg (ลองลงทะเบียน)", desc: "ลองจัดตารางเรียนก่อนลงจริง ดูกลุ่มเรียนและรีวิว", icon: Compass, url: CUGETREG_URL },
+  { title: "Reg Chula (ลงทะเบียนจริง)", desc: "เว็บลงทะเบียนเรียนของมหาวิทยาลัย", icon: UserCheck, url: REG_CHULA_URL },
+];
+
 function Home() {
   const navigate = useNavigate();
   const [search, setSearch] = useState("");
@@ -51,11 +60,7 @@ function Home() {
   const searchBoxRef = useRef<HTMLDivElement>(null);
   const suggestions = search.trim()
     ? allCourses
-        .filter((course) =>
-          `${course.code} ${course.nameEn} ${course.nameTh}`
-            .toLowerCase()
-            .includes(search.trim().toLowerCase()),
-        )
+        .filter((course) => searchText(course).includes(search.trim().toLowerCase()))
         .slice(0, 6)
     : [];
 
@@ -135,7 +140,7 @@ function Home() {
                     >
                       <span className="shrink-0 font-semibold text-primary">{course.code}</span>
                       <span className="min-w-0 truncate text-sm">
-                        {course.nameTh || course.nameEn || "ยังไม่มีชื่อวิชา"}
+                        {course.nameTh || course.nameEn || (course.shortName ? `${course.shortName} (ชื่อย่อ)` : "ยังไม่มีชื่อวิชา")}
                         {course.nameTh && course.nameEn && (
                           <span className="ml-2 text-muted-foreground">{course.nameEn}</span>
                         )}
@@ -172,13 +177,30 @@ function Home() {
         </div>
       </section>
 
-      <section className="rounded-2xl border bg-card p-5">
-        <h2 className="mb-3 flex items-center gap-2 text-xl font-bold">
-          <Megaphone className="h-5 w-5 text-primary" /> ข่าวสารและประกาศ
-        </h2>
-        <p className="text-sm">
-          <NoData>ยังไม่มีประกาศ — ข่าวสารจะแสดงที่นี่เมื่อได้รับข้อมูลจากแหล่งทางการ</NoData>
+      <section>
+        <h2 className="mb-1 text-xl font-bold">ลิงก์สำหรับวางแผนและลงทะเบียน</h2>
+        <p className="mb-3 text-sm text-muted-foreground">
+          เว็บภายนอกทั้งหมดไม่ได้ดูแลโดยทีมเรา เปิดในแท็บใหม่ ใช้วางแผนตามลำดับ: ดูว่าขาดวิชาอะไร → ลองจัดตาราง → ลงทะเบียนจริง
         </p>
+        <div className="grid gap-3 sm:grid-cols-3">
+          {EXTERNAL_LINKS.map((l) => (
+            <a
+              key={l.title}
+              href={l.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-start gap-3 rounded-xl border bg-card p-4 transition hover:border-primary"
+            >
+              <l.icon className="mt-0.5 h-6 w-6 shrink-0 text-primary" />
+              <div className="min-w-0 flex-1 text-sm">
+                <div className="flex items-center gap-1 font-semibold">
+                  {l.title} <ExternalLink className="h-3.5 w-3.5 text-muted-foreground" />
+                </div>
+                <div className="text-muted-foreground">{l.desc}</div>
+              </div>
+            </a>
+          ))}
+        </div>
       </section>
 
       <section className="grid gap-3 sm:grid-cols-2">

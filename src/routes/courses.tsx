@@ -1,9 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { ChevronRight, Search } from "lucide-react";
-import { ACTIVE_TERM_LABEL, GENED_LABELS, MINOR_CODE_COUNT, allCourses, isMis, accessNote } from "@/lib/courses";
+import { ACTIVE_TERM_LABEL, GENED_LABELS, MINOR_CODE_COUNT, allCourses, isMis, accessNote, searchText } from "@/lib/courses";
 import { CATEGORIES } from "@/lib/curriculum";
-import { CategoryBadge, GenEdTag, MinorTag, NoData, Notice } from "@/components/Labels";
+import { CategoryBadge, GenEdTag, MinorTag, NoData, Notice, ShortName } from "@/components/Labels";
 
 export const Route = createFileRoute("/courses")({
   validateSearch: (search: Record<string, unknown>) => ({
@@ -71,7 +71,7 @@ function Courses() {
       (!onlyOffered || c.offeredNow) &&
       // วิชา 300+ ที่กลุ่มเรียนเปิดเฉพาะสาขาอื่น ซ่อนไว้ก่อน (เปิดดูได้ด้วยตัวเลือกด้านล่าง) ถ้าค้นหาด้วยชื่อ/รหัสจะแสดงพร้อมหมายเหตุ
       (showBlocked || query !== "" || !(c.isCbs300 && c.access === "blocked")) &&
-      `${c.code} ${c.nameEn} ${c.nameTh}`.toLowerCase().includes(query),
+      searchText(c).includes(query),
   );
   const chip = (on: boolean) =>
     `rounded-full border px-3 py-1 text-sm ${on ? "border-primary bg-primary-soft text-primary" : "bg-card"}`;
@@ -171,7 +171,8 @@ function Courses() {
           {sub === "วิชาโทนอกคณะ" && (
             <Notice>
               รายการวิชาโทนอกคณะ ({MINOR_CODE_COUNT} รหัส) ได้จากการสอบถามหน่วยงานโดยตรงโดยสมาชิกกลุ่ม ไม่ใช่ประกาศทางการ โปรดยืนยันกับภาควิชาเจ้าของวิชาก่อนลงทะเบียน
-              วิชาที่ยังไม่มีชื่อในเว็บแสดงเป็นรหัส (ดูชื่อวิชาได้ที่ CU Get Reg) วิชาที่ CU Get Reg ระบุเป็น GenEd จะไม่แสดงในหมวดนี้ เพราะวิชา GenEd นับเป็นวิชาโทไม่ได้
+              วิชาที่ยังไม่มีชื่อเต็มในเว็บจะแสดง "ชื่อย่อ" ซึ่งไม่ใช่ชื่อทางการ (ดูชื่อเต็มได้ที่ CU Get Reg) และบางวิชาอาจไม่เปิดสอนในภาคเรียนนี้ โปรดตรวจที่ CU Get Reg
+              วิชาที่ CU Get Reg ระบุเป็น GenEd (ตอนนี้ 14 วิชา ยังรอยืนยันกับภาควิชา) จะไม่แสดงในหมวดนี้ เพราะวิชา GenEd นับเป็นวิชาโทไม่ได้
             </Notice>
           )}
         </>
@@ -214,7 +215,7 @@ function Courses() {
         แสดงวิชาอื่นที่ไม่อยู่ในรายการวิชาของหลักสูตร MIS (พิมพ์ค้นหาแล้วจะค้นทุกวิชาอยู่แล้ว)
       </label>
       <p className="text-sm text-muted-foreground">
-        ผลการค้นหา {list.length} รายการ · วิชาที่ไม่มีชื่อคือรหัสที่ยังไม่มีข้อมูลในเว็บนี้
+        ผลการค้นหา {list.length} รายการ · วิชาที่มีแค่ "ชื่อย่อ" หรือไม่มีชื่อ คือวิชาที่ยังไม่มีข้อมูลจาก CU Get Reg ในเว็บนี้ ซึ่งยังไม่ทราบว่าเปิดสอนภาคนี้หรือไม่
       </p>
 
       <div className="space-y-3">
@@ -229,7 +230,7 @@ function Courses() {
               <div className="text-lg font-bold">{c.code}</div>
               {c.stub || (!c.nameEn && !c.nameTh) ? (
                 <div className="text-sm">
-                  <NoData>ยังไม่มีข้อมูลชื่อวิชา</NoData>
+                  {c.shortName ? <ShortName name={c.shortName} /> : <NoData>ยังไม่มีข้อมูลชื่อวิชา</NoData>}
                 </div>
               ) : (
                 <>

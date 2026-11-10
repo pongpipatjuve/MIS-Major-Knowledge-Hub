@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ExternalLink, MessageSquarePlus } from "lucide-react";
-import { CategoryBadge, GenEdTag, MinorTag, NoData } from "@/components/Labels";
+import { CategoryBadge, GenEdTag, MinorTag, NoData, ShortName } from "@/components/Labels";
 import { ACTIVE_TERM, accessNote, cugetregUrl, findAnyCourse, reviewsFor } from "@/lib/courses";
 import { REVIEW_FORM_URL } from "@/lib/config";
 
@@ -63,8 +63,17 @@ function CourseDetail() {
           <p className="mt-1 text-xl text-muted-foreground">({c.nameTh})</p>
         ) : (
           !c.nameEn && (
-            <p className="mt-1">
-              <NoData>ยังไม่มีข้อมูลชื่อวิชาในเว็บนี้ — ดูชื่อวิชาได้ที่ CU Get Reg</NoData>
+            <p className="mt-1 space-y-1">
+              {c.shortName ? (
+                <>
+                  <ShortName name={c.shortName} />
+                  <span className="block text-sm text-muted-foreground">
+                    นี่คือชื่อย่อ ไม่ใช่ชื่อทางการ ดูชื่อเต็มได้ที่ CU Get Reg
+                  </span>
+                </>
+              ) : (
+                <NoData>ยังไม่มีข้อมูลชื่อวิชาในเว็บนี้ — ดูชื่อวิชาได้ที่ CU Get Reg</NoData>
+              )}
             </p>
           )
         )}
@@ -95,11 +104,27 @@ function CourseDetail() {
         </section>
       )}
 
+      {c.stub && (
+        <section className="space-y-2 rounded-2xl border bg-card p-5">
+          <h2 className="text-xl font-bold">เงื่อนไขรายวิชาและภาคที่เปิดสอน</h2>
+          <p className="text-sm">
+            เว็บนี้ยังไม่มีข้อมูลจาก CU Get Reg ของวิชานี้ จึงยังไม่ทราบว่าเปิดสอนใน {ACTIVE_TERM} (ปีการศึกษา/ภาค) หรือไม่
+            และไม่ทราบหน่วยกิตหรือเงื่อนไขรายวิชา โปรดตรวจสอบที่ CU Get Reg ก่อนวางแผนลงทะเบียน
+          </p>
+        </section>
+      )}
+
       {c.isGenEd && (
         <section className="rounded-2xl border bg-card p-5 text-sm">
           <h2 className="mb-1 text-lg font-bold">วิชา GenEd</h2>
           นิสิตตั้งแต่ปีการศึกษา 2566 ได้ผลวิชา GenEd เป็น S/U (ไม่มีเกรด) นับเป็นวิชาเลือกหรือวิชาโทไม่ได้
           แต่ลงเป็นวิชาเลือกเสรีได้ โปรดตรวจสอบกับประกาศของคณะ
+          {c.inMinorList && (
+            <p className="mt-2 rounded-lg bg-amber-50 p-2 text-amber-900 dark:bg-amber-950 dark:text-amber-200">
+              วิชานี้อยู่ในรายการวิชาโทนอกคณะที่กลุ่มเราสอบถามมา แต่ CU Get Reg ระบุว่าเป็น GenEd เรายังไม่ยืนยันว่านับเป็นวิชาโทได้หรือไม่
+              จึงยังไม่แสดงเป็นวิชาโท โปรดสอบถามภาควิชาหรืออาจารย์ที่ปรึกษาก่อนตัดสินใจ
+            </p>
+          )}
         </section>
       )}
 

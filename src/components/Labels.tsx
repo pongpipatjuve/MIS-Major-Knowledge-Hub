@@ -27,6 +27,16 @@ export function MinorTag({ show }: { show: boolean }) {
   return <span className="rounded-md border border-primary px-2 py-0.5 text-xs text-primary">วิชาโทนอกคณะ</span>;
 }
 
+/** ชื่อย่อ (ไม่ใช่ชื่อทางการ) แสดงเมื่อยังไม่มีชื่อเต็มจาก CU Get Reg */
+export function ShortName({ name }: { name: string }) {
+  return (
+    <span className="inline-flex flex-wrap items-center gap-2">
+      <span className="rounded-md bg-muted px-2 py-0.5 text-xs">ชื่อย่อ</span>
+      <span className="font-medium">{name}</span>
+    </span>
+  );
+}
+
 export function SampleBadge() {
   return <span className="inline-flex items-center gap-1 rounded-md border border-warning px-2 py-0.5 text-xs text-warning"><FlaskConical className="h-3 w-3" /> ข้อมูลตัวอย่าง</span>;
 }
