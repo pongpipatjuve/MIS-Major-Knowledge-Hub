@@ -6,7 +6,6 @@ const LINKS = [
   { to: "/", label: "หน้าแรก", exact: true },
   { to: "/courses", label: "ค้นหารายวิชา" },
   { to: "/curriculum", label: "หลักสูตร" },
-  { to: "/schedule", label: "ตารางเรียน" },
 ] as const;
 
 export function TopBar() {

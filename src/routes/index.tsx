@@ -77,7 +77,7 @@ function Home() {
 
     void navigate({
       to: "/courses",
-      search: query ? { search: query } : {},
+      search: { search: query },
     });
   };
 
@@ -193,12 +193,13 @@ function Home() {
           <ChevronRight className="text-muted-foreground" />
         </Link>
         <Link
-          to="/schedule"
+          to="/courses"
+          search={{ search: "" }}
           className="flex items-center gap-3 rounded-xl border bg-card p-4 transition hover:border-primary"
         >
           <div className="flex-1">
-            <div className="font-semibold">จำลองตารางเรียน</div>
-            <div className="text-sm text-muted-foreground">ตรวจเวลาเรียนและวันสอบชนกัน</div>
+            <div className="font-semibold">ค้นหาวิชาโทและวิชาเลือก</div>
+            <div className="text-sm text-muted-foreground">ดูว่าลงวิชาไหนเป็นวิชาโท วิชาเลือก หรือ GenEd ได้บ้าง</div>
           </div>
           <ChevronRight className="text-muted-foreground" />
         </Link>

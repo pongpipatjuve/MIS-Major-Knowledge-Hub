@@ -22,6 +22,11 @@ export function GenEdTag({ label }: { label?: string | undefined }) {
   return <span className="rounded-md bg-muted px-2 py-0.5 text-xs">{label}</span>;
 }
 
+export function MinorTag({ show }: { show: boolean }) {
+  if (!show) return null;
+  return <span className="rounded-md border border-primary px-2 py-0.5 text-xs text-primary">วิชาโทนอกคณะ</span>;
+}
+
 export function SampleBadge() {
   return <span className="inline-flex items-center gap-1 rounded-md border border-warning px-2 py-0.5 text-xs text-warning"><FlaskConical className="h-3 w-3" /> ข้อมูลตัวอย่าง</span>;
 }

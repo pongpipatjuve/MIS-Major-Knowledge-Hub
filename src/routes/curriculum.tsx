@@ -74,6 +74,70 @@ function Curriculum() {
           ))}
         </div>
       </section>
+
+      <section className="space-y-3">
+        <div>
+          <h2 className="text-xl font-bold">เสรี เลือกสาขา วิชาเลือก วิชาโทนอกคณะ รหัส 300 ต่างกันยังไง</h2>
+          <p className="mt-1 text-sm text-muted-foreground">
+            ตารางเทียบสั้น ๆ จากข้อความหลักสูตร — <b>วิชาระดับปริญญาตรีรหัส 300 ขึ้นไปกับวิชาโทนอกคณะไม่ใช่หมวดแยก</b> แต่เป็นแหล่งที่เลือกมานับเป็น “วิชาเลือก” ได้
+          </p>
+        </div>
+        <div className="overflow-x-auto rounded-xl border bg-card">
+          <table className="w-full min-w-[640px] text-left text-sm">
+            <thead className="bg-muted text-xs">
+              <tr>
+                <th className="p-3">ชื่อเรียก</th>
+                <th className="p-3">หน่วยกิต</th>
+                <th className="p-3">คืออะไร / เลือกจากไหน</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y">
+              <tr>
+                <td className="p-3 font-semibold">วิชาเลือกสาขา</td>
+                <td className="p-3">อย่างน้อย {CREDITS.majorElective}</td>
+                <td className="p-3">วิชาเลือกของสาขา MIS ต้องเรียนให้ครบ {CREDITS.majorElective} หน่วยกิตก่อน ส่วนที่เกินนับเป็นวิชาเลือกได้</td>
+              </tr>
+              <tr>
+                <td className="p-3 font-semibold">วิชาเลือก</td>
+                <td className="p-3">อย่างน้อย {CREDITS.otherElective}</td>
+                <td className="p-3">
+                  เลือกได้จาก 3 แหล่ง: (1) วิชาเลือกสาขา MIS ส่วนที่เกิน (2) วิชาระดับปริญญาตรีของคณะฯ ที่มีรหัส 3 ตัวหลังตั้งแต่ 300 ขึ้นไป
+                  (3) วิชาโทนอกคณะ ไม่รวมวิชา GenEd
+                </td>
+              </tr>
+              <tr>
+                <td className="p-3 font-semibold">วิชาระดับปริญญาตรี รหัส 3 ตัวหลังตั้งแต่ 300 ขึ้นไป</td>
+                <td className="p-3">นับในวิชาเลือก</td>
+                <td className="p-3">แหล่งที่ (2) ของวิชาเลือก ใช้ตัวกรองในหน้าค้นหา: เลือก “วิชาเลือก” แล้วเลือกแถบนี้ (เราตีความ “คณะฯ” = CBS และรหัส 500 ขึ้นไปเป็นระดับบัณฑิตศึกษา)</td>
+              </tr>
+              <tr>
+                <td className="p-3 font-semibold">วิชาโทนอกคณะ</td>
+                <td className="p-3">นับในวิชาเลือก</td>
+                <td className="p-3">แหล่งที่ (3) ของวิชาเลือก ใช้ตัวกรองในหน้าค้นหา: เลือก “วิชาเลือก” แล้วเลือก “วิชาโทนอกคณะ” รายการได้จากการสอบถามหน่วยงานโดยตรงโดยสมาชิกกลุ่ม</td>
+              </tr>
+              <tr>
+                <td className="p-3 font-semibold">GenEd</td>
+                <td className="p-3">{CREDITS.genEd}</td>
+                <td className="p-3">
+                  นิสิตตั้งแต่ปีการศึกษา 2566 ได้ผลเป็น S/U (ไม่มีเกรด) นับเป็นวิชาเลือกหรือวิชาโทไม่ได้ แต่ลงเป็นวิชาเลือกเสรีได้
+                </td>
+              </tr>
+              <tr>
+                <td className="p-3 font-semibold">วิชาเลือกเสรี</td>
+                <td className="p-3">{CREDITS.free}</td>
+                <td className="p-3">
+                  ลงวิชาอะไรของมหาวิทยาลัยก็ได้ รวมวิชา GenEd (ได้ผล S/U แต่ยังนับเป็นวิชาเลือกเสรี) ยกเว้นวิชาบังคับที่ต้องเรียนอยู่แล้ว
+                  และวิชาที่มีเงื่อนไขพิเศษ เช่น เปิดเฉพาะบางคณะหรือต้องผ่านวิชาก่อนหน้า ถ้าไม่มีเงื่อนไขเหล่านี้ลงได้ทุกวิชา
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <Notice>
+          ตารางนี้สรุปจากข้อความหลักสูตรและความเข้าใจของกลุ่มเรา ไม่ใช่ประกาศทางการ ข้อสงสัยที่ยังรอยืนยัน เช่น วิชาเลือกสาขาที่เกิน 12 นับรวมในวิชาเลือกจริงหรือไม่
+          และวิชาเลือก 15 หน่วยกิตมีขั้นต่ำแยกตามแต่ละแหล่งหรือไม่ โปรดถามอาจารย์ที่ปรึกษาหรือฝ่ายวิชาการของคณะ
+        </Notice>
+      </section>
     </div>
   );
 }
