@@ -64,6 +64,67 @@ function summarizeAccess(sections) {
   return { access: "cond", onlyFor, years };
 }
 
+
+// ---------- วิชาที่ลงไม่ได้เพราะวิชาก่อนหน้า (PRER) เป็นวิชาที่ MIS ลงไม่ได้ ----------
+/** รหัสวิชาที่ MIS ต้องเรียน/เรียนได้ตามหลักสูตร อ่านจาก src/lib/curriculum.ts (ถือว่าลงได้เสมอ แม้กลุ่มเรียนจะระบุสาขาอื่น) */
+function curriculumCodes() {
+  const text = readFileSync(path.join(ROOT, "src", "lib", "curriculum.ts"), "utf8");
+  const codes = new Set();
+  for (const name of ["CORE_CODES", "MAJOR_REQUIRED_CODES", "MAJOR_ELECTIVE_CODES"]) {
+    const m = text.match(new RegExp(`${name}\\s*=\\s*\\[([^\\]]*)\\]`));
+    for (const c of m?.[1]?.match(/\d{7}/g) ?? []) codes.add(c);
+  }
+  return codes;
+}
+
+/** (C.F. = ต้องได้รับอนุญาตจากคณะ/อาจารย์) ประเมินเงื่อนไข PRER แบบ AND/OR/วงเล็บ (AND ก่อน OR) ; isOk(code) บอกว่าวิชานั้นลงได้ไหม ; คืน true ถ้า parse ไม่ได้ (ไม่ซ่อนพลาด) */
+function prereqSatisfiable(condition, isOk) {
+  const body = (condition ?? "").replace(/C\.?F\.?/gi, " CF ").replace(/^\s*PRER\s*/i, "");
+  const tokens = body.match(/\d{7}|AND|OR|CF|\(|\)|,/gi);
+  if (!tokens) return true;
+  let i = 0;
+  const parseOr = () => {
+    let v = parseAnd();
+    while (tokens[i]?.toUpperCase() === "OR") { i++; const r = parseAnd(); v = v || r; }
+    return v;
+  };
+  const parseAnd = () => {
+    let v = parseAtom();
+    while (i < tokens.length && (tokens[i].toUpperCase() === "AND" || tokens[i] === ",")) { i++; const r = parseAtom(); v = v && r; }
+    return v;
+  };
+  const parseAtom = () => {
+    const t = tokens[i++];
+    if (t === undefined) return true;
+    if (t === "(") { const v = parseOr(); if (tokens[i] === ")") i++; return v; }
+    if (/^\d{7}$/.test(t)) return isOk(t);
+    if (t.toUpperCase() === "CF") return false; // ขออนุญาตคณะ/อาจารย์: ไม่นับว่าลงได้ตามปกติ แต่ทำเครื่องหมาย consent ไว้
+    return true;
+  };
+  try { return parseOr(); } catch { return true; }
+}
+
+/** เติม access:"blocked" + blockedBy ให้วิชาที่ต้องผ่านวิชาที่ MIS ลงไม่ได้ (ไล่ซ้ำจนนิ่ง) */
+function applyPrereqChain(courses) {
+  const keep = curriculumCodes();
+  const byCode = new Map(courses.map((c) => [c.code, c]));
+  const blocked = new Set(courses.filter((c) => c.access === "blocked" && !keep.has(c.code)).map((c) => c.code));
+  const isOk = (code) => keep.has(code) || !blocked.has(code); // ไม่รู้จัก = ถือว่าลงได้
+  let changed = true;
+  while (changed) {
+    changed = false;
+    for (const c of courses) {
+      if (blocked.has(c.code) || keep.has(c.code) || !c.condition) continue;
+      if (!prereqSatisfiable(c.condition, isOk)) { blocked.add(c.code); changed = true; }
+    }
+  }
+  return courses.map((c) => {
+    if (c.access === "blocked" || !blocked.has(c.code)) return c;
+    const blockedBy = (c.condition.match(/\d{7}/g) ?? []).filter((k) => blocked.has(k) && byCode.has(k));
+    return { ...c, access: "blocked", blockedBy, consent: /C\.?F\./i.test(c.condition) };
+  });
+}
+
 function* iterCourses(node) {
   if (Array.isArray(node)) {
     for (const v of node) yield* iterCourses(v);
@@ -125,7 +186,7 @@ export function buildCatalog(dataDir = path.join(ROOT, "data")) {
     }
   }
 
-  const courses = [...byCode.values()]
+  let courses = [...byCode.values()]
     .map(({ _latest, _acc, ...c }) => {
       // วิชาระดับ 300-499 ของภาควิชาการบัญชี (2601) ถือเป็นวิชาของสาขาบัญชี: หมายเหตุกลุ่มเรียนมักว่าง
       // แต่ต้องผ่านวิชาบัญชีก่อนหน้า นิสิต MIS ลงไม่ได้ในทางปฏิบัติ (ตามข้อมูลจากสมาชิกกลุ่ม) จึงไม่ถือว่า "ลงได้"
@@ -140,6 +201,7 @@ export function buildCatalog(dataDir = path.join(ROOT, "data")) {
       };
     })
     .sort((a, b) => a.code.localeCompare(b.code));
+  courses = applyPrereqChain(courses);
   const terms = [...new Set(courses.flatMap((c) => c.terms))].sort();
   return { catalog: { terms, courses }, stats };
 }

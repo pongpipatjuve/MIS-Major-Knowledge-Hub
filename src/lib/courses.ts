@@ -23,6 +23,8 @@ type RawCourse = {
   access?: "open" | "cond" | "blocked" | "unknown";
   onlyFor?: string[];
   years?: number[];
+  blockedBy?: string[];
+  consent?: boolean;
 };
 const catalog = catalogJson as unknown as { terms: string[]; courses: RawCourse[] };
 
@@ -81,11 +83,15 @@ export type Course = {
   access: "open" | "cond" | "blocked" | "unknown";
   onlyFor: string[]; // สาขา/หลักสูตรที่กลุ่มเรียนเปิดให้เฉพาะ
   years: number[]; // ชั้นปีที่กลุ่มเรียนสำหรับ MIS/BUS ADMIN จำกัดไว้
+  blockedBy: string[]; // วิชาก่อนหน้าที่ MIS ลงไม่ได้ ทำให้วิชานี้ลงไม่ได้ตามไปด้วย
+  consent: boolean; // เงื่อนไขมี C.F. (ขออนุญาตได้)
   stub?: boolean;
 };
 
 /** ข้อความอธิบายข้อจำกัด (ว่างถ้าไม่มี) */
-export function accessNote(c: Pick<Course, "access" | "onlyFor" | "years">): string {
+export function accessNote(c: Pick<Course, "access" | "onlyFor" | "years" | "blockedBy" | "consent">): string {
+  if (c.access === "blocked" && c.blockedBy.length)
+    return `ต้องผ่านวิชา ${c.blockedBy.join(", ")} ก่อน ซึ่งเป็นวิชาที่เปิดเฉพาะสาขาอื่น นิสิต MIS จึงลงไม่ได้${c.consent ? " เว้นแต่ได้รับอนุญาตจากอาจารย์/คณะ (C.F.)" : ""}`;
   if (c.access === "blocked")
     return `กลุ่มเรียนที่พบเปิดเฉพาะ ${c.onlyFor.join("/")} นิสิต MIS ลงไม่ได้ เว้นแต่ได้รับอนุญาตจากอาจารย์ผู้สอน`;
   if (c.access === "cond") {
@@ -124,6 +130,8 @@ function toCourse(raw: RawCourse): Course {
     access: raw.access ?? "unknown",
     onlyFor: raw.onlyFor ?? [],
     years: raw.years ?? [],
+    blockedBy: raw.blockedBy ?? [],
+    consent: raw.consent ?? false,
   };
 }
 
@@ -151,6 +159,8 @@ const stub = (code: string): Course => {
     access: "unknown",
     onlyFor: [],
     years: [],
+    blockedBy: [],
+    consent: false,
     stub: true,
   };
 };

@@ -89,5 +89,12 @@ describe("curriculum credits", () => {
     expect(accessNote(get("2601415")!)).toContain("อาจารย์");
     expect(get("2604361")?.access).not.toBe("blocked"); // BUSINESS FINANCE เปิดให้ BUS ADMIN
     expect(allCourses.some((c) => c.isCbs300 && c.access === "open")).toBe(true);
+    // ต้องผ่านวิชาของสาขาอื่นก่อน -> ลงไม่ได้ตามไปด้วย
+    expect(get("2603313")?.access).toBe("blocked");
+    expect(get("2603313")?.blockedBy).toContain("2603312");
+    expect(get("2603373")?.consent).toBe(true); // PRER ... OR C.F.
+    // วิชาแกน/บังคับของ MIS ไม่ถูกซ่อนแม้กลุ่มเรียนจะเขียนสาขาอื่น
+    expect(get("2602313")?.access).not.toBe("blocked");
+    expect(get("2602344")?.access).not.toBe("blocked");
   });
 });
