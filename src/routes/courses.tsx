@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { ChevronRight, Search } from "lucide-react";
-import { ACTIVE_TERM_LABEL, GENED_LABELS, MINOR_CODE_COUNT, allCourses, isMis } from "@/lib/courses";
+import { ACTIVE_TERM_LABEL, GENED_LABELS, MINOR_CODE_COUNT, allCourses, isMis, accessNote } from "@/lib/courses";
 import { CATEGORIES } from "@/lib/curriculum";
 import { CategoryBadge, GenEdTag, MinorTag, NoData, Notice } from "@/components/Labels";
 
@@ -43,6 +43,7 @@ function Courses() {
   const [sub, setSub] = useState<ElectiveSub>("ทั้งหมด");
   const [showOther, setShowOther] = useState(false);
   const [onlyOffered, setOnlyOffered] = useState(false);
+  const [showBlocked, setShowBlocked] = useState(false);
   const [limit, setLimit] = useState(50);
   const query = q.trim().toLowerCase();
 
@@ -68,6 +69,8 @@ function Courses() {
       (showOther || query !== "" || cat !== "ทั้งหมด" || isMis(c)) &&
       matchesCategory(c) &&
       (!onlyOffered || c.offeredNow) &&
+      // วิชา 300+ ที่กลุ่มเรียนเปิดเฉพาะสาขาอื่น ซ่อนไว้ก่อน (เปิดดูได้ด้วยตัวเลือกด้านล่าง) ถ้าค้นหาด้วยชื่อ/รหัสจะแสดงพร้อมหมายเหตุ
+      (showBlocked || query !== "" || !(c.isCbs300 && c.access === "blocked")) &&
       `${c.code} ${c.nameEn} ${c.nameTh}`.toLowerCase().includes(query),
   );
   const chip = (on: boolean) =>
@@ -161,6 +164,8 @@ function Courses() {
             <Notice>
               วิชาระดับปริญญาตรีของคณะฯ ที่มีรหัส 3 ตัวหลังตั้งแต่ 300 ขึ้นไป ตามข้อความหลักสูตร ตอนนี้เราแสดงวิชาของ CBS (รหัสขึ้นต้น 26) ที่รหัส 3 ตัวหลัง 300-499
               โดยถือว่ารหัส 500 ขึ้นไปเป็นระดับบัณฑิตศึกษา ไม่รวมวิชา GenEd วิชาแกน และวิชาบังคับสาขา ข้อมูลอาจไม่ครบทุกวิชา โปรดตรวจสอบกับคณะ
+              เราซ่อนวิชาที่หมายเหตุกลุ่มเรียนใน CU Get Reg (ภาค 2569/1–2) ระบุว่าเปิดเฉพาะสาขาอื่นทุกกลุ่ม (เช่น บัญชี การเงิน การตลาด โลจิสติกส์) ส่วนวิชาที่มีเงื่อนไขจะแสดงพร้อมหมายเหตุ
+              การสรุปนี้เป็นการประมาณจากข้อความหมายเหตุ ไม่ใช่ข้อมูลทางการ โปรดตรวจที่ CU Get Reg หรือถามอาจารย์ผู้สอนก่อนลง
             </Notice>
           )}
           {sub === "วิชาโทนอกคณะ" && (
@@ -191,6 +196,19 @@ function Courses() {
         />{" "}
         เฉพาะวิชาที่พบว่าเปิดสอนใน{ACTIVE_TERM_LABEL}
       </label>
+      {cat === "วิชาเลือก" && (
+        <label className="flex items-center gap-2 text-sm text-muted-foreground">
+          <input
+            type="checkbox"
+            checked={showBlocked}
+            onChange={(e) => {
+              setShowBlocked(e.target.checked);
+              reset();
+            }}
+          />{" "}
+          แสดงวิชา 300+ ที่กลุ่มเรียนเปิดเฉพาะสาขาอื่น (ต้องขออนุญาตอาจารย์ผู้สอน)
+        </label>
+      )}
       <label className="flex items-center gap-2 text-sm text-muted-foreground">
         <input type="checkbox" checked={showOther} onChange={(e) => setShowOther(e.target.checked)} />{" "}
         แสดงวิชาอื่นที่ไม่อยู่ในรายการวิชาของหลักสูตร MIS (พิมพ์ค้นหาแล้วจะค้นทุกวิชาอยู่แล้ว)
@@ -227,6 +245,9 @@ function Courses() {
                   <span className="rounded-md bg-muted px-2 py-0.5 text-xs">ปริญญาตรี รหัส 300 ขึ้นไป</span>
                 )}
               </div>
+              {c.isCbs300 && accessNote(c) && (
+                <div className="mt-2 text-xs text-amber-700 dark:text-amber-400">⚠ {accessNote(c)}</div>
+              )}
             </div>
             <div className="text-center">
               {c.stub ? (

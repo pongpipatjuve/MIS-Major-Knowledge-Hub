@@ -1,7 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ExternalLink, MessageSquarePlus } from "lucide-react";
 import { CategoryBadge, GenEdTag, MinorTag, NoData } from "@/components/Labels";
-import { ACTIVE_TERM, cugetregUrl, findAnyCourse, reviewsFor } from "@/lib/courses";
+import { ACTIVE_TERM, accessNote, cugetregUrl, findAnyCourse, reviewsFor } from "@/lib/courses";
 import { REVIEW_FORM_URL } from "@/lib/config";
 
 export const Route = createFileRoute("/course/$code")({
@@ -82,6 +82,11 @@ function CourseDetail() {
         <section className="space-y-2 rounded-2xl border bg-card p-5">
           <h2 className="text-xl font-bold">เงื่อนไขรายวิชา</h2>
           <p className="text-sm">{c.condition ?? "ไม่มีเงื่อนไขรายวิชาที่ระบุไว้ในข้อมูล"}</p>
+          {accessNote(c) && (
+            <p className="rounded-lg bg-amber-50 p-2 text-sm text-amber-900 dark:bg-amber-950 dark:text-amber-200">
+              ⚠ {accessNote(c)} (สรุปจากหมายเหตุกลุ่มเรียน 2569/1–2 เป็นการประมาณ โปรดตรวจที่ CU Get Reg)
+            </p>
+          )}
           <p className="text-xs text-muted-foreground">
             {c.offeredNow
               ? `พบว่าเปิดสอนใน ${ACTIVE_TERM} (ปีการศึกษา/ภาค) ตามข้อมูลที่เรามี`

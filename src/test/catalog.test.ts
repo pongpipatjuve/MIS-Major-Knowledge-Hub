@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import minorCodes from "@/data/minor-codes.json";
 import { CREDITS } from "@/lib/curriculum";
-import { ACTIVE_TERM, allCourses, isCbs300, reviewsFor } from "@/lib/courses";
+import { ACTIVE_TERM, allCourses, isCbs300, reviewsFor , accessNote } from "@/lib/courses";
 
 describe("real catalog", () => {
   it("loads real courses from the data files", () => {
@@ -78,5 +78,16 @@ describe("curriculum credits", () => {
   it("adds up to 138", () => {
     expect(CREDITS.genEd + CREDITS.specific + CREDITS.free).toBe(138);
     expect(CREDITS.core + CREDITS.majorRequired + CREDITS.majorElective + CREDITS.otherElective).toBe(99);
+  });
+
+  it("สรุปว่านิสิต MIS ลงวิชา 300+ ได้ไหมจากหมายเหตุกลุ่มเรียน", () => {
+    const get = (code: string) => allCourses.find((c) => c.code === code);
+    expect(get("2601415")?.access).toBe("blocked"); // ADVANCED AUDITING เฉพาะสาขาบัญชี
+    expect(get("2601415")?.onlyFor).toContain("บัญชี");
+    for (const k of ["2601352", "2601354", "2601361", "2601421"]) expect(get(k)?.access).toBe("blocked"); // วิชาภาควิชาบัญชี 300+
+    expect(get("2602374")?.access).toBe("blocked"); // โลจิสติกส์
+    expect(accessNote(get("2601415")!)).toContain("อาจารย์");
+    expect(get("2604361")?.access).not.toBe("blocked"); // BUSINESS FINANCE เปิดให้ BUS ADMIN
+    expect(allCourses.some((c) => c.isCbs300 && c.access === "open")).toBe(true);
   });
 });

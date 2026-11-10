@@ -20,6 +20,9 @@ type RawCourse = {
   genEdNote: boolean;
   dept: string | null;
   terms: string[];
+  access?: "open" | "cond" | "blocked" | "unknown";
+  onlyFor?: string[];
+  years?: number[];
 };
 const catalog = catalogJson as unknown as { terms: string[]; courses: RawCourse[] };
 
@@ -74,8 +77,25 @@ export type Course = {
   category?: Category | undefined;
   terms: string[]; // ภาคที่พบในข้อมูล เช่น ["2569/1","2569/2"]
   offeredNow: boolean;
+  /** นิสิต MIS ลงได้ไหม สรุปจากหมายเหตุกลุ่มเรียน 2569/1–2 (ประมาณการ): open ไม่พบข้อจำกัด / cond มีเงื่อนไข (ชั้นปี ฯลฯ) / blocked ทุกกลุ่มเปิดเฉพาะสาขาอื่น / unknown ไม่มีข้อมูลกลุ่มเรียน */
+  access: "open" | "cond" | "blocked" | "unknown";
+  onlyFor: string[]; // สาขา/หลักสูตรที่กลุ่มเรียนเปิดให้เฉพาะ
+  years: number[]; // ชั้นปีที่กลุ่มเรียนสำหรับ MIS/BUS ADMIN จำกัดไว้
   stub?: boolean;
 };
+
+/** ข้อความอธิบายข้อจำกัด (ว่างถ้าไม่มี) */
+export function accessNote(c: Pick<Course, "access" | "onlyFor" | "years">): string {
+  if (c.access === "blocked")
+    return `กลุ่มเรียนที่พบเปิดเฉพาะ ${c.onlyFor.join("/")} นิสิต MIS ลงไม่ได้ เว้นแต่ได้รับอนุญาตจากอาจารย์ผู้สอน`;
+  if (c.access === "cond") {
+    const parts: string[] = [];
+    if (c.years.length) parts.push(`กลุ่มเรียนที่เปิดให้ MIS/บริหารธุรกิจจำกัดชั้นปี ${c.years.join(", ")}`);
+    if (c.onlyFor.length) parts.push(`บางกลุ่มเปิดเฉพาะ ${c.onlyFor.join("/")}`);
+    return parts.length ? parts.join(" · ") : "มีเงื่อนไขในหมายเหตุกลุ่มเรียน ตรวจสอบที่ CU Get Reg";
+  }
+  return "";
+}
 
 function toCourse(raw: RawCourse): Course {
   const fixed = categoryOf(raw.code);
@@ -101,6 +121,9 @@ function toCourse(raw: RawCourse): Course {
     category,
     terms: raw.terms,
     offeredNow: raw.terms.includes(ACTIVE_TERM),
+    access: raw.access ?? "unknown",
+    onlyFor: raw.onlyFor ?? [],
+    years: raw.years ?? [],
   };
 }
 
@@ -125,6 +148,9 @@ const stub = (code: string): Course => {
     category: fixed ?? (inMinorList || isCbs300(code) ? "วิชาเลือก" : undefined),
     terms: [],
     offeredNow: false,
+    access: "unknown",
+    onlyFor: [],
+    years: [],
     stub: true,
   };
 };
