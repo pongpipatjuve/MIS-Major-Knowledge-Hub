@@ -213,4 +213,5 @@ export const externalReviewsFor = (code: string): ExternalReview[] => {
   return out;
 };
 
-export const cugetregUrl = (code: string) => `https://cugetreg.com/S/courses/${encodeURIComponent(code)}`;
+export const cugetregUrl = (code: string, term?: string) =>
+  `https://cugetreg.com/S/courses/${encodeURIComponent(code)}${term ? `?term=${encodeURIComponent(term)}` : ""}`;

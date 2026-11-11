@@ -151,14 +151,19 @@ function CourseDetail() {
           ดูกลุ่มเรียน เวลา ที่นั่งว่าง และชื่ออาจารย์ที่ CU Get Reg เปิดหน้าวิชา {c.code} ในแท็บใหม่
           เลื่อนลงไปด้านล่างของหน้านั้นเพื่ออ่านรีวิวจากนิสิตได้ด้วย
         </p>
-        <a
-          href={cugetregUrl(c.code)}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-3 inline-flex items-center gap-2 rounded-lg border border-primary px-4 py-2 text-sm font-medium text-primary transition hover:bg-primary-soft"
-        >
-          <ExternalLink className="h-4 w-4" /> เปิด {c.code} ใน CU Get Reg
-        </a>
+        <div className="mt-3 flex flex-wrap gap-2">
+          {(c.terms.length > 0 ? [...c.terms].sort() : [undefined]).map((t) => (
+            <a
+              key={t ?? "any"}
+              href={cugetregUrl(c.code, t)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg border border-primary px-4 py-2 text-sm font-medium text-primary transition hover:bg-primary-soft"
+            >
+              <ExternalLink className="h-4 w-4" /> {t ? `เปิด ${c.code} ใน CU Get Reg ภาค ${t}` : `เปิด ${c.code} ใน CU Get Reg`}
+            </a>
+          ))}
+        </div>
         <p className="mt-2 text-xs text-muted-foreground">
           เป็นเว็บภายนอกที่ไม่ได้ดูแลโดยทีมเรา เนื้อหาและรีวิวเป็นของเจ้าของเว็บนั้น
         </p>
