@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import minorCodes from "@/data/minor-codes.json";
-import { CREDITS } from "@/lib/curriculum";
+import { CREDITS, FOREIGN_LANGUAGE_COURSES, PLAN66 } from "@/lib/curriculum";
 import { ACTIVE_TERM, allCourses, isCbs300, reviewsFor , accessNote } from "@/lib/courses";
 
 describe("real catalog", () => {
@@ -78,6 +78,22 @@ describe("tags and filters", () => {
       expect(c.nameTh).toBe("");
     }
   });
+  it("study plan terms add up to their stated totals and stay within the per-term cap", () => {
+    for (const t of PLAN66) {
+      const sum = t.rows.filter((r) => !r.uncounted).reduce((a, r) => a + r.credits, 0);
+      expect(sum).toBe(t.total);
+      expect(t.total).toBeLessThanOrEqual(CREDITS.maxPerTerm);
+    }
+  });
+  it("foreign language courses form a chain (each requires the previous one) and match the study plan terms", () => {
+    expect(FOREIGN_LANGUAGE_COURSES).toHaveLength(7);
+    FOREIGN_LANGUAGE_COURSES.forEach((c, i) => {
+      expect(c.prereq).toBe(i === 0 ? undefined : FOREIGN_LANGUAGE_COURSES[i - 1]?.code);
+      expect(c.term).toBe(i % 2 === 0 ? 1 : 2);
+    });
+    const inPlan = PLAN66.flatMap((t) => t.rows.filter((r) => r.kind === "ภาษาต่างประเทศ").map((r) => r.code));
+    expect(inPlan).toEqual(FOREIGN_LANGUAGE_COURSES.map((c) => c.code));
+  });
   it("returns an empty list when a course has no curated reviews", () => {
     expect(reviewsFor("0000000")).toEqual([]);
   });
@@ -86,6 +102,8 @@ describe("tags and filters", () => {
 describe("curriculum credits", () => {
   it("adds up to 138", () => {
     expect(CREDITS.genEd + CREDITS.specific + CREDITS.free).toBe(138);
+    expect(CREDITS.genEdOnly + CREDITS.foreignLanguage).toBe(CREDITS.genEd);
+    expect(CREDITS.core + CREDITS.majorRequired + CREDITS.majorElective + CREDITS.otherElective).toBe(CREDITS.specific);
     expect(CREDITS.core + CREDITS.majorRequired + CREDITS.majorElective + CREDITS.otherElective).toBe(99);
   });
 

@@ -15,6 +15,9 @@ export const CUGETREG_URL = "https://cugetreg.com/";
 /** ระบบตรวจสอบหลักสูตรว่าขาดวิชาอะไร (Petra) */
 export const PETRA_URL = "https://petra.acc.chula.ac.th/";
 
+/** Padlet รีวิวรวมของคณะอักษรศาสตร์ (ไม่มีหน้าแยกรายวิชา ใช้กับวิชารหัสขึ้นต้น 22) */
+export const PADLET_ARTS_URL = "https://padlet.com/smopolscicu/genlang-culi-caz5gqul9srtitvn";
+
 /** วันที่ที่ดึงข้อมูลรายวิชาจาก CU Get Reg */
 export const DATA_PULLED_ON = "2 พฤศจิกายน 2569";
 

@@ -38,6 +38,7 @@ export const Route = createFileRoute("/")({
 });
 
 const DOCS: { title: string; icon: typeof FileText; url: string }[] = [
+  { title: "แผนการศึกษา รหัส 66 (MIS)", icon: ListChecks, url: "/studyplan_66_MIS.pdf" },
   { title: "คู่มือการลงทะเบียนเรียน", icon: FileText, url: "/registrationmanual_TH_240704.pdf" },
   { title: "คู่มือประจำภาคการศึกษา", icon: BookOpen, url: "/handbook.pdf" },
   {
@@ -162,7 +163,7 @@ function Home() {
 
       <section>
         <h2 className="mb-3 text-xl font-bold">เอกสารและคู่มือ</h2>
-        <div className="grid gap-3 sm:grid-cols-3">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {DOCS.map((d) => (
             <div key={d.title} className="flex items-start gap-3 rounded-xl border bg-card p-4">
               <d.icon className="h-6 w-6 shrink-0 text-primary" />

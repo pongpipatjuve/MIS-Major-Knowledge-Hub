@@ -1,8 +1,9 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ExternalLink, MessageSquarePlus } from "lucide-react";
 import { CategoryBadge, GenEdTag, MinorTag, NoData, ShortName } from "@/components/Labels";
-import { ACTIVE_TERM, accessNote, cugetregUrl, findAnyCourse, reviewsFor } from "@/lib/courses";
+import { ACTIVE_TERM, accessNote, cugetregUrl, externalReviewsFor, findAnyCourse, reviewsFor } from "@/lib/courses";
 import { REVIEW_FORM_URL } from "@/lib/config";
+import { COURSE_NOTES } from "@/lib/curriculum";
 
 export const Route = createFileRoute("/course/$code")({
   loader: ({ params }) => {
@@ -44,6 +45,7 @@ function CourseDetail() {
   const { code } = Route.useLoaderData();
   const c = findAnyCourse(code)!;
   const reviews = reviewsFor(c.code);
+  const external = externalReviewsFor(c.code);
 
   return (
     <div className="mx-auto max-w-4xl space-y-6 px-4 py-6">
@@ -104,6 +106,13 @@ function CourseDetail() {
         </section>
       )}
 
+      {COURSE_NOTES[c.code] && (
+        <section className="rounded-2xl border bg-card p-5 text-sm">
+          <h2 className="mb-1 text-lg font-bold">หมายเหตุ</h2>
+          {COURSE_NOTES[c.code]}
+        </section>
+      )}
+
       {c.stub && (
         <section className="space-y-2 rounded-2xl border bg-card p-5">
           <h2 className="text-xl font-bold">เงื่อนไขรายวิชาและภาคที่เปิดสอน</h2>
@@ -155,6 +164,32 @@ function CourseDetail() {
         </p>
       </section>
 
+      {external.length > 0 && (
+        <section className="rounded-2xl border bg-card p-5">
+          <h2 className="text-lg font-bold">รีวิวจากเว็บอื่น</h2>
+          <p className="mt-1 text-sm text-muted-foreground">
+            วิชานี้มีรีวิวในเว็บภายนอกด้านล่าง ไม่ใช่ทุกวิชาจะมี และเนื้อหาเป็นของเจ้าของเว็บนั้น ไม่ได้ผ่านการคัดกรองโดยทีมเรา
+          </p>
+          <div className="mt-3 flex flex-col gap-2">
+            {external.map((e) => (
+              <a
+                key={e.url}
+                href={e.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-2 rounded-lg border px-4 py-3 text-sm transition hover:border-primary"
+              >
+                <ExternalLink className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                <span>
+                  <span className="block font-medium">{e.label}</span>
+                  <span className="block text-xs text-muted-foreground">{e.hint}</span>
+                </span>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
       <section className="rounded-2xl border bg-card p-5 md:p-6">
         <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div>
@@ -176,7 +211,7 @@ function CourseDetail() {
         </div>
         {reviews.length === 0 ? (
           <p className="rounded-xl border border-dashed p-6 text-center text-sm text-muted-foreground">
-            ยังไม่มีรีวิวสำหรับรายวิชานี้ในเว็บเรา ดูรีวิวจากเว็บอื่นได้ที่ปุ่มด้านบน
+            ยังไม่มีรีวิวสำหรับรายวิชานี้ในเว็บเรา ดูรีวิวจากเว็บอื่นได้ที่ปุ่ม CU Get Reg ด้านบน{external.length > 0 ? " และส่วน \"รีวิวจากเว็บอื่น\"" : ""}
           </p>
         ) : (
           <div className="space-y-3">

@@ -2,6 +2,8 @@ import catalogJson from "@/data/catalog.json";
 import minorCodesJson from "@/data/minor-codes.json";
 import reviewsJson from "@/data/reviews.json";
 import shortNamesJson from "@/data/short-names.json";
+import reviewLinksJson from "@/data/review-links.json";
+import { PADLET_ARTS_URL } from "@/lib/config";
 import { CORE_CODES, MAJOR_ELECTIVE_CODES, MAJOR_REQUIRED_CODES, categoryOf, type Category } from "./curriculum";
 
 // ข้อมูลรายวิชามาจาก data/*.json (response ที่บันทึกจาก CU Get Reg) ผ่าน scripts/build-data.mjs -> src/data/catalog.json
@@ -188,4 +190,27 @@ export const searchText = (c: Pick<Course, "code" | "nameEn" | "nameTh" | "short
 export const findAnyCourse =(code: string) => allCourses.find((c) => c.code === code);
 
 /** ลิงก์ไปหน้าวิชานั้นใน CU Get Reg (S = หลักสูตรปกติ) ส่วนรีวิวอยู่ด้านล่างของหน้านั้น */
+const REVIEW_LINKS = reviewLinksJson as unknown as Record<string, string>;
+
+export type ExternalReview = { label: string; hint: string; url: string };
+
+/** ลิงก์รีวิวจากเว็บอื่นที่มีของวิชานี้จริง (ไม่ใช่ทุกวิชามี) ไม่รวม CU Get Reg ซึ่งมีหน้าวิชาแยกอยู่แล้ว */
+export const externalReviewsFor = (code: string): ExternalReview[] => {
+  const out: ExternalReview[] = [];
+  const statx = REVIEW_LINKS[code];
+  if (statx)
+    out.push({
+      label: "รีวิวจาก StatX Review (Google Sites)",
+      hint: "เว็บรีวิววิชาเลือก 300+ ของรุ่นพี่ ปี 2567",
+      url: statx,
+    });
+  if (PADLET_ARTS_URL && code.startsWith("22"))
+    out.push({
+      label: "Padlet รีวิวรวมวิชาคณะอักษรศาสตร์",
+      hint: "รีวิวรวมหลายวิชาในหน้าเดียว ไม่มีหน้าแยกรายวิชา ใช้ค้นหาในหน้านั้น",
+      url: PADLET_ARTS_URL,
+    });
+  return out;
+};
+
 export const cugetregUrl = (code: string) => `https://cugetreg.com/S/courses/${encodeURIComponent(code)}`;
