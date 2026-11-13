@@ -15,6 +15,7 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Footer } from "../components/Footer";
 import { BottomNav, TopBar } from "../components/TopBar";
 import { Toaster } from "../components/ui/sonner";
+import { Analytics } from "@vercel/analytics/react";
 
 function NotFoundComponent() {
   return (
@@ -126,6 +127,8 @@ function RootComponent() {
       <Outlet />
       <Footer />
       <BottomNav />
+      {/* นับจำนวนผู้เข้าชมและหน้าที่เปิด (Vercel Web Analytics) ทำงานเฉพาะบนเว็บจริงที่ Vercel */}
+      <Analytics />
       <Toaster />
     </QueryClientProvider>
   );
