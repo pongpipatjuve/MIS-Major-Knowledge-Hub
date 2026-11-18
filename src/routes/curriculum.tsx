@@ -1,11 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CATEGORIES, CREDITS, REGISTRATION_TIPS } from "@/lib/curriculum";
-import { Notice } from "@/components/Labels";
+import { Collapsible, Notice } from "@/components/Labels";
 
 export const Route = createFileRoute("/curriculum")({
   head: () => ({
     meta: [
-      { title: "โครงสร้างหลักสูตร MIS 138 หน่วยกิต — MIS Major Knowledge Hub" },
+      { title: "โครงสร้างหลักสูตร MIS 138 หน่วยกิต — MIS Hub CBS" },
       { name: "description", content: "สรุปโครงสร้างหลักสูตรบริหารธุรกิจบัณฑิต สาขาระบบสารสนเทศทางการจัดการ แบบอ่านง่าย" },
       { property: "og:title", content: "โครงสร้างหลักสูตร MIS" },
       { property: "og:description", content: "หมวดศึกษาทั่วไป 33 (GenEd 12 + ภาษาต่างประเทศ 21) · หมวดวิชาเฉพาะ 99 · วิชาเลือกเสรี 6 รวมไม่น้อยกว่า 138 หน่วยกิต" },
@@ -83,22 +83,22 @@ function Curriculum() {
       <section className="space-y-3">
         <div>
           <h2 className="text-xl font-bold">ความหมายของแต่ละหมวดวิชา</h2>
-          <p className="mt-1 text-sm text-muted-foreground">คำอธิบายสั้น ๆ เพื่อช่วยอ่านภาพโครงสร้างหลักสูตร</p>
+          <p className="mt-1 text-sm text-muted-foreground">กดที่หมวดเพื่อเปิดอ่านคำอธิบาย</p>
         </div>
-        <div className="grid gap-3 md:grid-cols-2">
+        <div className="grid items-start gap-3 md:grid-cols-2">
           {CATEGORIES.map((category, index) => (
-            <article key={category.key} className="rounded-xl border bg-card p-4">
-              <div className="flex items-start gap-3">
-                <span className={`mt-1 h-3 w-3 shrink-0 rounded-full ${categoryColors[index]}`} />
-                <div>
-                  <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-                    <h3 className="font-semibold">{category.key}</h3>
-                    <span className="text-sm font-bold text-primary">{categoryCredits[category.key]}</span>
-                  </div>
-                  <p className="mt-1 text-sm text-muted-foreground">{category.desc}</p>
-                </div>
-              </div>
-            </article>
+            <Collapsible
+              key={category.key}
+              title={
+                <span className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                  <span className={`h-3 w-3 shrink-0 rounded-full ${categoryColors[index]}`} />
+                  <span>{category.key}</span>
+                  <span className="text-sm font-bold text-primary">{categoryCredits[category.key]}</span>
+                </span>
+              }
+            >
+              {category.desc}
+            </Collapsible>
           ))}
         </div>
       </section>
@@ -110,7 +110,8 @@ function Curriculum() {
             ตารางเทียบสั้น ๆ จากข้อความหลักสูตร — <b>วิชาระดับปริญญาตรีรหัส 300 ขึ้นไปกับวิชาโทนอกคณะไม่ใช่หมวดแยก</b> แต่เป็นแหล่งที่เลือกมานับเป็น “วิชาเลือก” ได้
           </p>
         </div>
-        <div className="overflow-x-auto rounded-xl border bg-card">
+        <Collapsible title="เปิดดูตารางเทียบ">
+        <div className="overflow-x-auto rounded-xl border bg-card text-foreground">
           <table className="w-full min-w-[640px] text-left text-sm">
             <thead className="bg-muted text-xs">
               <tr>
@@ -147,7 +148,7 @@ function Curriculum() {
                 <td className="p-3 font-semibold">GenEd</td>
                 <td className="p-3">{CREDITS.genEdOnly}</td>
                 <td className="p-3">
-                  อยู่ในหมวดศึกษาทั่วไป {CREDITS.genEd} หน่วยกิต (ส่วนที่เหลือ {CREDITS.foreignLanguage} หน่วยกิตคือภาษาต่างประเทศ ดูด้านล่าง)
+                  อยู่ในหมวดศึกษาทั่วไป {CREDITS.genEd} หน่วยกิต (ส่วนที่เหลือ {CREDITS.foreignLanguage} หน่วยกิตคือภาษาต่างประเทศ ดูแถวถัดไป)
                   เลือกวิชาอะไรก็ได้ที่ศูนย์การศึกษาทั่วไปประกาศ นิสิตตั้งแต่ปีการศึกษา 2566 ได้ผลเป็น S/U (ไม่มีเกรด)
                   นับเป็นวิชาเลือกหรือวิชาโทไม่ได้ แต่ลงเป็นวิชาเลือกเสรีได้
                 </td>
@@ -156,7 +157,7 @@ function Curriculum() {
                 <td className="p-3 font-semibold">ภาษาต่างประเทศ</td>
                 <td className="p-3">{CREDITS.foreignLanguage}</td>
                 <td className="p-3">
-                  วิชาบังคับ 7 วิชา (ดูรายการด้านล่าง) ได้ผลเป็นเกรด ยกเว้น 5500415 ที่บังคับเรียนแต่ได้ผลเป็น S/U
+                  วิชาบังคับ 7 วิชา (ดูในภาพแผนการศึกษาด้านบน) ได้ผลเป็นเกรด ยกเว้น 5500415 ที่บังคับเรียนแต่ได้ผลเป็น S/U
                   เป็นวิชาบังคับจึงนับเป็นวิชาเลือกเสรีไม่ได้
                 </td>
               </tr>
@@ -171,7 +172,8 @@ function Curriculum() {
             </tbody>
           </table>
         </div>
-        <Notice>
+        </Collapsible>
+        <Notice title="ตารางนี้สรุปจากความเข้าใจของกลุ่มเรา ยังมีข้อที่รอยืนยัน">
           ตารางนี้สรุปจากข้อความหลักสูตรและความเข้าใจของกลุ่มเรา ไม่ใช่ประกาศทางการ ข้อสงสัยที่ยังรอยืนยัน เช่น วิชาเลือกสาขาที่เกิน 12 นับรวมในวิชาเลือกจริงหรือไม่
           และวิชาเลือก 15 หน่วยกิตมีขั้นต่ำแยกตามแต่ละแหล่งหรือไม่ โปรดถามอาจารย์ที่ปรึกษาหรือฝ่ายวิชาการของคณะ
         </Notice>

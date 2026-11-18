@@ -3,7 +3,7 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { ChevronRight, Search } from "lucide-react";
 import { GENED_LABELS, MINOR_CODE_COUNT, TERMS, allCourses, isMis, termsOf, accessNote, searchText } from "@/lib/courses";
 import { CATEGORIES } from "@/lib/curriculum";
-import { CategoryBadge, GenEdTag, MinorTag, NoData, Notice, ShortName } from "@/components/Labels";
+import { CategoryBadge, GenEdTag, MinorCallout, MinorTag, NoData, Notice, ShortName } from "@/components/Labels";
 
 export const Route = createFileRoute("/courses")({
   validateSearch: (search: Record<string, unknown>) => ({
@@ -11,7 +11,7 @@ export const Route = createFileRoute("/courses")({
   }),
   head: () => ({
     meta: [
-      { title: "ค้นหารายวิชา MIS — MIS Major Knowledge Hub" },
+      { title: "ค้นหารายวิชา MIS — MIS Hub CBS" },
       {
         name: "description",
         content:
@@ -34,6 +34,9 @@ const ELECTIVE_SUBS = [
   "วิชาโทนอกคณะ",
 ] as const;
 type ElectiveSub = (typeof ELECTIVE_SUBS)[number];
+
+/** วิชาในรายการวิชาโทที่ CU Get Reg ระบุเป็น GenEd (ยังไม่แสดงเป็นวิชาโท) */
+const MINOR_GENED_COUNT = allCourses.filter((c) => c.inMinorList && c.isGenEd).length;
 
 type TermFilter = "ทั้งหมด" | (typeof TERMS)[number];
 type Saved = {
@@ -161,7 +164,7 @@ function Courses() {
               </button>
             ))}
           </div>
-          <Notice>
+          <Notice title="GenEd ได้ผล S/U นับเป็นวิชาเลือกหรือวิชาโทไม่ได้ แต่ลงเป็นวิชาเลือกเสรีได้">
             นิสิตตั้งแต่ปีการศึกษา 2566 ได้ผลวิชา GenEd เป็น <b>S/U (ไม่มีเกรด)</b> วิชา GenEd จึงนับเป็นวิชาเลือกหรือวิชาโทไม่ได้
             แต่ลงเป็นวิชาเลือกเสรีได้ โปรดตรวจสอบกับประกาศของคณะ
           </Notice>
@@ -185,7 +188,7 @@ function Courses() {
             ))}
           </div>
           {sub === "ทั้งหมด" && (
-            <Notice>
+            <Notice title="วิชาเลือกต้องเรียนอย่างน้อย 15 หน่วยกิต เลือกได้จาก 3 แหล่ง">
               วิชาเลือกต้องเรียนอย่างน้อย 15 หน่วยกิต เลือกได้จาก 3 แหล่ง: วิชาเลือกสาขา MIS (ต้องเรียนครบ 12 หน่วยกิตก่อน ส่วนที่เกินนับเป็นวิชาเลือกได้),
               วิชาระดับปริญญาตรีของคณะฯ ที่รหัส 3 ตัวหลังตั้งแต่ 300 ขึ้นไป และวิชาโทนอกคณะ ไม่รวมวิชา GenEd
             </Notice>
@@ -194,7 +197,7 @@ function Courses() {
             <Notice>ต้องเรียนวิชาเลือกสาขาให้ครบ 12 หน่วยกิตก่อน หน่วยกิตส่วนที่เกินจึงนับเป็นวิชาเลือกได้</Notice>
           )}
           {sub === "วิชาระดับปริญญาตรี รหัส 3 ตัวหลังตั้งแต่ 300 ขึ้นไป" && (
-            <Notice>
+            <Notice title="วิชาของ CBS รหัส 3 ตัวหลัง 300–499 (ซ่อนวิชาที่เปิดเฉพาะสาขาอื่น)">
               วิชาระดับปริญญาตรีของคณะฯ ที่มีรหัส 3 ตัวหลังตั้งแต่ 300 ขึ้นไป ตามข้อความหลักสูตร ตอนนี้เราแสดงวิชาของ CBS (รหัสขึ้นต้น 26) ที่รหัส 3 ตัวหลัง 300-499
               โดยถือว่ารหัส 500 ขึ้นไปเป็นระดับบัณฑิตศึกษา ไม่รวมวิชา GenEd วิชาแกน และวิชาบังคับสาขา ข้อมูลอาจไม่ครบทุกวิชา โปรดตรวจสอบกับคณะ
               เราซ่อนวิชาที่หมายเหตุกลุ่มเรียนใน CU Get Reg (ภาค 2569/1–2) ระบุว่าเปิดเฉพาะสาขาอื่นทุกกลุ่ม (เช่น บัญชี การเงิน การตลาด โลจิสติกส์) ส่วนวิชาที่มีเงื่อนไขจะแสดงพร้อมหมายเหตุ
@@ -202,17 +205,20 @@ function Courses() {
             </Notice>
           )}
           {sub === "วิชาโทนอกคณะ" && (
-            <Notice>
+            <MinorCallout />
+          )}
+          {sub === "วิชาโทนอกคณะ" && (
+            <Notice title={`ที่มาของรายการวิชาโท ${MINOR_CODE_COUNT} รหัส และข้อจำกัดของข้อมูล`}>
               รายการวิชาโทนอกคณะ ({MINOR_CODE_COUNT} รหัส) ได้จากการสอบถามหน่วยงานโดยตรงโดยสมาชิกกลุ่ม ไม่ใช่ประกาศทางการ โปรดยืนยันกับภาควิชาเจ้าของวิชาก่อนลงทะเบียน
               วิชาที่ยังไม่มีชื่อเต็มในเว็บจะแสดง "ชื่อย่อ" ซึ่งไม่ใช่ชื่อทางการ (ดูชื่อเต็มได้ที่ CU Get Reg) และบางวิชาอาจไม่เปิดสอนในภาคเรียนนี้ โปรดตรวจที่ CU Get Reg
-              วิชาที่ CU Get Reg ระบุเป็น GenEd (ตอนนี้ 14 วิชา ยังรอยืนยันกับภาควิชา) จะไม่แสดงในหมวดนี้ เพราะวิชา GenEd นับเป็นวิชาโทไม่ได้
+              วิชาที่ CU Get Reg ระบุเป็น GenEd (ตอนนี้ {MINOR_GENED_COUNT} วิชา ยังรอยืนยันกับภาควิชา) จะไม่แสดงในหมวดนี้ เพราะวิชา GenEd นับเป็นวิชาโทไม่ได้
             </Notice>
           )}
         </>
       )}
 
       {cat === "วิชาเลือกเสรี" && (
-        <Notice>
+        <Notice title="วิชาเลือกเสรี 6 หน่วยกิต ลงวิชาอะไรก็ได้ จึงไม่แสดงเป็นรายการ">
           วิชาเลือกเสรี 6 หน่วยกิต คือลงวิชาอะไรของมหาวิทยาลัยก็ได้ ผลจะเป็นเกรดหรือ S/U ก็ได้ รวมวิชา GenEd (ได้ผล S/U แต่ยังนับเป็นวิชาเลือกเสรี) ยกเว้นวิชาบังคับที่ต้องเรียนอยู่แล้ว (รวมวิชาภาษาต่างประเทศ)
           และวิชาที่มีเงื่อนไขพิเศษ เช่น เปิดเฉพาะบางคณะหรือต้องผ่านวิชาก่อนหน้า ถ้าไม่มีเงื่อนไขเหล่านี้ลงได้ทุกวิชา จึงไม่แสดงเป็นรายการ ค้นหาวิชาที่สนใจได้ที่ CU Get Reg
           หรือพิมพ์ชื่อ/รหัสในช่องค้นหาด้านบนเพื่อดูวิชาที่เรามีข้อมูล

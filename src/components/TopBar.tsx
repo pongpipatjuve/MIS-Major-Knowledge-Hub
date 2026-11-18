@@ -1,13 +1,5 @@
 import { Link, useRouter, useRouterState } from "@tanstack/react-router";
-import { ArrowLeft, Database, ExternalLink, GraduationCap, Home, Search, type LucideIcon } from "lucide-react";
-import { CUGETREG_URL, PETRA_URL, REG_CHULA_URL } from "@/lib/config";
-
-/** ปุ่มลัดไปเว็บภายนอก เรียงตามลำดับที่ใช้จริง: ตรวจหลักสูตร → ลองจัดตาราง → ลงทะเบียนจริง */
-const QUICK_LINKS = [
-  { label: "Petra", hint: "ดูว่าขาดวิชาอะไร", url: PETRA_URL },
-  { label: "CU Get Reg", hint: "ลองลงทะเบียน", url: CUGETREG_URL },
-  { label: "Reg Chula", hint: "ลงทะเบียนจริง", url: REG_CHULA_URL },
-] as const;
+import { ArrowLeft, Database, GraduationCap, Home, Search, type LucideIcon } from "lucide-react";
 
 const LINKS = [
   { to: "/", label: "หน้าแรก", exact: true, icon: Home },
@@ -63,30 +55,12 @@ export function TopBar() {
               <Database className="h-5 w-5" />
             </span>
             <span className="min-w-0 leading-tight">
-              <span className="block truncate text-base font-bold tracking-tight sm:text-lg">MIS Major Knowledge Hub</span>
+              <span className="block truncate text-base font-bold tracking-tight sm:text-lg">MIS Hub CBS</span>
               <span className="hidden text-[10px] text-muted-foreground sm:block">สาขาระบบสารสนเทศทางการจัดการ · CBS จุฬาฯ</span>
             </span>
           </Link>
         </div>
         <nav className="hidden items-center gap-1 md:flex">{nav()}</nav>
-      </div>
-      <div className="border-t bg-muted/40">
-        <div className="mx-auto flex max-w-7xl items-center gap-2 overflow-x-auto px-4 py-1.5 text-xs">
-          <span className="shrink-0 text-muted-foreground">เว็บภายนอก:</span>
-          {QUICK_LINKS.map((l) => (
-            <a
-              key={l.label}
-              href={l.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex shrink-0 items-center gap-1 rounded-full border bg-card px-3 py-1 font-medium transition hover:border-primary hover:text-primary"
-            >
-              {l.label}
-              <span className="font-normal text-muted-foreground">· {l.hint}</span>
-              <ExternalLink className="h-3 w-3" />
-            </a>
-          ))}
-        </div>
       </div>
     </header>
   );

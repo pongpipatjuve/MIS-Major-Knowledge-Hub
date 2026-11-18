@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ExternalLink, MessageSquarePlus } from "lucide-react";
-import { CategoryBadge, GenEdTag, MinorTag, NoData, ShortName } from "@/components/Labels";
+import { CategoryBadge, GenEdTag, MinorCallout, MinorTag, NoData, ShortName } from "@/components/Labels";
 import { TERMS, accessNote, cugetregUrl, externalReviewsFor, findAnyCourse, reviewsFor, termsOf } from "@/lib/courses";
 import { REVIEW_FORM_URL } from "@/lib/config";
 import { COURSE_NOTES } from "@/lib/curriculum";
@@ -15,11 +15,11 @@ export const Route = createFileRoute("/course/$code")({
     if (!loaderData)
       return {
         meta: [
-          { title: "ไม่พบรายวิชา — MIS Major Knowledge Hub" },
+          { title: "ไม่พบรายวิชา — MIS Hub CBS" },
           { name: "robots", content: "noindex" },
         ],
       };
-    const t = `${loaderData.title} — MIS Major Knowledge Hub`;
+    const t = `${loaderData.title} — MIS Hub CBS`;
     const d = `ข้อมูลวิชา ${loaderData.th} หน่วยกิต เงื่อนไขรายวิชา และรีวิวจากนิสิต`;
     return {
       meta: [
@@ -187,10 +187,10 @@ function CourseDetail() {
       )}
 
       {c.isMinor && (
-        <section className="rounded-2xl border bg-card p-5 text-sm">
-          <h2 className="mb-1 text-lg font-bold">วิชาโทนอกคณะ</h2>
-          วิชานี้อยู่ในรายการที่กลุ่มเราสอบถามมาว่านิสิต MIS ลงเป็นวิชาโทนอกคณะได้ ไม่ใช่ประกาศทางการ
-          โปรดยืนยันกับภาควิชาเจ้าของวิชาก่อนลงทะเบียน
+        <section className="space-y-3 rounded-2xl border bg-card p-5 text-sm">
+          <h2 className="text-lg font-bold">วิชาโทนอกคณะ</h2>
+          <p>วิชานี้อยู่ในรายการที่กลุ่มเราสอบถามมาว่านิสิต MIS ลงเป็นวิชาโทนอกคณะได้ ไม่ใช่ประกาศทางการ</p>
+          <MinorCallout />
         </section>
       )}
 
