@@ -17,6 +17,13 @@ describe("real catalog", () => {
     const raw = JSON.stringify((await import("@/data/catalog.json")).default);
     expect(raw).not.toMatch(/"sections"|"capacity"|"teachers"|"midterm"|"final"/);
   });
+  it("stub minor courses show team-collected info, labelled separately from CU Get Reg terms", () => {
+    const c = allCourses.find((x) => x.code === "2201214");
+    expect(c?.stub).toBe(true);
+    expect(c?.terms).toEqual([]);
+    expect(c?.teamInfo?.terms).toEqual(["2569/2"]);
+    expect(c?.teamInfo?.credits).toBe(3);
+  });
   it("curriculum codes missing from the data stay as empty stubs, not invented", () => {
     const stubs = allCourses.filter((c) => c.stub);
     const real = new Set(allCourses.filter((c) => !c.stub).map((c) => c.code));

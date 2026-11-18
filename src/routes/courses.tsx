@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { ChevronRight, Search } from "lucide-react";
-import { ACTIVE_TERM_LABEL, GENED_LABELS, MINOR_CODE_COUNT, allCourses, isMis, accessNote, searchText } from "@/lib/courses";
+import { GENED_LABELS, MINOR_CODE_COUNT, TERMS, allCourses, isMis, termsOf, accessNote, searchText } from "@/lib/courses";
 import { CATEGORIES } from "@/lib/curriculum";
 import { CategoryBadge, GenEdTag, MinorTag, NoData, Notice, ShortName } from "@/components/Labels";
 
@@ -42,7 +42,7 @@ function Courses() {
   const [gened, setGened] = useState("ทั้งหมด");
   const [sub, setSub] = useState<ElectiveSub>("ทั้งหมด");
   const [showOther, setShowOther] = useState(false);
-  const [onlyOffered, setOnlyOffered] = useState(false);
+  const [term, setTerm] = useState<"ทั้งหมด" | (typeof TERMS)[number]>("ทั้งหมด");
   const [showBlocked, setShowBlocked] = useState(false);
   const [limit, setLimit] = useState(50);
   const query = q.trim().toLowerCase();
@@ -68,7 +68,7 @@ function Courses() {
     (c) =>
       (showOther || query !== "" || cat !== "ทั้งหมด" || isMis(c)) &&
       matchesCategory(c) &&
-      (!onlyOffered || c.offeredNow) &&
+      (term === "ทั้งหมด" || termsOf(c).includes(term)) &&
       // วิชา 300+ ที่กลุ่มเรียนเปิดเฉพาะสาขาอื่น ซ่อนไว้ก่อน (เปิดดูได้ด้วยตัวเลือกด้านล่าง) ถ้าค้นหาด้วยชื่อ/รหัสจะแสดงพร้อมหมายเหตุ
       (showBlocked || query !== "" || !(c.isCbs300 && c.access === "blocked")) &&
       searchText(c).includes(query),
@@ -186,17 +186,28 @@ function Courses() {
         </Notice>
       )}
 
-      <label className="flex items-center gap-2 text-sm text-muted-foreground">
-        <input
-          type="checkbox"
-          checked={onlyOffered}
-          onChange={(e) => {
-            setOnlyOffered(e.target.checked);
-            reset();
-          }}
-        />{" "}
-        เฉพาะวิชาที่พบว่าเปิดสอนใน{ACTIVE_TERM_LABEL}
-      </label>
+      <div className="space-y-2">
+        <div className="text-sm font-medium">ภาคเรียน</div>
+        <div className="flex flex-wrap gap-2">
+          {(["ทั้งหมด", ...TERMS] as const).map((t) => (
+            <button
+              key={t}
+              onClick={() => {
+                setTerm(t);
+                reset();
+              }}
+              className={chip(term === t)}
+            >
+              {t === "ทั้งหมด" ? "ทุกภาค" : `ภาค ${t}`}
+            </button>
+          ))}
+        </div>
+        {term !== "ทั้งหมด" && (
+          <p className="text-xs text-muted-foreground">
+            แสดงวิชาที่พบว่าเปิดสอนในภาค {term} จาก CU Get Reg และวิชาที่เพื่อนในกลุ่มแจ้งว่าลงได้ภาคนั้น (ไม่ใช่ข้อมูลทางการ) วิชาที่ไม่มีข้อมูลภาคเรียนเลยจะไม่แสดงเมื่อเลือกภาค โปรดตรวจที่ CU Get Reg
+          </p>
+        )}
+      </div>
       {cat === "วิชาเลือก" && (
         <label className="flex items-center gap-2 text-sm text-muted-foreground">
           <input
@@ -246,12 +257,19 @@ function Courses() {
                   <span className="rounded-md bg-muted px-2 py-0.5 text-xs">ปริญญาตรี รหัส 300 ขึ้นไป</span>
                 )}
               </div>
+              {termsOf(c).length > 0 && (
+                <div className="mt-2 text-xs text-muted-foreground">
+                  {c.terms.length > 0 ? "เปิดสอน" : "เพื่อนแจ้งว่าลงได้"}: {[...termsOf(c)].sort().join(" · ")}
+                </div>
+              )}
               {c.isCbs300 && accessNote(c) && (
                 <div className="mt-2 text-xs text-amber-700 dark:text-amber-400">⚠ {accessNote(c)}</div>
               )}
             </div>
             <div className="text-center">
-              {c.stub ? (
+              {c.stub && c.teamInfo ? (
+                <div className="text-2xl font-bold">{c.teamInfo.credits}</div>
+              ) : c.stub ? (
                 <div className="text-xs">
                   <NoData>— </NoData>
                 </div>

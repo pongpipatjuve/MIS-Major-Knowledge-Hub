@@ -1,6 +1,7 @@
 import catalogJson from "@/data/catalog.json";
 import minorCodesJson from "@/data/minor-codes.json";
 import reviewsJson from "@/data/reviews.json";
+import minorInfoJson from "@/data/minor-info.json";
 import shortNamesJson from "@/data/short-names.json";
 import reviewLinksJson from "@/data/review-links.json";
 import { PADLET_ARTS_URL } from "@/lib/config";
@@ -10,6 +11,8 @@ import { CORE_CODES, MAJOR_ELECTIVE_CODES, MAJOR_REQUIRED_CODES, categoryOf, typ
 // เก็บเฉพาะข้อเท็จจริงพื้นฐาน (รหัส ชื่อ หน่วยกิต เงื่อนไข ภาคที่เปิด) รัน `npm run build:data` ใหม่เมื่อเพิ่ม/เปลี่ยนไฟล์ใน data/
 
 /** ภาคเรียนที่ใช้ตรวจว่าวิชา "เปิดสอน" (ปีการศึกษา/ภาค) */
+/** ภาคเรียนที่เรามีข้อมูลจาก CU Get Reg (ใช้เป็นตัวเลือกกรองและแสดงภาคที่เปิดสอน) */
+export const TERMS = ["2569/1", "2569/2"] as const;
 export const ACTIVE_TERM = "2569/2";
 export const ACTIVE_TERM_LABEL = "ภาคเรียนที่ 2 ปีการศึกษา 2569";
 
@@ -42,6 +45,15 @@ export const GENED_LABELS: Record<string, string> = {
 /** รหัสวิชาที่อยู่ในรายการวิชาโทนอกคณะ (src/data/minor-codes.json) — ใช้ติดป้าย ไม่ได้บอกว่าเป็นวิชาโทของสาขาไหน */
 const MINOR_CODES = new Set<string>(minorCodesJson as string[]);
 export const MINOR_CODE_COUNT = MINOR_CODES.size;
+
+/** ข้อมูลที่เพื่อนในกลุ่มรวบรวมมา (หน่วยกิต ภาคที่ลงได้ เงื่อนไข) ใช้เฉพาะวิชาที่ยังไม่มีข้อมูลจาก CU Get Reg ไม่ใช่ข้อมูลทางการ */
+export type TeamInfo = { credits: number; terms: string[]; cond: string | null };
+const MINOR_INFO = minorInfoJson as unknown as Record<string, { credits: number | null; terms: string[]; cond: string | null }>;
+const teamInfoOf = (code: string): TeamInfo | undefined => {
+  const i = MINOR_INFO[code];
+  if (!i || i.credits === null) return undefined;
+  return { credits: i.credits, terms: i.terms.map((t) => `2569/${t}`), cond: i.cond };
+};
 
 /** ชื่อย่อรายวิชา (จากไฟล์ที่เพื่อนในกลุ่มรวบรวม src/data/short-names.json) ใช้เมื่อยังไม่มีชื่อเต็มจาก CU Get Reg ไม่ใช่ชื่อทางการ */
 const SHORT_NAMES = shortNamesJson as unknown as Record<string, string>;
@@ -94,7 +106,12 @@ export type Course = {
   blockedBy: string[]; // วิชาก่อนหน้าที่ MIS ลงไม่ได้ ทำให้วิชานี้ลงไม่ได้ตามไปด้วย
   consent: boolean; // เงื่อนไขมี C.F. (ขออนุญาตได้)
   stub?: boolean;
+  /** ข้อมูลจากเพื่อน (เฉพาะวิชาที่ไม่มีข้อมูลจาก CU Get Reg) ภาคเป็นรูปแบบเดียวกับ terms เช่น "2569/1" */
+  teamInfo?: TeamInfo | undefined;
 };
+
+/** ภาคที่ใช้กรอง/แสดง: จาก CU Get Reg ก่อน ถ้าไม่มีใช้ข้อมูลจากเพื่อน */
+export const termsOf = (c: Pick<Course, "terms" | "teamInfo">): string[] => (c.terms.length ? c.terms : (c.teamInfo?.terms ?? []));
 
 /** ข้อความอธิบายข้อจำกัด (ว่างถ้าไม่มี) */
 export function accessNote(c: Pick<Course, "access" | "onlyFor" | "years" | "blockedBy" | "consent">): string {
@@ -172,6 +189,7 @@ const stub = (code: string): Course => {
     blockedBy: [],
     consent: false,
     stub: true,
+    teamInfo: teamInfoOf(code),
   };
 };
 const known = new Set(courses.map((c) => c.code));
@@ -214,4 +232,4 @@ export const externalReviewsFor = (code: string): ExternalReview[] => {
 };
 
 export const cugetregUrl = (code: string, term?: string) =>
-  `https://cugetreg.com/S/courses/${encodeURIComponent(code)}${term ? `?term=${encodeURIComponent(term)}` : ""}`;
+  `https://cugetreg.com/S/courses/${encodeURIComponent(code)}${term ? `?courseNo=${encodeURIComponent(code)}&term=${encodeURIComponent(term)}` : ""}`;

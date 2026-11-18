@@ -1,7 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ExternalLink, MessageSquarePlus } from "lucide-react";
 import { CategoryBadge, GenEdTag, MinorTag, NoData, ShortName } from "@/components/Labels";
-import { ACTIVE_TERM, accessNote, cugetregUrl, externalReviewsFor, findAnyCourse, reviewsFor } from "@/lib/courses";
+import { TERMS, accessNote, cugetregUrl, externalReviewsFor, findAnyCourse, reviewsFor, termsOf } from "@/lib/courses";
 import { REVIEW_FORM_URL } from "@/lib/config";
 import { COURSE_NOTES } from "@/lib/curriculum";
 
@@ -93,16 +93,35 @@ function CourseDetail() {
         <section className="space-y-2 rounded-2xl border bg-card p-5">
           <h2 className="text-xl font-bold">เงื่อนไขรายวิชา</h2>
           <p className="text-sm">{c.condition ?? "ไม่มีเงื่อนไขรายวิชาที่ระบุไว้ในข้อมูล"}</p>
+          {c.condition && /PRER|C\.F\./.test(c.condition) && (
+            <p className="text-xs text-muted-foreground">
+              PRER = วิชาที่ต้องผ่านมาก่อน · C.F. = ต้องได้รับอนุญาตจากอาจารย์หรือคณะ (Consent of Faculty) · OR = หรือ · AND = และ
+            </p>
+          )}
           {accessNote(c) && (
             <p className="rounded-lg bg-amber-50 p-2 text-sm text-amber-900 dark:bg-amber-950 dark:text-amber-200">
               ⚠ {accessNote(c)} (สรุปจากหมายเหตุกลุ่มเรียน 2569/1–2 เป็นการประมาณ โปรดตรวจที่ CU Get Reg)
             </p>
           )}
-          <p className="text-xs text-muted-foreground">
-            {c.offeredNow
-              ? `พบว่าเปิดสอนใน ${ACTIVE_TERM} (ปีการศึกษา/ภาค) ตามข้อมูลที่เรามี`
-              : `ไม่พบวิชานี้ในข้อมูลภาค ${ACTIVE_TERM} ที่เรามี (อาจไม่เปิดสอน หรือข้อมูลยังไม่ครบ) โปรดตรวจสอบกับ CU Get Reg`}
-          </p>
+          <div className="pt-1 text-sm">
+            <div className="mb-1 font-medium">ภาคที่เปิดสอน (ตามข้อมูลที่เรามี)</div>
+            <div className="flex flex-wrap gap-2">
+              {TERMS.map((t) => {
+                const on = c.terms.includes(t);
+                return (
+                  <span
+                    key={t}
+                    className={`rounded-full border px-3 py-1 text-xs ${on ? "border-primary bg-primary-soft text-primary" : "text-muted-foreground line-through"}`}
+                  >
+                    {t} {on ? "เปิดสอน" : "ไม่พบ"}
+                  </span>
+                );
+              })}
+            </div>
+            <p className="mt-2 text-xs text-muted-foreground">
+              ข้อมูลดึงจาก CU Get Reg เมื่อต้นเดือนพฤศจิกายน 2569 ภาคที่ไม่พบอาจไม่เปิดสอนหรือข้อมูลยังไม่ครบ โปรดตรวจสอบกับ CU Get Reg ก่อนวางแผนลงทะเบียน
+            </p>
+          </div>
         </section>
       )}
 
@@ -113,11 +132,41 @@ function CourseDetail() {
         </section>
       )}
 
-      {c.stub && (
+      {c.stub && c.teamInfo && (
+        <section className="space-y-2 rounded-2xl border bg-card p-5">
+          <h2 className="text-xl font-bold">หน่วยกิต เงื่อนไข และภาคที่ลงได้ (จากเพื่อนในกลุ่ม)</h2>
+          <p className="text-sm">หน่วยกิต: {c.teamInfo.credits}</p>
+          <p className="text-sm">เงื่อนไขรายวิชา: {c.teamInfo.cond ?? "ไม่มีตัวก่อนหน้า/เงื่อนไขพิเศษตามที่เพื่อนแจ้ง"}</p>
+          {c.teamInfo.cond && /PRER|C\.F\./.test(c.teamInfo.cond) && (
+            <p className="text-xs text-muted-foreground">
+              PRER = วิชาที่ต้องผ่านมาก่อน · C.F. = ต้องได้รับอนุญาตจากอาจารย์หรือคณะ (Consent of Faculty) · OR = หรือ · AND = และ
+            </p>
+          )}
+          <div className="flex flex-wrap gap-2 pt-1">
+            {TERMS.map((t) => {
+              const on = c.teamInfo?.terms.includes(t) ?? false;
+              return (
+                <span
+                  key={t}
+                  className={`rounded-full border px-3 py-1 text-xs ${on ? "border-primary bg-primary-soft text-primary" : "text-muted-foreground line-through"}`}
+                >
+                  {t} {on ? "ลงได้" : "ไม่ได้แจ้ง"}
+                </span>
+              );
+            })}
+          </div>
+          <p className="text-xs text-muted-foreground">
+            ข้อมูลนี้เพื่อนในกลุ่มสอบถามมา ไม่ใช่ข้อมูลจาก CU Get Reg และไม่ใช่ข้อมูลทางการ ภาค 1/2 ในไฟล์ของเพื่อนแสดงเป็นปีการศึกษา 2569
+            เป็นการสันนิษฐาน โปรดตรวจสอบที่ CU Get Reg ก่อนวางแผนลงทะเบียน
+          </p>
+        </section>
+      )}
+
+      {c.stub && !c.teamInfo && (
         <section className="space-y-2 rounded-2xl border bg-card p-5">
           <h2 className="text-xl font-bold">เงื่อนไขรายวิชาและภาคที่เปิดสอน</h2>
           <p className="text-sm">
-            เว็บนี้ยังไม่มีข้อมูลจาก CU Get Reg ของวิชานี้ จึงยังไม่ทราบว่าเปิดสอนใน {ACTIVE_TERM} (ปีการศึกษา/ภาค) หรือไม่
+            เว็บนี้ยังไม่มีข้อมูลจาก CU Get Reg ของวิชานี้ จึงยังไม่ทราบว่าเปิดสอนภาคไหน
             และไม่ทราบหน่วยกิตหรือเงื่อนไขรายวิชา โปรดตรวจสอบที่ CU Get Reg ก่อนวางแผนลงทะเบียน
           </p>
         </section>
@@ -152,7 +201,7 @@ function CourseDetail() {
           เลื่อนลงไปด้านล่างของหน้านั้นเพื่ออ่านรีวิวจากนิสิตได้ด้วย
         </p>
         <div className="mt-3 flex flex-wrap gap-2">
-          {(c.terms.length > 0 ? [...c.terms].sort() : [undefined]).map((t) => (
+          {(termsOf(c).length > 0 ? [...termsOf(c)].sort() : [undefined]).map((t) => (
             <a
               key={t ?? "any"}
               href={cugetregUrl(c.code, t)}
