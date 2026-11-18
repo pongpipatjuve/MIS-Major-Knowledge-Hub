@@ -44,37 +44,38 @@
 
 :root {
   --radius: 0.75rem;
-  --background: oklch(0.985 0.006 350);
-  --foreground: oklch(0.24 0.02 300);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.24 0.02 300);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.24 0.02 300);
-  --primary: oklch(0.64 0.2 355);
-  --primary-foreground: oklch(1 0 0);
-  --primary-soft: oklch(0.95 0.035 355);
-  --secondary: oklch(0.96 0.01 350);
-  --secondary-foreground: oklch(0.3 0.02 300);
-  --muted: oklch(0.96 0.008 350);
-  --muted-foreground: oklch(0.52 0.02 300);
-  --accent: oklch(0.95 0.035 355);
-  --accent-foreground: oklch(0.45 0.17 355);
+  /* โทนฟ้า: สีหลัก #00A1DF ใช้กับพื้นที่ใหญ่/ตกแต่ง ตัวหนังสือและปุ่มใช้ฟ้าเข้ม #0072A3 เพื่อให้อ่านง่าย (contrast 5.3:1) */
+  --background: #f5fafd;
+  --foreground: #0e2a3d;
+  --card: #ffffff;
+  --card-foreground: #0e2a3d;
+  --popover: #ffffff;
+  --popover-foreground: #0e2a3d;
+  --primary: #0072a3;
+  --primary-foreground: #ffffff;
+  --primary-soft: #e3f4fb;
+  --secondary: #eef6fa;
+  --secondary-foreground: #123247;
+  --muted: #eef5f9;
+  --muted-foreground: #4a6273;
+  --accent: #e3f4fb;
+  --accent-foreground: #005a85;
   --destructive: oklch(0.58 0.22 25);
   --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.92 0.015 350);
-  --input: oklch(0.92 0.015 350);
-  --ring: oklch(0.64 0.2 355);
-  --ink: oklch(0.24 0.015 290);
-  --ink-foreground: oklch(0.97 0.005 350);
+  --border: #d3e6f0;
+  --input: #d3e6f0;
+  --ring: #00a1df;
+  --ink: #0e2a3d;
+  --ink-foreground: #f5fafd;
   --success: oklch(0.62 0.15 150);
   --warning: oklch(0.72 0.15 70);
-  --block-1: oklch(0.9 0.07 355);
-  --block-2: oklch(0.9 0.06 250);
-  --block-3: oklch(0.9 0.08 150);
-  --block-4: oklch(0.92 0.09 90);
-  --block-5: oklch(0.88 0.07 300);
-  --gradient-hero: linear-gradient(135deg, oklch(0.72 0.17 355), oklch(0.58 0.2 350));
-  --shadow-card: 0 8px 24px -12px color-mix(in oklab, var(--primary) 25%, transparent);
+  --block-1: #bfe7f7;
+  --block-2: #cfe0fa;
+  --block-3: #c7eee9;
+  --block-4: #fbe7b8;
+  --block-5: #dcd6f5;
+  --gradient-hero: linear-gradient(135deg, #00a1df 0%, #0080b8 45%, #005e8f 100%);
+  --shadow-card: 0 8px 24px -12px color-mix(in oklab, var(--primary) 35%, transparent);
 }
 
 @layer base {
