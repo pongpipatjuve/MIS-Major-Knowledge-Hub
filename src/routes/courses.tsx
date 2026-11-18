@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { ChevronRight, Search } from "lucide-react";
 import { GENED_LABELS, MINOR_CODE_COUNT, TERMS, allCourses, isMis, termsOf, accessNote, searchText } from "@/lib/courses";
 import { CATEGORIES } from "@/lib/curriculum";
@@ -35,16 +35,49 @@ const ELECTIVE_SUBS = [
 ] as const;
 type ElectiveSub = (typeof ELECTIVE_SUBS)[number];
 
+type TermFilter = "ทั้งหมด" | (typeof TERMS)[number];
+type Saved = {
+  q: string;
+  cat: string;
+  gened: string;
+  sub: ElectiveSub;
+  showOther: boolean;
+  term: TermFilter;
+  showBlocked: boolean;
+  limit: number;
+  scroll: number;
+};
+/** จำตัวกรองและตำแหน่งที่เลื่อนไว้ เพื่อให้กดย้อนกลับจากหน้าวิชาแล้วกลับมาที่เดิม (เก็บในหน่วยความจำของหน้าเว็บ รีเฟรชแล้วรีเซ็ต) */
+let saved: Saved | null = null;
+
 function Courses() {
   const { search } = Route.useSearch();
-  const [q, setQ] = useState(search);
-  const [cat, setCat] = useState("ทั้งหมด");
-  const [gened, setGened] = useState("ทั้งหมด");
-  const [sub, setSub] = useState<ElectiveSub>("ทั้งหมด");
-  const [showOther, setShowOther] = useState(false);
-  const [term, setTerm] = useState<"ทั้งหมด" | (typeof TERMS)[number]>("ทั้งหมด");
-  const [showBlocked, setShowBlocked] = useState(false);
-  const [limit, setLimit] = useState(50);
+  // ถ้าเข้ามาพร้อมคำค้นจากหน้าอื่น (search ใน URL) ให้เริ่มใหม่ ไม่ใช้ค่าที่จำไว้
+  const init = search === "" ? saved : null;
+  const [q, setQ] = useState(init?.q ?? search);
+  const [cat, setCat] = useState(init?.cat ?? "ทั้งหมด");
+  const [gened, setGened] = useState(init?.gened ?? "ทั้งหมด");
+  const [sub, setSub] = useState<ElectiveSub>(init?.sub ?? "ทั้งหมด");
+  const [showOther, setShowOther] = useState(init?.showOther ?? false);
+  const [term, setTerm] = useState<TermFilter>(init?.term ?? "ทั้งหมด");
+  const [showBlocked, setShowBlocked] = useState(init?.showBlocked ?? false);
+  const [limit, setLimit] = useState(init?.limit ?? 50);
+  const scrollRef = useRef(0);
+  useEffect(() => {
+    const onScroll = () => {
+      scrollRef.current = window.scrollY;
+      if (saved) saved.scroll = window.scrollY;
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+  useLayoutEffect(() => {
+    if (init) window.scrollTo(0, init.scroll);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  useEffect(() => {
+    saved = { q, cat, gened, sub, showOther, term, showBlocked, limit, scroll: scrollRef.current };
+  });
   const query = q.trim().toLowerCase();
 
   const matchesCategory = (c: (typeof allCourses)[number]) => {
