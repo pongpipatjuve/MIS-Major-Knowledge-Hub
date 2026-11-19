@@ -1,5 +1,6 @@
-import { AlertTriangle, ChevronDown, FlaskConical, Info } from "lucide-react";
+import { AlertTriangle, ChevronDown, ExternalLink, FlaskConical, Info } from "lucide-react";
 import type { ReactNode } from "react";
+import { MINOR_GROUPS_URL } from "@/lib/config";
 import { CATEGORIES, type Category } from "@/lib/curriculum";
 
 const CAT_CLASS: Record<Category, string> = {
@@ -106,7 +107,33 @@ export function MinorCallout() {
             <b>ฝ่ายวิชาการคณะเรา (CBS)</b> ว่าวิชานั้นนับเป็นวิชาเลือกในหลักสูตรได้ไหม
           </li>
         </ol>
-        <div className="text-xs text-muted-foreground">รายการวิชาโทในเว็บนี้ทีมสอบถามมาเอง ไม่ใช่ประกาศทางการ</div>
+        <a
+          href={MINOR_GROUPS_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1 font-medium text-primary underline"
+        >
+          ประกาศจุฬาฯ: กลุ่มวิชาโทที่เปิดให้นิสิตปริญญาตรี <ExternalLink className="h-3.5 w-3.5" />
+        </a>
+        <details className="rounded-lg bg-background/70 p-2">
+          <summary className="cursor-pointer font-medium">วิธีเช็กวิชาคณะอักษรฯ ว่าลงเป็นวิชาโทได้ไหม</summary>
+          <ol className="mt-2 list-decimal space-y-1 pl-5">
+            <li>เปิดประกาศด้านบน กดคณะอักษรศาสตร์ แล้วกด Ctrl+F ค้นรหัสวิชา</li>
+            <li>
+              เจอในส่วน "วิชาโท" (หน้า 1–204) → <b>ลงเป็นวิชาโทได้</b> แม้จะมีในหน้า 211 ขึ้นไปด้วยก็ตาม
+            </li>
+            <li>
+              เจอเฉพาะหน้า 211 ขึ้นไป (รายวิชาที่ให้บริการนิสิตนอกคณะ) ไม่เจอในหน้า 1–204 → <b>ลงเป็นวิชาโทไม่ได้</b>
+            </li>
+          </ol>
+          <p className="mt-2">
+            เช่น 2222100 จีนปริทัศน์ อยู่หน้า 73 จึงลงได้ ส่วน 2223041 ญี่ปุ่นเร่งรัด 1 อยู่แค่หน้า 273 จึงลงไม่ได้
+          </p>
+          <p className="text-xs text-muted-foreground">เลขหน้าคือเลขที่พิมพ์มุมบนของหน้า ไม่ใช่เลขในโปรแกรม PDF</p>
+        </details>
+        <div className="text-xs text-muted-foreground">
+          ประกาศนี้ลงวันที่ 2 ม.ค. 2566 อาจไม่ตรงกับปีปัจจุบัน ส่วนรายการวิชาโทในเว็บนี้ทีมสอบถามมาเอง ไม่ใช่ประกาศทางการ
+        </div>
       </div>
     </div>
   );

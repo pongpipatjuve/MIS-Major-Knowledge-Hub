@@ -100,7 +100,7 @@ function CourseDetail() {
           )}
           {accessNote(c) && (
             <p className="rounded-lg bg-amber-50 p-2 text-sm text-amber-900 dark:bg-amber-950 dark:text-amber-200">
-              ⚠ {accessNote(c)} (สรุปจากหมายเหตุกลุ่มเรียน 2569/1–2 เป็นการประมาณ โปรดตรวจที่ CU Get Reg)
+              ⚠ {accessNote(c)} (ประมาณจากหมายเหตุกลุ่มเรียน โปรดตรวจที่ CU Get Reg)
             </p>
           )}
           <div className="pt-1 text-sm">
@@ -119,7 +119,7 @@ function CourseDetail() {
               })}
             </div>
             <p className="mt-2 text-xs text-muted-foreground">
-              ข้อมูลดึงจาก CU Get Reg เมื่อต้นเดือนพฤศจิกายน 2569 ภาคที่ไม่พบอาจไม่เปิดสอนหรือข้อมูลยังไม่ครบ โปรดตรวจสอบกับ CU Get Reg ก่อนวางแผนลงทะเบียน
+              ข้อมูล CU Get Reg ณ พ.ย. 2569 โปรดตรวจซ้ำก่อนลงทะเบียน
             </p>
           </div>
         </section>
@@ -156,8 +156,7 @@ function CourseDetail() {
             })}
           </div>
           <p className="text-xs text-muted-foreground">
-            ข้อมูลนี้เพื่อนในกลุ่มสอบถามมา ไม่ใช่ข้อมูลจาก CU Get Reg และไม่ใช่ข้อมูลทางการ ภาค 1/2 ในไฟล์ของเพื่อนแสดงเป็นปีการศึกษา 2569
-            เป็นการสันนิษฐาน โปรดตรวจสอบที่ CU Get Reg ก่อนวางแผนลงทะเบียน
+            ข้อมูลจากเพื่อนในกลุ่ม ไม่ใช่ทางการ โปรดตรวจที่ CU Get Reg
           </p>
         </section>
       )}
@@ -197,8 +196,7 @@ function CourseDetail() {
       <section className="rounded-2xl border bg-card p-5">
         <h2 className="text-lg font-bold">ตารางเรียน ที่นั่ง และผู้สอน</h2>
         <p className="mt-1 text-sm text-muted-foreground">
-          ดูกลุ่มเรียน เวลา ที่นั่งว่าง และชื่ออาจารย์ที่ CU Get Reg เปิดหน้าวิชา {c.code} ในแท็บใหม่
-          เลื่อนลงไปด้านล่างของหน้านั้นเพื่ออ่านรีวิวจากนิสิตได้ด้วย
+          ดูกลุ่มเรียน ที่นั่ง และรีวิวนิสิตที่ CU Get Reg
         </p>
         <div className="mt-3 flex flex-wrap gap-2">
           {(termsOf(c).length > 0 ? [...termsOf(c)].sort() : [undefined]).map((t) => (

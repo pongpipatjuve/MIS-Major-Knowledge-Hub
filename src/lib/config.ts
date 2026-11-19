@@ -18,6 +18,9 @@ export const PETRA_URL = "https://petra.acc.chula.ac.th/";
 /** Padlet รีวิวรวมของคณะอักษรศาสตร์ (ไม่มีหน้าแยกรายวิชา ใช้กับวิชารหัสขึ้นต้น 22) */
 export const PADLET_ARTS_URL = "https://padlet.com/smopolscicu/genlang-culi-caz5gqul9srtitvn";
 
+/** ประกาศสำนักงานการศึกษาฯ จุฬาฯ: กลุ่มวิชาโทที่เปิดให้นิสิตปริญญาตรี (ประกาศ 2 ม.ค. 2566 อาจไม่ตรงกับปีปัจจุบัน) */
+export const MINOR_GROUPS_URL = "https://academic.chula.ac.th/detail/news/23";
+
 /** วันที่ที่ดึงข้อมูลรายวิชาจาก CU Get Reg */
 export const DATA_PULLED_ON = "2 พฤศจิกายน 2569";
 

@@ -54,20 +54,20 @@ const DOCS: { title: string; icon: typeof FileText; url: string }[] = [
 const STEPS: { title: string; desc: string; site: string; url: string; inSite?: boolean }[] = [
   {
     title: "ตรวจหน่วยกิตที่ยังขาด",
-    desc: "ดูใน Petra ว่าแต่ละหมวดเรียนครบหรือยัง ยังขาดวิชาบังคับ วิชาเลือก หรือวิชาเลือกเสรีอีกกี่หน่วยกิต",
+    desc: "ดูใน Petra ว่าแต่ละหมวดขาดอีกกี่หน่วยกิต",
     site: "Petra",
     url: PETRA_URL,
   },
   {
     title: "เลือกวิชาและลองจัดตาราง",
-    desc: "หาวิชาในเว็บนี้ แล้วนำรหัสวิชาไปลองจัดตารางใน CU Get Reg ดูกลุ่มเรียน เวลา และวันสอบไม่ให้ชนกัน",
+    desc: "หาวิชาในเว็บนี้ แล้วลองจัดตารางใน CU Get Reg",
     site: "CU Get Reg",
     url: CUGETREG_URL,
     inSite: true,
   },
   {
     title: "ลงทะเบียนจริง",
-    desc: "เข้าระบบ Reg Chula ลงทะเบียนตามกำหนดการของมหาวิทยาลัย",
+    desc: "ลงทะเบียนใน Reg Chula ตามกำหนดการของมหาวิทยาลัย",
     site: "Reg Chula",
     url: REG_CHULA_URL,
   },
@@ -133,9 +133,9 @@ function Home() {
       <section className="rounded-2xl bg-hero p-6 text-primary-foreground shadow-card md:p-8">
         <h1 className="text-2xl font-bold md:text-3xl">MIS Hub CBS</h1>
         <p className="mt-2 max-w-2xl opacity-95">
-          คู่มือวางแผนหน่วยกิตและค้นหาวิชาเลือก วิชาโท สำหรับนิสิต MIS คณะพาณิชยศาสตร์และการบัญชี จุฬาฯ ก่อนลงทะเบียนจริง
+          คู่มือวางแผนวิชาเลือกและวิชาโท สำหรับนิสิต MIS CBS จุฬาฯ
         </p>
-        <p className="mt-1 text-xs opacity-80">เว็บของนิสิต ไม่ใช่เว็บทางการ โปรดตรวจสอบกับคณะก่อนลงทะเบียน</p>
+        <p className="mt-1 text-xs opacity-80">เว็บของนิสิต ไม่ใช่เว็บทางการ โปรดตรวจสอบกับคณะ</p>
         <div className="mt-4 flex flex-wrap gap-2">
           <div ref={searchBoxRef} className="relative min-w-0 flex-1 basis-full sm:basis-auto">
             <form onSubmit={handleSearch}>
@@ -195,17 +195,17 @@ function Home() {
         <h2 id="goals-h" className="text-xl font-bold">อยากทำอะไรวันนี้?</h2>
         <div className="grid gap-3 sm:grid-cols-3">
           <Link to="/courses" search={{ search: "" }} className={CARD}>
-            <GoalBody icon={Search} title="หาวิชาเลือก / วิชาโท" desc="ค้นตามหมวดและภาคเรียน ดูหน่วยกิต เงื่อนไข และรีวิว" />
+            <GoalBody icon={Search} title="หาวิชาเลือก / วิชาโท" desc="ค้นตามหมวดและภาคเรียน ดูรีวิวรุ่นพี่" />
           </Link>
           <Link to="/curriculum" className={CARD}>
             <GoalBody
               icon={GraduationCap}
               title="เข้าใจหลักสูตร"
-              desc={`${CREDITS.total} หน่วยกิต แบ่งเป็นหมวดอะไรบ้าง แต่ละหมวดต้องเรียนเท่าไร`}
+              desc={`${CREDITS.total} หน่วยกิต แบ่งเป็นหมวดอะไรบ้าง`}
             />
           </Link>
           <a href="#steps" className={CARD}>
-            <GoalBody icon={ClipboardCheck} title="ขั้นตอนลงทะเบียน" desc="ทำอะไรก่อนหลัง ตั้งแต่ตรวจหน่วยกิตจนลงทะเบียนจริง" />
+            <GoalBody icon={ClipboardCheck} title="ขั้นตอนลงทะเบียน" desc="ตรวจ → ลองจัดตาราง → ลงจริง" />
           </a>
         </div>
       </section>
