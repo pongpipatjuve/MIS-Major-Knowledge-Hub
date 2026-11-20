@@ -213,7 +213,7 @@ function Home() {
       <section id="steps" aria-labelledby="steps-h" className="scroll-mt-20 space-y-3">
         <div>
           <h2 id="steps-h" className="text-xl font-bold">ลงทะเบียนใน 3 ขั้นตอน</h2>
-          <p className="text-sm text-muted-foreground">ทำตามลำดับนี้ทุกเทอม เว็บภายนอกเปิดในแท็บใหม่ และไม่ได้ดูแลโดยทีมเรา</p>
+          <p className="text-sm text-muted-foreground">ทำตามลำดับนี้ทุกเทอม เว็บภายนอกเปิดในแท็บใหม่ และเป็นของหน่วยงานอื่น</p>
         </div>
         <ol className="grid gap-3 md:grid-cols-3">
           {STEPS.map((step, i) => (

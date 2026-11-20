@@ -53,6 +53,15 @@ function classifyNote(note) {
   return { kind: "unknown", only: [], years };
 }
 
+const ACCESS_RANK = { open: 3, cond: 2, blocked: 1, unknown: 0 };
+/** รวมผลสรุปของสองภาค: เลือกอันที่ลงได้ง่ายกว่า (open > cond > blocked > unknown) ถ้าเป็น cond ทั้งคู่ให้รวมชั้นปี */
+function mergeAccess(a, b) {
+  const ra = ACCESS_RANK[a.access], rb = ACCESS_RANK[b.access];
+  if (ra !== rb) return ra > rb ? a : b;
+  if (a.access === "cond") return { ...a, onlyFor: [...new Set([...a.onlyFor, ...b.onlyFor])], years: [...new Set([...a.years, ...b.years])].sort() };
+  return a.access === "blocked" ? { ...a, onlyFor: [...new Set([...a.onlyFor, ...b.onlyFor])] } : a;
+}
+
 /** สรุประดับวิชา: open = มีกลุ่มที่ไม่จำกัด, cond = ลงได้แต่มีเงื่อนไข/จำกัดบางอย่าง, blocked = ทุกกลุ่มจำกัดเฉพาะสาขาอื่น, unknown = ไม่มีข้อมูลกลุ่มเรียน */
 function summarizeAccess(sections) {
   if (!sections || sections.length === 0) return { access: "unknown", onlyFor: [], years: [] };
@@ -177,8 +186,8 @@ export function buildCatalog(dataDir = path.join(ROOT, "data")) {
       }
       cur.genEdNote ||= genEdByNote;
       if (!cur.terms.includes(term)) cur.terms.push(term);
-      // เก็บผลสรุปการลงได้ของภาคล่าสุดที่มีข้อมูลกลุ่มเรียน
-      if (info._acc.access !== "unknown" && (cur._acc.access === "unknown" || term > cur._acc.term)) cur._acc = info._acc;
+      // รวมผลสรุปการลงได้ของทุกภาค: ถ้าภาคใดภาคหนึ่งเปิดให้ MIS ถือว่าลงได้ (เช่น ERP ภาค 1 "MIS YEAR 3 ONLY" ภาค 2 "LOGISTICS ONLY")
+      cur._acc = mergeAccess(cur._acc, info._acc);
       // ข้อมูลระดับวิชาใช้ของภาคล่าสุด
       if (term > cur._latest) {
         Object.assign(cur, { ...info, terms: cur.terms, genEdNote: cur.genEdNote, _latest: term, _acc: cur._acc });

@@ -104,7 +104,7 @@ function CourseDetail() {
             </p>
           )}
           <div className="pt-1 text-sm">
-            <div className="mb-1 font-medium">ภาคที่เปิดสอน (ตามข้อมูลที่เรามี)</div>
+            <div className="mb-1 font-medium">ภาคที่เปิดสอน</div>
             <div className="flex flex-wrap gap-2">
               {TERMS.map((t) => {
                 const on = c.terms.includes(t);
@@ -134,9 +134,9 @@ function CourseDetail() {
 
       {c.stub && c.teamInfo && (
         <section className="space-y-2 rounded-2xl border bg-card p-5">
-          <h2 className="text-xl font-bold">หน่วยกิต เงื่อนไข และภาคที่ลงได้ (จากเพื่อนในกลุ่ม)</h2>
+          <h2 className="text-xl font-bold">หน่วยกิต เงื่อนไข และภาคที่ลงได้</h2>
           <p className="text-sm">หน่วยกิต: {c.teamInfo.credits}</p>
-          <p className="text-sm">เงื่อนไขรายวิชา: {c.teamInfo.cond ?? "ไม่มีตัวก่อนหน้า/เงื่อนไขพิเศษตามที่เพื่อนแจ้ง"}</p>
+          <p className="text-sm">เงื่อนไขรายวิชา: {c.teamInfo.cond ?? "ไม่พบเงื่อนไขพิเศษ"}</p>
           {c.teamInfo.cond && /PRER|C\.F\./.test(c.teamInfo.cond) && (
             <p className="text-xs text-muted-foreground">
               PRER = วิชาที่ต้องผ่านมาก่อน · C.F. = ต้องได้รับอนุญาตจากอาจารย์หรือคณะ (Consent of Faculty) · OR = หรือ · AND = และ
@@ -156,7 +156,7 @@ function CourseDetail() {
             })}
           </div>
           <p className="text-xs text-muted-foreground">
-            ข้อมูลจากเพื่อนในกลุ่ม โปรดตรวจที่ CU Get Reg
+            ข้อมูลนี้ไม่ได้มาจาก CU Get Reg โปรดตรวจซ้ำก่อนลงทะเบียน
           </p>
         </section>
       )}
@@ -178,8 +178,8 @@ function CourseDetail() {
           แต่ลงเป็นวิชาเลือกเสรีได้ โปรดตรวจสอบกับประกาศของคณะ
           {c.inMinorList && (
             <p className="mt-2 rounded-lg bg-amber-50 p-2 text-amber-900 dark:bg-amber-950 dark:text-amber-200">
-              วิชานี้อยู่ในรายการวิชาโทนอกคณะที่กลุ่มเราสอบถามมา แต่ CU Get Reg ระบุว่าเป็น GenEd เรายังไม่ยืนยันว่านับเป็นวิชาโทได้หรือไม่
-              จึงยังไม่แสดงเป็นวิชาโท โปรดสอบถามภาควิชาหรืออาจารย์ที่ปรึกษาก่อนตัดสินใจ
+              วิชานี้อยู่ในรายการวิชาโทนอกคณะ แต่ CU Get Reg ระบุว่าเป็น GenEd จึงยังไม่ยืนยันว่านับเป็นวิชาโทได้หรือไม่
+              ระบบจึงยังไม่แสดงเป็นวิชาโท โปรดสอบถามภาควิชาหรืออาจารย์ที่ปรึกษาก่อนตัดสินใจ
             </p>
           )}
         </section>
@@ -188,7 +188,7 @@ function CourseDetail() {
       {c.isMinor && (
         <section className="space-y-3 rounded-2xl border bg-card p-5 text-sm">
           <h2 className="text-lg font-bold">วิชาโทนอกคณะ</h2>
-          <p>วิชานี้อยู่ในรายการที่ทีมสอบถามจากทะเบียนคณะว่านิสิต MIS ลงเป็นวิชาโทนอกคณะได้</p>
+          <p>วิชานี้อยู่ในรายการวิชาโทนอกคณะที่นิสิต MIS ลงได้ ตามที่สอบถามทะเบียนคณะ</p>
           <MinorCallout />
         </section>
       )}
@@ -212,7 +212,7 @@ function CourseDetail() {
           ))}
         </div>
         <p className="mt-2 text-xs text-muted-foreground">
-          เป็นเว็บภายนอกที่ไม่ได้ดูแลโดยทีมเรา เนื้อหาและรีวิวเป็นของเจ้าของเว็บนั้น
+          เป็นเว็บภายนอก เนื้อหาและรีวิวเป็นของเจ้าของเว็บนั้น
         </p>
       </section>
 
@@ -220,7 +220,7 @@ function CourseDetail() {
         <section className="rounded-2xl border bg-card p-5">
           <h2 className="text-lg font-bold">รีวิวจากเว็บอื่น</h2>
           <p className="mt-1 text-sm text-muted-foreground">
-            วิชานี้มีรีวิวในเว็บภายนอกด้านล่าง ไม่ใช่ทุกวิชาจะมี และเนื้อหาเป็นของเจ้าของเว็บนั้น ไม่ได้ผ่านการคัดกรองโดยทีมเรา
+            วิชานี้มีรีวิวในเว็บภายนอกด้านล่าง ไม่ใช่ทุกวิชาจะมี และเนื้อหาเป็นของเจ้าของเว็บนั้น ไม่ได้ผ่านการคัดกรองจากเว็บนี้
           </p>
           <div className="mt-3 flex flex-col gap-2">
             {external.map((e) => (
@@ -247,7 +247,7 @@ function CourseDetail() {
           <div>
             <h2 className="text-xl font-bold">รีวิวจากนิสิต</h2>
             <p className="mt-1 text-sm text-muted-foreground">
-              ความคิดเห็นจากนิสิตที่เคยเรียน ไม่ระบุชื่อผู้เขียน และผ่านการคัดกรองโดยทีมงานก่อนแสดง
+              ความคิดเห็นจากนิสิตที่เคยเรียน ไม่ระบุชื่อผู้เขียน และผ่านการคัดกรองก่อนแสดง
             </p>
           </div>
           {REVIEW_FORM_URL && (
@@ -263,7 +263,7 @@ function CourseDetail() {
         </div>
         {reviews.length === 0 ? (
           <p className="rounded-xl border border-dashed p-6 text-center text-sm text-muted-foreground">
-            ยังไม่มีรีวิวสำหรับรายวิชานี้ในเว็บเรา ดูรีวิวจากเว็บอื่นได้ที่ปุ่ม CU Get Reg ด้านบน{external.length > 0 ? " และส่วน \"รีวิวจากเว็บอื่น\"" : ""}
+            ยังไม่มีรีวิวสำหรับรายวิชานี้ในเว็บนี้ ดูรีวิวจากเว็บอื่นได้ที่ปุ่ม CU Get Reg ด้านบน{external.length > 0 ? " และส่วน \"รีวิวจากเว็บอื่น\"" : ""}
           </p>
         ) : (
           <div className="space-y-3">

@@ -4,7 +4,7 @@ import reviewsJson from "@/data/reviews.json";
 import minorInfoJson from "@/data/minor-info.json";
 import shortNamesJson from "@/data/short-names.json";
 import reviewLinksJson from "@/data/review-links.json";
-import { PADLET_ARTS_URL } from "@/lib/config";
+import { FEATURED_CODES, PADLET_ARTS_URL } from "@/lib/config";
 import { CORE_CODES, MAJOR_ELECTIVE_CODES, MAJOR_REQUIRED_CODES, categoryOf, type Category } from "./curriculum";
 
 // ข้อมูลรายวิชามาจาก data/*.json (response ที่บันทึกจาก CU Get Reg) ผ่าน scripts/build-data.mjs -> src/data/catalog.json
@@ -80,6 +80,17 @@ export type Review = { text: string; year?: string; tags?: string[] };
 /** รีวิวที่ทีมคัดมาใส่เองใน src/data/reviews.json รูปแบบ { "2602313": [{ "text": "..." }] } */
 const REVIEWS = reviewsJson as unknown as Record<string, Review[]>;
 export const reviewsFor = (code: string): Review[] => REVIEWS[code] ?? [];
+
+/** มีรีวิวในเว็บนี้ (ใช้แสดงป้าย "มีรีวิว" ไม่ได้หมายความว่าแนะนำ) */
+export const hasReviews = (code: string) => reviewsFor(code).length > 0;
+
+/** ลำดับการขึ้นก่อนในหน้าค้นหา: วิชาใน FEATURED_CODES ตามลำดับ → วิชาที่มีรีวิว (มากไปน้อย) → วิชาอื่น */
+export const featuredRank = (code: string): number => {
+  const i = FEATURED_CODES.indexOf(code);
+  if (i >= 0) return i;
+  const n = reviewsFor(code).length;
+  return n > 0 ? 1000 - n : 1_000_000;
+};
 
 export type Course = {
   code: string;

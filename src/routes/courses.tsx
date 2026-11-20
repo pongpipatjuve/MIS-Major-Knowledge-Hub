@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { ChevronRight, Search } from "lucide-react";
-import { GENED_LABELS, MINOR_CODE_COUNT, TERMS, allCourses, isMis, termsOf, accessNote, searchText } from "@/lib/courses";
+import { GENED_LABELS, MINOR_CODE_COUNT, TERMS, allCourses, featuredRank, hasReviews, isMis, termsOf, accessNote, searchText } from "@/lib/courses";
 import { CATEGORIES } from "@/lib/curriculum";
 import { CategoryBadge, GenEdTag, MinorCallout, MinorTag, NoData, Notice, ShortName } from "@/components/Labels";
 
@@ -108,7 +108,7 @@ function Courses() {
       // วิชา 300+ ที่กลุ่มเรียนเปิดเฉพาะสาขาอื่น ซ่อนไว้ก่อน (เปิดดูได้ด้วยตัวเลือกด้านล่าง) ถ้าค้นหาด้วยชื่อ/รหัสจะแสดงพร้อมหมายเหตุ
       (showBlocked || query !== "" || !(c.isCbs300 && c.access === "blocked")) &&
       searchText(c).includes(query),
-  );
+  ).sort((a, b) => featuredRank(a.code) - featuredRank(b.code));
   const chip = (on: boolean) =>
     `rounded-full border px-3 py-1 text-sm ${on ? "border-primary bg-primary-soft text-primary" : "bg-card"}`;
   const reset = () => setLimit(50);
@@ -200,7 +200,7 @@ function Courses() {
             <Notice title="วิชาของ CBS รหัส 3 ตัวหลัง 300–499 (ซ่อนวิชาที่เปิดเฉพาะสาขาอื่น)">
               วิชาระดับปริญญาตรีของคณะฯ ที่มีรหัส 3 ตัวหลังตั้งแต่ 300 ขึ้นไป ตามข้อความหลักสูตร ตอนนี้เราแสดงวิชาของ CBS (รหัสขึ้นต้น 26) ที่รหัส 3 ตัวหลัง 300-499
               โดยถือว่ารหัส 500 ขึ้นไปเป็นระดับบัณฑิตศึกษา ไม่รวมวิชา GenEd วิชาแกน และวิชาบังคับสาขา ข้อมูลอาจไม่ครบทุกวิชา โปรดตรวจสอบกับคณะ
-              เราซ่อนวิชาที่หมายเหตุกลุ่มเรียนใน CU Get Reg (ภาค 2569/1–2) ระบุว่าเปิดเฉพาะสาขาอื่นทุกกลุ่ม (เช่น บัญชี การเงิน การตลาด โลจิสติกส์) ส่วนวิชาที่มีเงื่อนไขจะแสดงพร้อมหมายเหตุ
+              เว็บนี้ซ่อนวิชาที่หมายเหตุกลุ่มเรียนใน CU Get Reg (ภาค 2569/1–2) ระบุว่าเปิดเฉพาะสาขาอื่นทุกกลุ่ม (เช่น บัญชี การเงิน การตลาด โลจิสติกส์) ส่วนวิชาที่มีเงื่อนไขจะแสดงพร้อมหมายเหตุ
               การสรุปนี้เป็นการประมาณจากข้อความหมายเหตุ โปรดตรวจที่ CU Get Reg หรือถามอาจารย์ผู้สอนก่อนลง
             </Notice>
           )}
@@ -209,9 +209,9 @@ function Courses() {
           )}
           {sub === "วิชาโทนอกคณะ" && (
             <Notice title={`ที่มาของรายการวิชาโท ${MINOR_CODE_COUNT} รหัส และข้อจำกัดของข้อมูล`}>
-              รายการวิชาโทนอกคณะ ({MINOR_CODE_COUNT} รหัส) ได้จากการสอบถามทะเบียนคณะโดยสมาชิกกลุ่ม โปรดยืนยันกับภาควิชาเจ้าของวิชาก่อนลงทะเบียน
+              รายการวิชาโทนอกคณะ ({MINOR_CODE_COUNT} รหัส) ได้จากการสอบถามทะเบียนคณะ โปรดยืนยันกับภาควิชาเจ้าของวิชาก่อนลงทะเบียน
               วิชาที่ยังไม่มีชื่อเต็มในเว็บจะแสดง "ชื่อย่อ" (ดูชื่อเต็มได้ที่ CU Get Reg) และบางวิชาอาจไม่เปิดสอนในภาคเรียนนี้ โปรดตรวจที่ CU Get Reg
-              วิชาที่ CU Get Reg ระบุเป็น GenEd (ตอนนี้ {MINOR_GENED_COUNT} วิชา ยังรอยืนยันกับภาควิชา) จะไม่แสดงในหมวดนี้ เพราะวิชา GenEd นับเป็นวิชาโทไม่ได้
+              วิชาที่ CU Get Reg ระบุเป็น GenEd (ตอนนี้ {MINOR_GENED_COUNT} วิชา ยังไม่ยืนยันกับภาควิชา) จะไม่แสดงในหมวดนี้ เพราะวิชา GenEd นับเป็นวิชาโทไม่ได้
             </Notice>
           )}
         </>
@@ -221,7 +221,7 @@ function Courses() {
         <Notice title="วิชาเลือกเสรี 6 หน่วยกิต ลงวิชาอะไรก็ได้ จึงไม่แสดงเป็นรายการ">
           วิชาเลือกเสรี 6 หน่วยกิต คือลงวิชาอะไรของมหาวิทยาลัยก็ได้ ผลจะเป็นเกรดหรือ S/U ก็ได้ รวมวิชา GenEd (ได้ผล S/U แต่ยังนับเป็นวิชาเลือกเสรี) ยกเว้นวิชาบังคับที่ต้องเรียนอยู่แล้ว (รวมวิชาภาษาต่างประเทศ)
           และวิชาที่มีเงื่อนไขพิเศษ เช่น เปิดเฉพาะบางคณะหรือต้องผ่านวิชาก่อนหน้า ถ้าไม่มีเงื่อนไขเหล่านี้ลงได้ทุกวิชา จึงไม่แสดงเป็นรายการ ค้นหาวิชาที่สนใจได้ที่ CU Get Reg
-          หรือพิมพ์ชื่อ/รหัสในช่องค้นหาด้านบนเพื่อดูวิชาที่เรามีข้อมูล
+          หรือพิมพ์ชื่อ/รหัสในช่องค้นหาด้านบนเพื่อดูวิชาที่มีข้อมูลในเว็บนี้
         </Notice>
       )}
 
@@ -243,7 +243,7 @@ function Courses() {
         </div>
         {term !== "ทั้งหมด" && (
           <p className="text-xs text-muted-foreground">
-            แสดงวิชาที่พบว่าเปิดสอนในภาค {term} จาก CU Get Reg และวิชาที่เพื่อนในกลุ่มแจ้งว่าลงได้ภาคนั้น (ไม่ใช่ข้อมูลทางการ) วิชาที่ไม่มีข้อมูลภาคเรียนเลยจะไม่แสดงเมื่อเลือกภาค โปรดตรวจที่ CU Get Reg
+            แสดงวิชาที่พบว่าเปิดสอนในภาค {term} จาก CU Get Reg และวิชาที่สอบถามมาว่าลงได้ภาคนั้น วิชาที่ไม่มีข้อมูลภาคเรียนเลยจะไม่แสดงเมื่อเลือกภาค โปรดตรวจที่ CU Get Reg
           </p>
         )}
       </div>
@@ -292,13 +292,16 @@ function Courses() {
                 <CategoryBadge cat={c.category} />
                 <GenEdTag label={c.genEdLabel} />
                 <MinorTag show={c.isMinor} />
+                {hasReviews(c.code) && (
+                  <span className="rounded-md bg-primary-soft px-2 py-0.5 text-xs font-medium text-primary">มีรีวิว</span>
+                )}
                 {c.isCbs300 && (
                   <span className="rounded-md bg-muted px-2 py-0.5 text-xs">ปริญญาตรี รหัส 300 ขึ้นไป</span>
                 )}
               </div>
               {termsOf(c).length > 0 && (
                 <div className="mt-2 text-xs text-muted-foreground">
-                  {c.terms.length > 0 ? "เปิดสอน" : "เพื่อนแจ้งว่าลงได้"}: {[...termsOf(c)].sort().join(" · ")}
+                  {c.terms.length > 0 ? "เปิดสอน" : "ลงได้"}: {[...termsOf(c)].sort().join(" · ")}
                 </div>
               )}
               {c.isCbs300 && accessNote(c) && (

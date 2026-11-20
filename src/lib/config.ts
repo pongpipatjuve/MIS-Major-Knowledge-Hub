@@ -26,3 +26,16 @@ export const DATA_PULLED_ON = "2 พฤศจิกายน 2569";
 
 /** วันที่สอบถามรายการวิชาโทจากหน่วยงานต่าง ๆ — ให้เพื่อนที่โทรถามยืนยัน แล้วแก้ข้อความนี้ */
 export const MINOR_LIST_ASKED_ON = "";
+
+/** วิชาที่ให้ขึ้นก่อนในทุกหมวดของหน้าค้นหา (เรียงตามลำดับในรายการนี้) เป็นแค่ลำดับการแสดง ไม่ได้แปลว่าแนะนำ และไม่มีป้ายกำกับ */
+export const FEATURED_CODES: string[] = [
+  "2602399", // MNG ORG CHG INNO
+  "2602349", // ERP
+  "2602441", // INFO SYS PROJ MGT
+  "2602368", // DIGIT BUS
+  "2602364", // CON TOPIC MIS
+  "2602367", // MACHINE LEARN BUS
+  "2602365", // PYTHON BUS ANA
+  "2222100", // INTRO CHINESE
+  "2224101", // MALAY I
+];
