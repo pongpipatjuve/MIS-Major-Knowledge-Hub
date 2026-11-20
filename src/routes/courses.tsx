@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { ChevronRight, Search } from "lucide-react";
-import { GENED_LABELS, MINOR_CODE_COUNT, TERMS, allCourses, featuredRank, hasReviews, isMis, termsOf, accessNote, searchText } from "@/lib/courses";
+import { GENED_LABELS, MINOR_CODE_COUNT, TERMS, allCourses, featuredRank, isMis, termsOf, accessNote, searchText } from "@/lib/courses";
 import { CATEGORIES } from "@/lib/curriculum";
 import { CategoryBadge, GenEdTag, MinorCallout, MinorTag, NoData, Notice, ShortName } from "@/components/Labels";
 
@@ -292,9 +292,6 @@ function Courses() {
                 <CategoryBadge cat={c.category} />
                 <GenEdTag label={c.genEdLabel} />
                 <MinorTag show={c.isMinor} />
-                {hasReviews(c.code) && (
-                  <span className="rounded-md bg-primary-soft px-2 py-0.5 text-xs font-medium text-primary">มีรีวิว</span>
-                )}
                 {c.isCbs300 && (
                   <span className="rounded-md bg-muted px-2 py-0.5 text-xs">ปริญญาตรี รหัส 300 ขึ้นไป</span>
                 )}
