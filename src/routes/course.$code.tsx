@@ -70,7 +70,7 @@ function CourseDetail() {
                 <>
                   <ShortName name={c.shortName} />
                   <span className="block text-sm text-muted-foreground">
-                    นี่คือชื่อย่อ ไม่ใช่ชื่อทางการ ดูชื่อเต็มได้ที่ CU Get Reg
+                    นี่คือชื่อย่อ ดูชื่อเต็มได้ที่ CU Get Reg
                   </span>
                 </>
               ) : (
@@ -156,7 +156,7 @@ function CourseDetail() {
             })}
           </div>
           <p className="text-xs text-muted-foreground">
-            ข้อมูลจากเพื่อนในกลุ่ม ไม่ใช่ทางการ โปรดตรวจที่ CU Get Reg
+            ข้อมูลจากเพื่อนในกลุ่ม โปรดตรวจที่ CU Get Reg
           </p>
         </section>
       )}
@@ -188,7 +188,7 @@ function CourseDetail() {
       {c.isMinor && (
         <section className="space-y-3 rounded-2xl border bg-card p-5 text-sm">
           <h2 className="text-lg font-bold">วิชาโทนอกคณะ</h2>
-          <p>วิชานี้อยู่ในรายการที่กลุ่มเราสอบถามมาว่านิสิต MIS ลงเป็นวิชาโทนอกคณะได้ ไม่ใช่ประกาศทางการ</p>
+          <p>วิชานี้อยู่ในรายการที่ทีมสอบถามจากทะเบียนคณะว่านิสิต MIS ลงเป็นวิชาโทนอกคณะได้</p>
           <MinorCallout />
         </section>
       )}

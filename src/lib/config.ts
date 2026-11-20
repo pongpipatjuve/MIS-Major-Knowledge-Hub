@@ -1,10 +1,10 @@
 // ตั้งค่าลิงก์ที่ทีมต้องกรอกเอง — เว้นว่าง ("") ได้ ปุ่ม/ข้อความที่เกี่ยวข้องจะไม่แสดง
 
 /** ลิงก์ฟอร์ม (เช่น Google Form) สำหรับให้นิสิตส่งรีวิวแบบไม่ระบุชื่อ */
-export const REVIEW_FORM_URL = "";
+export const REVIEW_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdg2vd5sSRjhcERUirOpgHidlH7_bH7OX0A8Crjwkpx75M4aA/viewform";
 
 /** ลิงก์หรืออีเมลสำหรับแจ้งข้อมูลผิด หรือขอให้นำข้อมูลออก (ใส่ได้ทั้ง https://... หรือ mailto:...) */
-export const REPORT_CONTACT_URL = "";
+export const REPORT_CONTACT_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdg2vd5sSRjhcERUirOpgHidlH7_bH7OX0A8Crjwkpx75M4aA/viewform";
 
 /** เว็บลงทะเบียนเรียนจริงของมหาวิทยาลัย */
 export const REG_CHULA_URL = "https://www2.reg.chula.ac.th/";

@@ -24,13 +24,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "คู่มือวางแผนหน่วยกิตและค้นหาวิชาเลือก วิชาโท สำหรับนิสิต MIS คณะพาณิชยศาสตร์และการบัญชี จุฬาฯ (ไม่ใช่เว็บทางการ)",
+          "คู่มือวางแผนหน่วยกิตและค้นหาวิชาเลือก วิชาโท สำหรับนิสิต MIS คณะพาณิชยศาสตร์และการบัญชี จุฬาฯ (เว็บของนิสิต)",
       },
       { property: "og:title", content: "MIS Hub CBS" },
       {
         property: "og:description",
         content:
-          "คู่มือวางแผนหน่วยกิตและค้นหาวิชาเลือก วิชาโท สำหรับนิสิต MIS คณะพาณิชยศาสตร์และการบัญชี จุฬาฯ (ไม่ใช่เว็บทางการ)",
+          "คู่มือวางแผนหน่วยกิตและค้นหาวิชาเลือก วิชาโท สำหรับนิสิต MIS คณะพาณิชยศาสตร์และการบัญชี จุฬาฯ (เว็บของนิสิต)",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
@@ -135,7 +135,7 @@ function Home() {
         <p className="mt-2 max-w-2xl opacity-95">
           คู่มือวางแผนวิชาเลือกและวิชาโท สำหรับนิสิต MIS CBS จุฬาฯ
         </p>
-        <p className="mt-1 text-xs opacity-80">เว็บของนิสิต ไม่ใช่เว็บทางการ โปรดตรวจสอบกับคณะ</p>
+        <p className="mt-1 text-xs opacity-80">เว็บของนิสิต โปรดตรวจสอบกับคณะก่อนลงทะเบียน</p>
         <div className="mt-4 flex flex-wrap gap-2">
           <div ref={searchBoxRef} className="relative min-w-0 flex-1 basis-full sm:basis-auto">
             <form onSubmit={handleSearch}>
