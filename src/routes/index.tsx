@@ -260,6 +260,18 @@ function Home() {
           <h2 id="faq-h" className="text-xl font-bold">คำถามที่พบบ่อยและเอกสาร</h2>
           <p className="text-sm text-muted-foreground">กดที่หัวข้อเพื่อเปิดอ่าน</p>
         </div>
+        <Collapsible title="เข้า Petra ไม่ได้ หรือลืมรหัสผ่าน ทำยังไง">
+          <ul className="list-disc space-y-1 pl-5">
+            <li>ล็อกอินด้วยอีเมล @acc.chula.ac.th</li>
+            <li>
+              ลืมรหัสผ่าน: ส่งอีเมลขอรหัสผ่านใหม่ไปที่{" "}
+              <a href="mailto:petra.helpdesk@acc.chula.ac.th" className="text-primary underline">
+                petra.helpdesk@acc.chula.ac.th
+              </a>
+            </li>
+            <li>หรือไปติดต่อที่ศูนย์คอมพิวเตอร์ อาคาร COM9 ได้เลย</li>
+          </ul>
+        </Collapsible>
         <Collapsible title="อยากลงวิชาโทนอกคณะ ต้องถามใคร">
           <MinorCallout />
         </Collapsible>
